@@ -2,7 +2,8 @@
 export default defineNuxtConfig({
   modules: [
       '@nuxt/devtools',
-      '@nuxtjs/tailwindcss' 
+      '@nuxtjs/tailwindcss',
+      'nuxt3-vuex-module'
   ],
   runtimeConfig: {
       public: {
