@@ -2,10 +2,10 @@
     <!-- TODO: fix for seo -->
     <transition
       enter-active-class="transition duration-200 ease-out"
-      enter-class="translate-y-1 opacity-0"
+      enter-from-class="translate-y-1 opacity-0"
       enter-to-class="translate-y-0 opacity-100"
       leave-active-class="transition duration-150 ease-in"
-      leave-class="translate-y-0 opacity-100"
+      leave-from-class="translate-y-0 opacity-100"
       leave-to-class="translate-y-1 opacity-0"
     >
       <div v-show="opened" :ref="category" v-click-outside="vcoConfig" class="absolute inset-x-0 z-20 hidden transform shadow-lg md:block">

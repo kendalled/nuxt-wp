@@ -80,10 +80,10 @@
         </div>
         <!-- todo: simplify closing, add aria roles -->
         <transition
-          enter-class="transform scale-95 opacity-0"
+          enter-from-class="transform scale-95 opacity-0"
           enter-active-class="transition duration-200 ease-out"
           enter-to-class="transform scale-100 opacity-100"
-          leave-class="transform scale-100 opacity-100"
+          leave-from-class="transform scale-100 opacity-100"
           leave-active-class="transition duration-75 ease-in"
           leave-to-class="transform scale-95 opacity-0"
         >

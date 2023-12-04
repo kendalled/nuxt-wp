@@ -1,33 +1,56 @@
 <template>
   <div>
-    <TheHeader></TheHeader>
-    <div class="grid gap-8 grid-cols-1 lg:grid-cols-3 p-6">
-      <Post v-for="post in data" :key="post.uri" :post="post"></Post>
+    <FullNav />
+    <div class="relative md:pt-8 lg:pt-10">
+      <NewHero />
+      <!-- Logo Cloud -->
+      <LogoCloud />
+      <ThreeFeat />
+      <VideoSpot />
+      <TailFeat2 />
+      <SocialProof />
+      <ThreeSteps />
+      <SimpleTest />
+      <Faq2 />
+      <TailCta />
+      <TailFoot />
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-const route = useRoute()
-const config = useRuntimeConfig();
-const { data, refresh, pending } = await useFetch(config.public.wordpressUrl, {
-  method: 'get',
-  query: {
-    query: `
-      query NewQuery {
-        pages(first:150) {
-          nodes {
-            id
-            date
-            title
-            excerpt
-            uri
-          }
-        }
-      }`
-}, 
-transform(data:any){
- return data.data.pages.nodes as Array<Record<'title' | 'date' | 'excerpt' | 'uri', string>>;
+<script>
+import FullNav from '~/components/FullNav'
+import VideoSpot from '~/components/VideoSpot'
+import NewHero from '~/components/NewHero'
+import LogoCloud from '~/components/LogoCloud'
+import ThreeSteps from '~/components/ThreeSteps'
+import ThreeFeat from '~/components/ThreeFeat'
+import TailFeat2 from '~/components/TailFeat2'
+import SimpleTest from '~/components/SimpleTest'
+import TailCta from '~/components/TailCta'
+import SocialProof from '~/components/SocialProof'
+import Faq2 from '~/components/Faq2'
+import TailFoot from '~/components/TailFoot'
+export default {
+  components: {
+    VideoSpot,
+    NewHero,
+    LogoCloud,
+    ThreeFeat,
+    ThreeSteps,
+    TailFeat2,
+    SimpleTest,
+    TailCta,
+    SocialProof,
+    Faq2,
+    TailFoot
+  },
+  head () {
+    return {
+      link: [
+        { hid: 'canonical', rel: 'canonical', href: 'https://lapelpinsandcoins.com' }
+      ]
+    }
+  }
 }
-});
 </script>
