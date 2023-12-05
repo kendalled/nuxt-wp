@@ -404,13 +404,13 @@ export default {
         {
           title: 'The History of Nursing Pins',
           desc: 'Nursing pins have played a vital role in healthcare for over twenty years. Learn about their interesting backstory.',
-          img: '/static/nursingpins.jpg',
+          img: '/pinblog1.jpg',
           href: '/blog/history-of-nursing-pins'
         },
         {
           title: 'A Complete History of Disney Pins',
           desc: 'An in-depth overview of the origins, changes, and loyal community behind Disney\'s famous lapel pins.',
-          img: '/static/disneypinssmall.jpg',
+          img: '/pinblog2.jpg',
           href: '/blog/disney-pins'
         }
       ],
