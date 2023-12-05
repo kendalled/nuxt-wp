@@ -55,7 +55,7 @@
                 <li v-for="post in blogs" :key="post.href" class="flow-root">
                   <nuxt-link :to="post.href" class="flex p-3 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-100 sm:space-x-8">
                     <div class="flex-shrink-0 hidden sm:block">
-                      <img class="object-cover w-32 h-20 rounded-md" :src="post.img" alt="">
+                      <NuxtImg class="object-cover w-32 h-20 rounded-md" format="webp" :src="post.img" alt="" />
                     </div>
                     <div class="flex-1 w-0 space-y-1">
                       <h4 class="text-base font-medium leading-6 text-gray-900 truncate">
