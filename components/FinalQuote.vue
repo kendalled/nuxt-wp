@@ -790,6 +790,8 @@ export default {
       // close notification if choice made
       if (!newVal) {
         this.closeNotif()
+        // auto advance, as per grant instructions (only first time)
+        this.nextPage()
       }
     },
     currentPage (newVal, oldVal) {

@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   modules: [
       '@nuxt/devtools',
       '@nuxtjs/tailwindcss',
-      'nuxt3-vuex-module'
+      'nuxt3-vuex-module',
+      '@nuxt/image',
   ],
   runtimeConfig: {
       public: {
