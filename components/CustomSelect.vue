@@ -32,7 +32,7 @@
 
       <transition
         leave-active-class="transition duration-100 ease-in"
-        leave-class="opacity-100"
+        leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
         <!-- Select popover, show/hide based on select state. -->

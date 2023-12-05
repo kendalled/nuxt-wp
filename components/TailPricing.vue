@@ -19,20 +19,20 @@
           <!-- where it was -->
           <transition
             enter-active-class="transition-opacity duration-200 ease-out"
-            enter-class="opacity-0"
+            enter-from-class="opacity-0"
             enter-to-class="opacity-100"
             leave-active-class="transition-opacity duration-150 ease-in"
-            leave-class="opacity-100"
+            leave-from-class="opacity-100"
             leave-to-class="opacity-0"
           >
             <PricingTable v-show="!isCoin" />
           </transition>
           <transition
             enter-active-class="transition-opacity duration-200 ease-out"
-            enter-class="opacity-0"
+            enter-from-class="opacity-0"
             enter-to-class="opacity-100"
             leave-active-class="transition-opacity duration-150 ease-in"
-            leave-class="opacity-100"
+            leave-from-class="opacity-100"
             leave-to-class="opacity-0"
           >
             <PricingTableCoin v-if="isCoin" />

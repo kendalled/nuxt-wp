@@ -1,10 +1,10 @@
 <template>
   <transition
     enter-active-class="transition duration-300 ease-out transform"
-    enter-class="opacity-0 translate-y-2"
+    enter-from-class="opacity-0 translate-y-2"
     enter-to-class="opacity-100 translate-y-0"
     leave-active-class="transition duration-100 ease-in"
-    leave-class="opacity-100"
+    leave-from-class="opacity-100"
     leave-to-class="opacity-0"
   >
     <div v-if="show" class="fixed inset-x-0 bottom-0 z-20 pb-2 sm:pb-5">

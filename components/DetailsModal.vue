@@ -2,10 +2,10 @@
   <div v-if="showModal" class="fixed inset-0 z-50 flex items-center justify-center max-h-screen" @keydown.escape="close">
     <transition
       enter-active-class="transition-opacity duration-300 ease-out"
-      enter-class="opacity-0"
+      enter-from-class="opacity-0"
       enter-to-class="opacity-100"
       leave-active-class="transition-opacity duration-100 ease-in"
-      leave-class="opacity-100"
+      leave-from-class="opacity-100"
       leave-to-class="opacity-0"
       appear
       @before-leave="backdropLeaving = true"
@@ -18,9 +18,9 @@
     <transition
       enter-active-class="duration-300 ease-out"
       leave-active-class="duration-200 ease-in"
-      enter-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      enter-from-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       enter-to-class="opacity-100 translate-y-0 sm:scale-100"
-      leave-class="opacity-100 translate-y-0 sm:scale-100"
+      leave-from-class="opacity-100 translate-y-0 sm:scale-100"
       leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       appear
       @before-leave="cardLeaving = true"

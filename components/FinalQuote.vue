@@ -32,10 +32,10 @@
       <!-- end card header, start body -->
       <transition-group
         enter-active-class="transition-opacity duration-300 ease-out"
-        enter-class="opacity-0"
+        enter-from-class="opacity-0"
         enter-to-class="opacity-100"
         leave-active-class="transition-opacity duration-150 ease-in"
-        leave-class="opacity-100"
+        leave-from-class="opacity-100"
         leave-to-class="opacity-0"
       >
         <div v-for="page in categories[option]" v-show="currentPage === page.ind" :key="page.pid" class="radio-wrap">
@@ -251,31 +251,31 @@ export default {
               id: 0,
               sid: 'sz0',
               name: '0.75 inch',
-              src: 'sizing/penny.png'
+              src: '/sizing/penny.png'
             },
             {
               id: 1,
               sid: 'sz1',
               name: '1.00 inch',
-              src: 'sizing/quarter.png'
+              src: '/sizing/quarter.png'
             },
             {
               id: 2,
               sid: 'sz2',
               name: '1.25 inch',
-              src: 'sizing/50centcoin.png'
+              src: '/sizing/50centcoin.png'
             },
             {
               id: 3,
               sid: 'sz3',
               name: '1.50 inch',
-              src: 'sizing/dollarcoin.png'
+              src: '/sizing/dollarcoin.png'
             },
             {
               id: 4,
               sid: 'sz4',
               name: '1.75 inch',
-              src: 'sizing/golfball.png'
+              src: '/sizing/golfball.png'
             }
           ]
           },
@@ -291,31 +291,31 @@ export default {
               id: 0,
               sid: 'bk0',
               name: 'Butterfly Clutch',
-              src: 'backings/new1.png'
+              src: '/backings/new1.png'
             },
             {
               id: 1,
               sid: 'bk1',
               name: 'Black Rubber',
-              src: 'backings/new2.png'
+              src: '/backings/new2.png'
             },
             {
               id: 2,
               sid: 'bk2',
               name: 'Yellow Rubber',
-              src: 'backings/new3.png'
+              src: '/backings/new3.png'
             },
             {
               id: 3,
               sid: 'bk3',
               name: 'Jewelry Clutch',
-              src: 'backings/new4.png'
+              src: '/backings/new4.png'
             },
             {
               id: 4,
               sid: 'bk4',
               name: 'Deluxe Clutch',
-              src: 'backings/new5.png'
+              src: '/backings/new5.png'
             }
           ]
           },
@@ -460,49 +460,49 @@ export default {
               id: 0,
               sid: 'sz0',
               name: '1.25 inch',
-              src: 'sizing/50centcoin.png'
+              src: '/sizing/50centcoin.png'
             },
             {
               id: 1,
               sid: 'sz1',
               name: '1.50 inch',
-              src: 'sizing/dollarcoin.png'
+              src: '/sizing/dollarcoin.png'
             },
             {
               id: 2,
               sid: 'sz2',
               name: '1.75 inch',
-              src: 'sizing/golfball.png'
+              src: '/sizing/golfball.png'
             },
             {
               id: 3,
               sid: 'sz3',
               name: '2.00 inch',
-              src: 'sizing/sodacan.png'
+              src: '/sizing/sodacan.png'
             },
             {
               id: 4,
               sid: 'sz4',
               name: '2.25 inch',
-              src: 'sizing/poolball.png'
+              src: '/sizing/poolball.png'
             },
             {
               id: 5,
               sid: 'sz5',
               name: '2.50 inch',
-              src: 'sizing/tennisball.png'
+              src: '/sizing/tennisball.png'
             },
             {
               id: 6,
               sid: 'sz6',
               name: '2.75 inch',
-              src: 'sizing/baseball.png'
+              src: '/sizing/baseball.png'
             },
             {
               id: 7,
               sid: 'sz7',
               name: '3.00 inch',
-              src: 'sizing/hockeypuck.png'
+              src: '/sizing/hockeypuck.png'
             }
           ]
           },
@@ -665,49 +665,49 @@ export default {
               id: 0,
               sid: 'sz0',
               name: '1.25 inch',
-              src: 'sizing/50centcoin.png'
+              src: '/sizing/50centcoin.png'
             },
             {
               id: 1,
               sid: 'sz1',
               name: '1.50 inch',
-              src: 'sizing/dollarcoin.png'
+              src: '/sizing/dollarcoin.png'
             },
             {
               id: 2,
               sid: 'sz2',
               name: '1.75 inch',
-              src: 'sizing/golfball.png'
+              src: '/sizing/golfball.png'
             },
             {
               id: 3,
               sid: 'sz3',
               name: '2.00 inch',
-              src: 'sizing/sodacan.png'
+              src: '/sizing/sodacan.png'
             },
             {
               id: 4,
               sid: 'sz4',
               name: '2.25 inch',
-              src: 'sizing/poolball.png'
+              src: '/sizing/poolball.png'
             },
             {
               id: 5,
               sid: 'sz5',
               name: '2.50 inch',
-              src: 'sizing/tennisball.png'
+              src: '/sizing/tennisball.png'
             },
             {
               id: 6,
               sid: 'sz6',
               name: '2.75 inch',
-              src: 'sizing/baseball.png'
+              src: '/sizing/baseball.png'
             },
             {
               id: 7,
               sid: 'sz7',
               name: '3.00 inch',
-              src: 'sizing/hockeypuck.png'
+              src: '/sizing/hockeypuck.png'
             }
           ]
           },
