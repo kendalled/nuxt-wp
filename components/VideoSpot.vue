@@ -29,14 +29,7 @@
       </div>
       <div class="mx-auto lg:max-w-2xl">
         <div class="relative w-full">
-          <picture>
-            <!-- <source srcset="~/static/thumbnail3-mobile.webp" type="image/webp" media="(max-width: 400px)">
-        <source srcset="~/static/thumbnail3-mobile.jpg" type="image/jpeg" media="(max-width: 400px)" media="(min-width: 800px)"> -->
-            <source srcset="/withPin.webp" type="image/webp">
-            <source srcset="/withPin.jpg" type="image/jpeg">
-            <img src="/withPin.jpg" class="object-cover w-full h-56 rounded-md shadow-lg sm:h-64 md:h-80 lg:h-96" alt="Promotional video for custom lapel pins and challenge coins.">
-          </picture>
-          <!-- <img class="object-cover w-full h-56 rounded-md shadow-lg sm:h-64 md:h-80 lg:h-96" src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="" /> -->
+          <NuxtPicture src="/withPin.jpg" format="webp" sizes="647px sm:250px md:450px" class="object-cover w-full h-56 rounded-md shadow-lg sm:h-64 md:h-80 lg:h-96" alt="Promotional video for custom lapel pins and challenge coins." />          
           <button aria-label="Play Video" class="absolute inset-0 flex items-center justify-center w-full h-full transition-colors duration-300 bg-gray-900 rounded-md focus:ring-2 bg-opacity-40 group hover:bg-opacity-25 focus:outline-none focus:ring-blue-300" @click.prevent="showModal = true">
             <div class="flex items-center justify-center w-16 h-16 transition duration-300 transform bg-gray-100 rounded-full shadow-2xl group-hover:scale-110">
               <svg class="w-10 h-10 text-orange-400" fill="currentColor" viewBox="0 0 24 24">
