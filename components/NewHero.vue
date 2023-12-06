@@ -59,6 +59,10 @@ export default {
   left:-100%;
   background-size:800px auto;
   background-image:url(/scrollingPins.png);
+
+  @supports (background-image: url(/scrollingPins.webp)) {
+    background-image: url(/scrollingPins.webp);
+  }
 }
 @keyframes scrollSmall {
   from {
