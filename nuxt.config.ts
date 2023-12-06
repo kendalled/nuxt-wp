@@ -10,5 +10,12 @@ export default defineNuxtConfig({
       public: {
           wordpressUrl: 'https://lapelpinsandcoins.com/graphql'
       }
+  },
+  app: {
+    head: {  
+      htmlAttrs: {
+        lang: 'en',
+      },
+    }
   }
 })
