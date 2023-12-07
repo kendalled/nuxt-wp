@@ -39,7 +39,7 @@
       <div class="relative max-w-md col-span-1 py-3 mx-auto">
         <div class="absolute inset-0 transform shadow-lg bg-gradient-to-r from-light-blue-500 to-blue-600 -rotate-3 sm:-rotate-6 rounded-3xl" />
         <div class="relative overflow-hidden bg-gray-400 shadow-lg rounded-3xl h-96 w-80">
-          <NuxtPicture format="webp" src="/backings/drawing.png" class="absolute object-cover object-top w-full h-full -mt-6 " alt="A complete custom pin." />
+          <NuxtPicture format="webp" src="/backings/complete.png" class="absolute object-cover object-top w-full h-full -mt-6 " alt="A complete custom pin." />
         </div>
         <div class="absolute flex items-center w-full pt-4 pb-4 pl-4 bg-gray-50 rounded-b-3xl bottom-3">
           <span class="flex items-center justify-center mr-3 text-2xl font-bold rounded-full bg-light-blue-100 text-light-blue-600 w-9 h-9">3</span>
