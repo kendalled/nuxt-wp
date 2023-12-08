@@ -18,10 +18,10 @@
 
     <transition
       enter-active-class="duration-300 ease-out"
-      enter-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+      enter-from-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
       enter-to-class="opacity-100 translate-y-0 sm:scale-100"
       leave-active-class="duration-200 ease-in"
-      leave-class="opacity-100 translate-y-0 sm:scale-100"
+      leave-from-class="opacity-100 translate-y-0 sm:scale-100"
       leave-to-class="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     >
       <div v-show="open" class="px-4 pt-5 pb-4 overflow-hidden bg-white rounded-lg shadow-xl transition-all transform sm:max-w-sm sm:w-full sm:p-6" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
