@@ -23,7 +23,8 @@
           enctype="multipart/form-data"
         >
           <!-- Replace with your content -->
-          <input type="hidden" name="_next" value="https://lapelpinsandcoins.com/thanks">
+          <input type="hidden" name="form-name" value="Quote Form" />
+          <!-- <input type="hidden" name="_next" value="https://lapelpinsandcoins.com/thanks"> -->
           <input id="product" v-model="product" type="hidden" name="*Product">
           <HiddenInputs :product="product" />
           <FinalQuote
