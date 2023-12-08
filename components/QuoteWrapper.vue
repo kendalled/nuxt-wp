@@ -105,7 +105,7 @@ export default {
         customerData: this.twoColData,
         active: true,
         category: this.product,
-        customer: this.$store.state.user.id,
+        // customer: this.$store.state.user.id,
         cost: 0,
         sentArtist: false,
         deadline: {
@@ -113,7 +113,7 @@ export default {
           seconds: this.secondsUTC
         },
         status: -2,
-        id: 'project-' + this.$store.state.user.id
+        // id: 'project-' + this.$store.state.user.id
       }
     },
     secondsUTC () {
