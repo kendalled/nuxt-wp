@@ -791,7 +791,7 @@ export default {
       if (!newVal) {
         this.closeNotif()
         // auto advance, as per grant instructions (only first time)
-        this.nextPage()
+        // this.nextPage()
       }
     },
     currentPage (newVal, oldVal) {

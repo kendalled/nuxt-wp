@@ -20,7 +20,7 @@
           name="Quote Request"
           class="mx-auto max-w-7xl sm:px-6 lg:px-8"
           method="POST"
-          enctype="multipart/form-data"
+          action="/"
         >
           <!-- Replace with your content -->
           <input type="hidden" name="form-name" value="Quote Form" />
