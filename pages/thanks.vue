@@ -10,7 +10,7 @@
     components: {
       ThanksModal
     },
-    layout: 'login'
+    layout: 'default'
   }
   </script>
   
