@@ -89,7 +89,7 @@
                       </div> -->
                       <div class="flex text-sm text-gray-600">
                         <label v-for="f in 4" v-show="f === emitData.referenceFiles.length + 1" :key="f" :for="'file-input-' + f" class="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500">
-                          <span>Upload a file<span class="sr-only">{{ f }}</span></span>
+                          <span>Upload a file<span class="sr-only"> ({{ f }})</span></span>
                           <input
                             :id="'file-input-' + f"
                             multiple
