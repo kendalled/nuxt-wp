@@ -41,6 +41,7 @@
       </dl>
     </div> -->
     <div class="relative max-w-lg mx-auto lg:mx-0 lg:max-w-xl sm:h-64 lg:h-48 h-96">
+      <!-- todo: fix mode -->
       <transition-group
         enter-from-class="transform scale-95 opacity-0"
         enter-active-class="transition duration-200 ease-out"

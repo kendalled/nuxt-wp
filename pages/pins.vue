@@ -1,6 +1,5 @@
 <template>
     <div>
-        <FullNav />
         <div class="w-auto h-auto bg-gray-50">
         <InteriorHeader :new-layout="true" :headline="headline" :subheading="subheading" :choices="choices" />
         <!-- <SimpleHeader /> -->

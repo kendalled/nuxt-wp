@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <FullNav />
+    <!-- <FullNav /> -->
     <QuoteWrapper />
     <TailFoot />
   </div>

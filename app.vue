@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <!-- content that is site wide -->
-  </div>
+  <!-- content that is site wide -->
+  <FullNav />
   <NuxtPage />
 </template>

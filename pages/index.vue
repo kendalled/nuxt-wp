@@ -7,7 +7,6 @@
         content="An industry leader in custom made pins since 1999. Take a look at our recent orders and place a quote to get a complimentary digital render."
       />
     </Head>
-    <FullNav />
     <div class="relative md:pt-8 lg:pt-10">
       <NewHero />
       <!-- Logo Cloud -->
