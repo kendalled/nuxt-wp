@@ -15,8 +15,9 @@
             <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
         </button>
-        <div class="ml-2 text-base text-gray-500">
-          <a title="Lapel Pins and Coins Phone Number" href="tel:+18004829101" class="inline-block text-sm leading-9 transition-colors duration-200 hover:underline hover:text-gray-600">
+        <!-- todo: fix typography principles -->
+        <div class="ml-2 text-base text-gray-500 font-semibold">
+          <a title="Lapel Pins and Coins Phone Number" href="tel:+18004829101" class="inline-block text-base leading-9 transition-colors duration-200 hover:underline hover:text-gray-600">
             +1 (800) 482-9101
           </a>
         </div>
@@ -33,8 +34,9 @@
             stroke="currentColor"
           ><path d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" /></svg>
         </button>
-        <div class="ml-2 text-base leading-9 text-gray-500">
-          <a title="Lapel Pins and Coins email" href="mailto:info@lapelpinsandcoins.com" target="_blank" rel="nofollow" class="inline-block text-sm transition-colors duration-200 hover:underline hover:text-gray-600">
+        <!-- todo: fix typography principles -->
+        <div class="ml-2 text-base leading-9 font-semibold text-gray-500">
+          <a title="Lapel Pins and Coins email" href="mailto:info@lapelpinsandcoins.com" target="_blank" rel="nofollow" class="inline-block text-base transition-colors duration-200 hover:underline hover:text-gray-600">
             info@lapelpinsandcoins.com
           </a>
         </div>
@@ -117,7 +119,7 @@
     data () {
       return {
         emailOpen: false,
-        phoneOpen: false,
+        phoneOpen: true,
         open: false,
         readyToClose: false
       }
