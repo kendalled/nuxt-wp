@@ -146,7 +146,7 @@
           </div>
         </div>
         <div class="mt-5 md:mt-0 md:col-span-2">
-          <div class="mx-4 rounded-md shadow sm:mx-0">
+          <div class="mx-4 overflow-hidden rounded-md shadow sm:mx-0">
             <section id="contact-info" class="px-4 py-5 bg-white sm:p-6">
               <div class="grid grid-cols-6 gap-6">
                 <div class="col-span-6 sm:col-span-3">
@@ -455,8 +455,7 @@ export default {
       lastName: '',
       countryList: [
         'United States',
-        'Canada',
-        'Mexico'
+        'Canada'
       ]
     }
   },
