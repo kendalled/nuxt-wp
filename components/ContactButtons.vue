@@ -16,8 +16,8 @@
           </svg>
         </button>
         <div class="ml-2 text-base text-gray-500">
-          <a title="Lapel Pins and Coins Phone Number" href="tel:+18443954464" class="inline-block text-sm leading-9 transition-colors duration-200 hover:underline hover:text-gray-600">
-            +1 (844) 395-4464
+          <a title="Lapel Pins and Coins Phone Number" href="tel:+18004829101" class="inline-block text-sm leading-9 transition-colors duration-200 hover:underline hover:text-gray-600">
+            +1 (800) 482-9101
           </a>
         </div>
       </div>

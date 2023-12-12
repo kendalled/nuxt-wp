@@ -27,8 +27,8 @@
                 </svg>
               </div>
               <div class="ml-3 text-base text-gray-500 leading-6">
-                <a class="inline-block transition-colors duration-200 hover:underline hover:text-gray-600" title="Lapel Pins and Coins Phone Number" href="tel:+18443954464">
-                  +1 (844) 395-4464
+                <a class="inline-block transition-colors duration-200 hover:underline hover:text-gray-600" title="Lapel Pins and Coins Phone Number" href="tel:+18004829101">
+                  +1 (800) 482-9101
                 </a>
                 <p class="mt-1 text-sm">
                   Mon - Fri, 9am-6pm EST
