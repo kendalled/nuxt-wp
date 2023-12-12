@@ -1,5 +1,5 @@
 <template>
-  <section id="order-steps" class="w-full h-auto bg-gray-800">
+  <section id="order-steps" class="w-full h-auto bg-blue-950 bg-gradient-to-b from-blue-950 to-blue-900">
     <div class="px-4 pt-8 pb-12 mx-auto max-w-7xl sm:px-6 lg:px-8 lg:pb-24 lg:pt-16">
       <p class="text-base antialiased font-semibold leading-6 tracking-wide text-orange-400 uppercase lg:text-center">
         ordering process

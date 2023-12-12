@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <div id="pricing-section" class="pb-16 mt-8 bg-gray-800 sm:pb-20 lg:pb-24">
+    <div id="pricing-section" class="pb-16 mt-8 bg-blue-950 sm:pb-20 lg:pb-24">
       <div class="relative">
         <div class="absolute inset-0 bg-gray-50 h-1/2" />
         <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">

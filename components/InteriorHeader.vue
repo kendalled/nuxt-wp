@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-800">
+  <div class="bg-gradient-to-tr from-blue-950 to-blue-900">
     <VideoModal :open="showModal" @close="showModal = false" />
     <div class="px-4 py-10 mx-auto sm:py-16 max-w-7xl sm:px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
