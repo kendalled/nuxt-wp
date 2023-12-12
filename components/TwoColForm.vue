@@ -146,7 +146,7 @@
           </div>
         </div>
         <div class="mt-5 md:mt-0 md:col-span-2">
-          <div class="mx-4 overflow-hidden rounded-md shadow sm:mx-0">
+          <div class="mx-4 rounded-md shadow sm:mx-0">
             <section id="contact-info" class="px-4 py-5 bg-white sm:p-6">
               <div class="grid grid-cols-6 gap-6">
                 <div class="col-span-6 sm:col-span-3">
@@ -200,7 +200,7 @@
                   <CustomSelect :title="'Country'" :options="countryList" @chosen="updateCountry" />
                 </div>
 
-                <div class="col-span-6">
+                <!-- <div class="col-span-6">
                   <label for="street_address" class="block text-sm font-medium leading-5 text-gray-700">Street address</label>
                   <input
                     id="street_address"
@@ -396,7 +396,7 @@
                     required
                     class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 sm:text-sm"
                   >
-                </div>
+                </div> -->
               </div>
             </section>
             <div class="px-4 py-3 text-right bg-gray-50 sm:px-6">
@@ -445,11 +445,11 @@ export default {
         description: '',
         referenceFiles: [],
         proofs: [],
-        zip: '',
+        // zip: '',
         email: '',
         phone: '',
-        name: '',
-        address: ''
+        name: ''
+        // address: ''
       },
       name: '',
       lastName: '',
@@ -482,7 +482,7 @@ export default {
       ]
     },
     allInfo () {
-      const data = [this.emitData.zip, this.emitData.phone,
+      const data = [this.emitData.phone,
         this.emitData.name, this.emitData.email, this.emitData.address]
       for (let i = 0; i < data.length; i++) {
         const element = data[i]

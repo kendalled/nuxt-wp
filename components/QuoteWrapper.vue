@@ -82,15 +82,15 @@ export default {
       dropOpen: false,
       twoColData: {
         quantity: '50',
-        state: 'Select a State',
+        // state: 'Select a State',
         country: 'US',
         description: '',
         referenceFiles: [],
-        zip: '',
+        // zip: '',
         email: '',
         phone: '',
-        name: '',
-        address: ''
+        name: ''
+        // address: ''
       }
     }
   },
