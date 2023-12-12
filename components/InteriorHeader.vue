@@ -30,9 +30,9 @@
               </svg>
               <span class="mt-1.5 text-blue-400 group-hover:text-blue-300 transition-colors ease-in-out duration-150">Watch a video overview</span>
             </a>
-            <a href="tel:+18443954464" class="inline-flex items-start ml-1 text-lg font-medium leading-6 sm:ml-8 group" title="Phone number">
+            <a href="tel:+18004829101" class="inline-flex items-start ml-1 text-lg font-medium leading-6 sm:ml-8 group" title="Phone number">
               <svg class="flex-shrink-0 w-8 h-8 mr-3 text-blue-400 transition-colors duration-150 ease-in-out group-hover:text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path vector-effect="non-scaling-stroke" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
-              <span class="mt-1.5 text-blue-400 group-hover:text-blue-300 transition-colors ease-in-out duration-150">+1 (844) 395-4464</span>
+              <span class="mt-1.5 text-blue-400 group-hover:text-blue-300 transition-colors ease-in-out duration-150">+1 (800) 482-9101</span>
             </a>
           </div>
         </div>
