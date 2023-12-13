@@ -11,7 +11,7 @@
           <h1 class="mt-2 text-3xl font-semibold leading-10 text-white sm:text-4xl">
             {{ headline }}
           </h1>
-          <p class="max-w-3xl mt-4 text-base leading-6 text-gray-400">
+          <p class="max-w-3xl mt-4 text-base leading-6 text-blue-100">
             {{ subheading }}
           </p>
           <div class="flex flex-col items-start w-full mt-6 space-y-4 sm:space-y-0 sm:items-center sm:flex-row">
