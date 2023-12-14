@@ -790,8 +790,6 @@ export default {
       // close notification if choice made
       if (!newVal) {
         this.closeNotif()
-        // auto advance, as per grant instructions (only first time)
-        // this.nextPage()
       }
     },
     currentPage (newVal, oldVal) {
@@ -847,6 +845,8 @@ export default {
         // console.log('two')
         this.$store.commit('chainQuote/setQuote', JSON.stringify(this.quote))
       }
+      // auto advance like grant asked, the 'right' way
+      this.nextPage()
       // console.log('vuex updated!')
     }
   }
