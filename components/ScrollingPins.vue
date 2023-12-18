@@ -1,0 +1,143 @@
+<template>
+<div class="hidden md:block">
+      <div class="scroll-parent border-b-2 border-gray-100 will-change-transform">
+        <div class="scroll-element bg-white primary">
+          <NuxtImg
+            src="pins.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="MoviePin.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="rnPin.jpg"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="sampleCoin.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="homeShapes.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="attendance.jpg"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="GlitterPin.png"
+            alt="damilola jerugba"
+            />
+        </div>
+        <div class="scroll-element bg-white secondary">
+          <NuxtImg
+            src="pins.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="MoviePin.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="rnPin.jpg"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="sampleCoin.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="homeShapes.png"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="attendance.jpg"
+            alt="damilola jerugba"
+          />
+          <NuxtImg
+            src="GlitterPin.png"
+            alt="damilola jerugba"
+            />
+        </div>
+      </div>
+    </div>
+
+</template>
+
+<script>
+    export default {
+        name: 'ScrollingPins'
+    }
+</script>
+
+<style>
+@media only screen and (max-width: 767px) {
+  .scroll-parent {
+    height: auto;
+    padding: 1rem 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+
+  .scroll-element {
+    display: inline-block;
+    position: relative;
+  }
+
+  .scroll-element img {
+    width: 100%;
+    max-width: 8.5rem;
+    height: auto;
+  }
+}
+.scroll-parent {
+  position: relative;
+  width: 100vw;
+  height: 13rem;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.scroll-element img {
+  width: 8.5rem;
+}
+
+.primary {
+  animation: primary 45s linear infinite;
+}
+
+.secondary {
+  animation: secondary 45s linear infinite;
+}
+
+@keyframes primary {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes secondary {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+</style>

@@ -4,7 +4,7 @@
         <InteriorHeader :new-layout="true" :headline="headline" :subheading="subheading" :choices="choices" />
         <!-- <SimpleHeader /> -->
         <!-- <SplitBrandPanel /> -->
-        <SlidingPins class="hidden" />
+        <ScrollingPins/>
         <TwoColumnImage>
             <p>Our pins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.</p>
             <p>There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.</p>
