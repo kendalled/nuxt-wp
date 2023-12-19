@@ -2,6 +2,7 @@
   <div class="w-auto h-auto bg-gray-50">
     <InteriorHeader :headline="headline" :subheading="subheading" :choices="choices" />
     <!-- <FinalQuote /> -->
+    <ScrollingCoins />
     <TwoColumnImage :grabber="twoColGrabber" :headline="'Crafted with pride and tradition.'" :img="bigImg2">
       <p>It can be overwhelming to design your own custom coin, so that’s why we're here to help you every step of the way.</p>
       <p>Challenge coins are a time-honored tradition in the military and police forces. They date back to World War I and are a meaningful symbol for members of certain units or groups. A custom challenge coin can be the perfect way to honor the heroes that have fought for our safety and freedom. With the right design, you can make a beautiful commemorative gift to thank these men and women for their sacrifice and service.</p>
