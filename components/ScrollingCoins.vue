@@ -1,37 +1,43 @@
 <template>
-    <div class="hidden md:block">
-          <div class="scroll-parent border-b-2 border-gray-100 will-change-transform">
+    <div>
+          <div class="scroll-parent bg-white border-b-2 border-gray-100 will-change-transform">
             <div class="scroll-element bg-white primary">
               <!-- <NuxtImg
                 src="spinners.png"
                 alt="damilola jerugba"
               /> -->
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="noColorCoin.png"
                 alt="Challenge coin with no color"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="goldCoin.png"
                 alt="Polished gold challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="sampleCoin.png"
                 alt="Polished silver challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="homeShapes.png"
                 alt="3D colored challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="airforceCoin.png"
                 alt="Multicolor air force challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="colorCoin.png"
                 alt="Colored challenge coin"
@@ -43,31 +49,37 @@
                 alt="damilola jerugba"
               /> -->
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="noColorCoin.png"
                 alt="Challenge coin with no color"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="goldCoin.png"
                 alt="Polished gold challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="sampleCoin.png"
                 alt="Polished silver challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="homeShapes.png"
                 alt="3D colored challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="airforceCoin.png"
                 alt="Multicolor air force challenge coin"
               />
               <NuxtImg
+                class="mx-4 md:mx-0"
                 format="webp"
                 src="colorCoin.png"
                 alt="Colored challenge coin"
@@ -86,6 +98,13 @@
     
     <style>
     @media only screen and (max-width: 767px) {
+      .primary {
+        animation: primary 60s linear infinite;
+      }
+    
+      .secondary {
+        animation: secondary 60s linear infinite;
+      }
       .scroll-parent {
         height: auto;
         padding: 1rem 0;
@@ -102,6 +121,9 @@
         width: 100%;
         max-width: 8.5rem;
         height: auto;
+      }
+      .secondary {
+        display: none !important;
       }
     }
     .scroll-parent {
@@ -153,4 +175,5 @@
       }
     }
     </style>
+    
     

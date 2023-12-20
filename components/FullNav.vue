@@ -86,8 +86,9 @@
             Blog Posts
           </nuxt-link>
         </div>
+        <!-- todo: fix padding if keeping this layout -->
         <div class="pt-4 pb-3 border-t border-gray-200">
-          <div class="flex items-center px-4">
+          <!-- <div class="flex items-center px-4">
             <div class="flex-shrink-0">
               <span class="inline-block w-10 h-10 overflow-hidden bg-gray-100 border-2 border-gray-300 rounded-full">
                 <svg class="w-full h-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
@@ -103,7 +104,7 @@
                 you@example.com
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="mt-3">
             <nuxt-link to="/checkout" class="block px-4 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100">
               Checkout
