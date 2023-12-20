@@ -3,62 +3,76 @@
       <div class="scroll-parent border-b-2 border-gray-100 will-change-transform">
         <div class="scroll-element bg-white primary">
           <NuxtImg
+            format="webp"
             src="pins.png"
-            alt="damilola jerugba"
+            alt="Soft enamel custom pin"
           />
           <NuxtImg
+            format="webp"
             src="MoviePin.png"
-            alt="damilola jerugba"
+            alt="Star wars themed pin"
           />
           <NuxtImg
+            format="webp"
             src="rnPin.jpg"
-            alt="damilola jerugba"
+            alt="Nursing lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="sampleCoin.png"
-            alt="damilola jerugba"
+            alt="Polished silver lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="homeShapes.png"
-            alt="damilola jerugba"
+            alt="3D multicolor lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="attendance.jpg"
-            alt="damilola jerugba"
+            alt="Gold and red school lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="GlitterPin.png"
-            alt="damilola jerugba"
+            alt="Glitter custom lapel pin"
             />
         </div>
         <div class="scroll-element bg-white secondary">
           <NuxtImg
+            format="webp"
             src="pins.png"
-            alt="damilola jerugba"
+            alt="Soft enamel custom pin"
           />
           <NuxtImg
+            format="webp"
             src="MoviePin.png"
-            alt="damilola jerugba"
+            alt="Star wars themed pin"
           />
           <NuxtImg
+            format="webp"
             src="rnPin.jpg"
-            alt="damilola jerugba"
+            alt="Nursing lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="sampleCoin.png"
-            alt="damilola jerugba"
+            alt="Polished silver lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="homeShapes.png"
-            alt="damilola jerugba"
+            alt="3D multicolor lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="attendance.jpg"
-            alt="damilola jerugba"
+            alt="Gold and red school lapel pin"
           />
           <NuxtImg
+            format="webp"
             src="GlitterPin.png"
-            alt="damilola jerugba"
+            alt="Glitter custom lapel pin"
             />
         </div>
       </div>

@@ -7,28 +7,34 @@
                 alt="damilola jerugba"
               /> -->
               <NuxtImg
+                format="webp"
                 src="noColorCoin.png"
-                alt="damilola jerugba"
+                alt="Challenge coin with no color"
               />
               <NuxtImg
+                format="webp"
                 src="goldCoin.png"
-                alt="damilola jerugba"
+                alt="Polished gold challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="sampleCoin.png"
-                alt="damilola jerugba"
+                alt="Polished silver challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="homeShapes.png"
-                alt="damilola jerugba"
+                alt="3D colored challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="airforceCoin.png"
-                alt="damilola jerugba"
+                alt="Multicolor air force challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="colorCoin.png"
-                alt="damilola jerugba"
+                alt="Colored challenge coin"
                 />
             </div>
             <div class="scroll-element bg-white secondary">
@@ -37,28 +43,34 @@
                 alt="damilola jerugba"
               /> -->
               <NuxtImg
+                format="webp"
                 src="noColorCoin.png"
-                alt="damilola jerugba"
+                alt="Challenge coin with no color"
               />
               <NuxtImg
+                format="webp"
                 src="goldCoin.png"
-                alt="damilola jerugba"
+                alt="Polished gold challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="sampleCoin.png"
-                alt="damilola jerugba"
+                alt="Polished silver challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="homeShapes.png"
-                alt="damilola jerugba"
+                alt="3D colored challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="airforceCoin.png"
-                alt="damilola jerugba"
+                alt="Multicolor air force challenge coin"
               />
               <NuxtImg
+                format="webp"
                 src="colorCoin.png"
-                alt="damilola jerugba"
+                alt="Colored challenge coin"
                 />
             </div>
           </div>
