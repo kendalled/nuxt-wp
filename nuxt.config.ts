@@ -11,6 +11,10 @@ export default defineNuxtConfig({
           wordpressUrl: 'https://lapelpinsandcoins.com/graphql'
       }
   },
+  routeRules: {
+    '/lapel-pins': { redirect: { to: '/pins', statusCode: 301 } },
+    '/challenge-coins': { redirect: { to: '/coins', statusCode: 301 } },
+  },
   app: {
     head: {  
       htmlAttrs: {
