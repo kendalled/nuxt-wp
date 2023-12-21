@@ -99,11 +99,11 @@
     <style>
     @media only screen and (max-width: 767px) {
       .primary {
-        animation: primary 50s linear infinite;
+        animation: primary 40s linear infinite;
       }
     
       .secondary {
-        animation: secondary 50s linear infinite;
+        animation: secondary 40s linear infinite;
       }
       .scroll-parent {
         height: auto;
