@@ -1,7 +1,7 @@
 <template>
   <div class="px-4 pt-5 pb-4 mx-auto overflow-hidden transition-all transform bg-white rounded-md shadow-xl sm:max-w-md sm:w-full sm:p-6">
     <div>
-      <NuxtImg class="w-auto h-48 mx-auto lazyload" format="webp" :src="img" :alt="link" />
+      <NuxtImg class="w-auto h-48 mx-auto lazyload" loading="lazy" format="webp" :src="img" :alt="link" />
       <div class="mt-3 text-center sm:mt-5">
         <h3 class="text-lg font-medium leading-6 text-gray-900">
           {{ title }}
