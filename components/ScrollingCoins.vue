@@ -2,88 +2,24 @@
     <div>
           <div class="scroll-parent bg-white border-b-2 border-gray-100 will-change-transform">
             <div class="scroll-element bg-white primary">
-              <!-- <NuxtImg
-                src="spinners.png"
-                alt="damilola jerugba"
-              /> -->
               <NuxtImg
+                v-for="coin in coinsArray"
+                loading="lazy"
                 class="mx-4 md:mx-0"
                 format="webp"
-                src="noColorCoin.png"
-                alt="Challenge coin with no color"
+                :src="coin.src"
+                :alt="coin.alt"
               />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="goldCoin.png"
-                alt="Polished gold challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="sampleCoin.png"
-                alt="Polished silver challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="homeShapes.png"
-                alt="3D colored challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="airforceCoin.png"
-                alt="Multicolor air force challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="colorCoin.png"
-                alt="Colored challenge coin"
-                />
             </div>
             <div class="scroll-element bg-white secondary">
-              <!-- <NuxtImg
-                src="spinners.png"
-                alt="damilola jerugba"
-              /> -->
               <NuxtImg
+                v-for="coin in coinsArray"
+                loading="lazy"
                 class="mx-4 md:mx-0"
                 format="webp"
-                src="noColorCoin.png"
-                alt="Challenge coin with no color"
+                :src="coin.src"
+                :alt="coin.alt"
               />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="goldCoin.png"
-                alt="Polished gold challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="sampleCoin.png"
-                alt="Polished silver challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="homeShapes.png"
-                alt="3D colored challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="airforceCoin.png"
-                alt="Multicolor air force challenge coin"
-              />
-              <NuxtImg
-                class="mx-4 md:mx-0"
-                format="webp"
-                src="colorCoin.png"
-                alt="Colored challenge coin"
-                />
             </div>
           </div>
         </div>
@@ -92,7 +28,37 @@
     
     <script>
         export default {
-            name: 'ScrollingPins'
+            name: 'ScrollingPins',
+            data () {
+              return {
+                coinsArray: [
+                  {
+                    src: 'noColorCoin.png',
+                    alt: 'Challenge coin with no color'
+                  },
+                  {
+                    src: 'goldCoin.png',
+                    alt: 'Polished gold challenge coin'
+                  },
+                  {
+                    src: 'sampleCoin.png',
+                    alt: 'Polished silver challenge coin'
+                  },
+                  {
+                    src: 'homeShapes.png',
+                    alt: '3D colored challenge coin'
+                  },
+                  {
+                    src: 'airforceCoin.png',
+                    alt: 'Multicolor air force challenge coin'
+                  },
+                  {
+                    src: 'colorCoin.png',
+                    alt: 'Colored challenge coin'
+                  }
+                ]
+              }
+            }
         }
     </script>
     

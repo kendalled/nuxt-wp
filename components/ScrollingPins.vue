@@ -3,91 +3,23 @@
       <div class="scroll-parent bg-white border-b-2 border-gray-100 will-change-transform">
         <div class="scroll-element bg-white primary">
           <NuxtImg
+            v-for="pin in pinsArray"
+            loading="lazy"
             class="mx-4 md:mx-0"
             format="webp"
-            src="pins.png"
-            alt="Soft enamel custom pin"
+            :src="pin.src"
+            :alt="pin.alt"
           />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="MoviePin.png"
-            alt="Star wars themed pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="rnPin.jpg"
-            alt="Nursing lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="sampleCoin.png"
-            alt="Polished silver lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="homeShapes.png"
-            alt="3D multicolor lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="attendance.jpg"
-            alt="Gold and red school lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="GlitterPin.png"
-            alt="Glitter custom lapel pin"
-            />
         </div>
         <div class="scroll-element bg-white secondary">
           <NuxtImg
+            v-for="pin in pinsArray"
+            loading="lazy"
             class="mx-4 md:mx-0"
             format="webp"
-            src="pins.png"
-            alt="Soft enamel custom pin"
+            :src="pin.src"
+            :alt="pin.alt"
           />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="MoviePin.png"
-            alt="Star wars themed pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="rnPin.jpg"
-            alt="Nursing lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="sampleCoin.png"
-            alt="Polished silver lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="homeShapes.png"
-            alt="3D multicolor lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="attendance.jpg"
-            alt="Gold and red school lapel pin"
-          />
-          <NuxtImg
-            class="mx-4 md:mx-0"
-            format="webp"
-            src="GlitterPin.png"
-            alt="Glitter custom lapel pin"
-            />
         </div>
       </div>
     </div>
@@ -96,7 +28,41 @@
 
 <script>
     export default {
-        name: 'ScrollingPins'
+        name: 'ScrollingPins',
+        data () {
+          return {
+            pinsArray: [
+              {
+                src: 'pins.png',
+                alt: 'Soft enamel custom pin'
+              },
+              {
+                src: 'MoviePin.png',
+                alt: 'Star Wars themed pin'
+              },
+              {
+                src: 'rnPin.jpg',
+                alt: 'Nursing lapel pin'
+              },
+              {
+                src: 'sampleCoin.png',
+                alt: 'Polished silver lapel pin'
+              },
+              {
+                src: 'homeShapes.png',
+                alt: '3D Multicolor lapel pin'
+              },
+              {
+                src: 'attendance.jpg',
+                alt: 'Gold and red school lapel pin'
+              },
+              {
+                src: 'GlitterPin.png',
+                alt: 'Glitter custom lapel pin'
+              }
+            ]
+          }
+        }
     }
 </script>
 
