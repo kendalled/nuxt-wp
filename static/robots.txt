@@ -1,8 +1,0 @@
-User-agent: Googlebot
-Disallow: /admin/
-Disallow: /admin
-
-User-agent: *
-Allow: /
-
-Sitemap: https://lapelpinsandcoins.com/sitemap.xml
