@@ -27,6 +27,10 @@ useHead({
       rel: 'canonical',
       href: 'https://lapelpinsandcoins.com'
     },
+    {
+      rel: 'preload',
+      href: 'https://lapelpinsandcoins.com/scrollingPins.webp'
+    }
   ],
 })
 </script>
