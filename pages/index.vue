@@ -1,17 +1,26 @@
 <template>
-  <div class="relative md:pt-8 lg:pt-10">
-    <NewHero />
-    <!-- Logo Cloud -->
-    <LogoCloud />
-    <ThreeFeat />
-    <VideoSpot />
-    <TailFeat2 />
-    <SocialProof />
-    <ThreeSteps />
-    <SimpleTest />
-    <Faq2 />
-    <TailCta />
-    <TailFoot />
+  <div>
+    <Head>
+      <Title>Lapel Pins & Coins: Custom Pins in Minutes.</Title>
+      <Meta
+        name="description"
+        content="An industry leader in custom made pins since 1999. Take a look at our recent orders and place a quote to get a complimentary digital render."
+      />
+    </Head>
+    <div class="relative md:pt-8 lg:pt-10">
+      <NewHero />
+      <!-- Logo Cloud -->
+      <LogoCloud />
+      <ThreeFeat />
+      <VideoSpot />
+      <TailFeat2 />
+      <SocialProof />
+      <ThreeSteps />
+      <SimpleTest />
+      <Faq2 />
+      <TailCta />
+      <TailFoot />
+    </div>
   </div>
 </template>
 
@@ -49,8 +58,4 @@ export default {
     }
   }
 }
-useSeoMeta({
-  title: 'Lapel Pins & Coins: Custom Lapel Pins in Minutes.',
-  description: 'An industry leader in custom made pins since 1999. Take a look at our recent orders and place a quote to get a complimentary digital render.',
-})
 </script>
