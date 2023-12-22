@@ -81,7 +81,7 @@
                     </svg>
 
                     <div class="text-base font-medium leading-6 text-gray-500">
-                      CEO, Workcation
+                      CEO, Telluride
                     </div>
                   </div>
                 </div>
