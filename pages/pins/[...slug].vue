@@ -20,7 +20,7 @@
 
 <script setup>
   const route = useRoute()
-	const { data } = await useAsyncData('page-data', () => queryContent(route.path).findOne())
+	let { data } = await useAsyncData('page-data', () => queryContent(route.path).findOne())
 	const show = (data !== null)
 	console.log(show)
 </script>
