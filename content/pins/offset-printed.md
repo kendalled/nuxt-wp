@@ -1,28 +1,28 @@
 ---
-title: Flag Pins
+title: Offset Printed Pins
 description: Rachel
-headline1: Custom Years of Service Pins
-subHeading: It’s important to keep morale up as a business owner, and there’s no better way to do that than by acknowledging and celebrating those who have worked tirelessly.
+headline1: Offset printed pins designed by in-house artists.
+subHeading: Offset Printed lapel pins are perfect for photographs or high-detail designs. This style doesn’t require small metal separations between colors, so your design won't be limited.
 
 teaser: since 1999
-headline2: Recognize your employees with custom pins.
-grabber: Years of service pins are a perfect incentive for any business owner to award their employees.
-img: https://images.unsplash.com/photo-1521341057461-6eb5f40b07ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
-imgAlt: Employee showing off a years of service pin.
-para1: Loyalty and dedication are some of the best traits you could ask for in an employee - and these qualities deserve to be rewarded.
-para2: With years of service pins, you can thank employees for all their hard work and long hours. It’s important to keep morale up as a business owner, and there’s no better way to do that than by acknowledging and celebrating those who have worked tirelessly. 
-ulHeadline: Years of service pins are great for
-ex1: Events
-ex2: Yearly reviews
+headline2: Make any photograph into a pin.
+grabber: Offset printed pins are a simple but effective product. They are extremely versatile and adaptable, with a variety of uses that are only limited by your imagination.
+img: https://images.unsplash.com/photo-1521249692263-e0659c60326e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
+imgAlt: Offset printed pins with no epoxy dome.
+para1: Our pins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.
+para2: There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.
+ulHeadline: Offset printed pins are great for
+ex1: Photographs
+ex2: Detailed icons
 ex3: Fundraising campaigns
 headline3: What production method should I choose?
-para3: Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
+para3: Most custom pin designs can be made into offset printed pins, but this process often works best with designs that have high levels of detail and many, many colors. These details are important because the end result is almost like a very high quality button. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
 
-pciHeadline: Honor volunteer work in no time.
-pciPara1: There are endless options to make a beautiful pin that honors employees. Gold, bronze, or silver plating options assure you’ll have the highest quality and classiest award.
-pciPara2: Years of service pins are great for volunteer organizations. Keep your volunteers happy by making them feel appreciated. A high quality, beautiful custom pin is the perfect way to honor them for all the work they do. They not only make a classy and honorable gift, they provide people something to commemorate their hard work when they look back at their career. 
-pciImg: https://a.storyblok.com/f/78493/450x450/ab310e9142/autism_pin.png
-pciAlt: Autism awareness pin
+pciHeadline: What is an Offset Printed pin?
+pciPara1: Offset Printed pins are perfect for complex designs. They allow you to perfectly recreate highly detailed or multicolored designs. Offset printed pins use a special printing technique using a digital file or photographic negative. This allows you to make designs that require gradients, shadows, and other subtle color changes.
+pciPara2: You can even have your pick of any font, colors, and other design elements. Offset printed pins allow you to bring any idea to life without the limits that enamel pins generally have!
+pciImg: https://a.storyblok.com/f/78493/250x250/48808bf032/off-set-printed.png
+pciAlt: Offset printed pin of a logo
 ---
 
 # Nuxt Content

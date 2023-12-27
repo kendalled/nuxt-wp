@@ -1,28 +1,28 @@
 ---
-title: Flag Pins
+title: Custom Die Struck Pins
 description: Rachel
-headline1: Custom Years of Service Pins
-subHeading: It’s important to keep morale up as a business owner, and there’s no better way to do that than by acknowledging and celebrating those who have worked tirelessly.
+headline1: Die struck pins designed by professional artists.
+subHeading: Die struck lapel pins are classic, professional, and dimensional. These colorless pins allow you to create a product that feels antique and high-end.
 
 teaser: since 1999
-headline2: Recognize your employees with custom pins.
-grabber: Years of service pins are a perfect incentive for any business owner to award their employees.
-img: https://images.unsplash.com/photo-1521341057461-6eb5f40b07ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
-imgAlt: Employee showing off a years of service pin.
-para1: Loyalty and dedication are some of the best traits you could ask for in an employee - and these qualities deserve to be rewarded.
-para2: With years of service pins, you can thank employees for all their hard work and long hours. It’s important to keep morale up as a business owner, and there’s no better way to do that than by acknowledging and celebrating those who have worked tirelessly. 
-ulHeadline: Years of service pins are great for
-ex1: Events
-ex2: Yearly reviews
+headline2: Custom pins in a timeless all-metal finish.
+grabber: Custom pins are a simple but effective product. They are extremely versatile and adaptable, with a variety of uses that are only limited by your imagination.
+img: https://images.unsplash.com/photo-1590657324600-e473c791b437?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
+imgAlt: Die struck pin being held.
+para1: Our pins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.
+para2: There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.
+ulHeadline: Die struck pins are great for
+ex1: Clubs
+ex2: Sporting events
 ex3: Fundraising campaigns
-headline3: What production method should I choose?
-para3: Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
+headline3: Will die struck work for my design?
+para3: Note that the die struck style of lapel pin is completely colorless. Because of this, many die struck lapel pins are made with antiqued or dual plated metals to make their designs stand out better – especially any wording on the pin. Contact us today and let us bring your ideas to life!
 
-pciHeadline: Honor volunteer work in no time.
-pciPara1: There are endless options to make a beautiful pin that honors employees. Gold, bronze, or silver plating options assure you’ll have the highest quality and classiest award.
-pciPara2: Years of service pins are great for volunteer organizations. Keep your volunteers happy by making them feel appreciated. A high quality, beautiful custom pin is the perfect way to honor them for all the work they do. They not only make a classy and honorable gift, they provide people something to commemorate their hard work when they look back at their career. 
-pciImg: https://a.storyblok.com/f/78493/450x450/ab310e9142/autism_pin.png
-pciAlt: Autism awareness pin
+pciHeadline: What is a Die Struck pin?
+pciPara1: Die struck pins offer a classy look for your product and have the fastest production time available!  This style of custom lapel pin is composed of raised and recessed metal areas and is manufactured without any enamel paint so it won’t allow for color in your design. They have a beautiful antique look and are perfect for awards and classy corporate products. 
+pciPara2: The raised areas of the pin are typically polished and the recessed areas sandblasted. This sandblast contrasts beautifully with the polished raised metal, resulting in a timeless look.   Once you have authorized your artwork, we immediately put your order into production.  All artwork is free and includes revisions as needed. 
+pciImg: https://a.storyblok.com/f/78493/350x297/1ac23f0284/diestruck_outstandingemployee.png
+pciAlt: Die struck pin
 ---
 
 # Nuxt Content
