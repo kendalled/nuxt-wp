@@ -1,5 +1,5 @@
 <template>
-    <ContentQuery :path="$route.path" find="one" v-slot="{ data }">
+    <ContentQuery v-if="data" :path="$route.path" find="one" v-slot="{ data }">
 				<ContentRenderer :value="data">
 					<PinHeader :data="data" />
 					<TwoColumnContent :data="data" />
