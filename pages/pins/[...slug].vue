@@ -19,8 +19,9 @@
 </template>
 
 <script setup>
-  let route = useRoute()
+  let route = reactive(useRoute())
 	let { data } = reactive(await useAsyncData('page-data', () => queryContent(route.path).findOne()))
 	const show = (data !== null)
-	console.log(show)
+	console.log(route)
+	console.log(data)
 </script>
