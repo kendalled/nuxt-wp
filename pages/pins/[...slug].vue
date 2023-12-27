@@ -20,7 +20,7 @@
 
 <script setup>
   let route = useRoute()
-	let { data } = await useAsyncData('page-data', () => queryContent(route.path).findOne())
+	let { data } = reactive(await useAsyncData('page-data', () => queryContent(route.path).findOne()))
 	const show = (data !== null)
 	console.log(show)
 </script>
