@@ -37,12 +37,13 @@
             <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
               <figure>
                 <div class="relative pb-7/12 lg:pb-0">
+									<!-- lg: static? -->
                   <img
                     :src="data.img"
                     :alt="data.imgAlt"
                     width="1184"
                     height="1376"
-                    class="lg:absolute inset-0 object-cover object-center w-full h-full bg-gray-100 rounded-lg shadow-lg myMinHeight lg:static lg:h-auto"
+                    class="inset-0 object-cover object-center w-full h-full bg-gray-100 rounded-lg shadow-lg myMinHeight lg:static lg:h-auto"
                   >
                 </div>
                 <figcaption class="flex mt-3 text-sm text-gray-500">
@@ -67,7 +68,7 @@
               <p>
                 {{ data.para2 }}
               </p>
-              <p>{{ data.ulHeadline }}</p>
+              <p>{{ data.ulHeadline }}:</p>
               <ul>
                 <li>
                   {{ data.ex1 }}
@@ -79,13 +80,13 @@
                   {{ data.ex3 }}
                 </li>
                 <li><span>&hellip;</span> and so much more!</li>
-                <h2>
+              </ul>
+              <h2>
                   {{ data.headline3 }}
                 </h2>
                 <p>
                   {{ data.para3 }}
                 </p>
-              </ul>
             </div>
           </div>
         </div>
