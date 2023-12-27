@@ -1,28 +1,28 @@
 ---
-title: Flag Pins
+title: Police Pins
 description: Rachel
-headline1: Custom Years of Service Pins
-subHeading: It’s important to keep morale up as a business owner, and there’s no better way to do that than by acknowledging and celebrating those who have worked tirelessly.
+headline1: Custom Police Pins
+subHeading: Law enforcement is an essential part of the way our society runs. Pins with meaningful police symbols are a great way to show your support for officers everywhere.
 
 teaser: since 1999
-headline2: Recognize your employees with custom pins.
-grabber: Years of service pins are a perfect incentive for any business owner to award their employees.
-img: https://images.unsplash.com/photo-1521341057461-6eb5f40b07ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
-imgAlt: Employee showing off a years of service pin.
-para1: Loyalty and dedication are some of the best traits you could ask for in an employee - and these qualities deserve to be rewarded.
-para2: With years of service pins, you can thank employees for all their hard work and long hours. It’s important to keep morale up as a business owner, and there’s no better way to do that than by acknowledging and celebrating those who have worked tirelessly. 
-ulHeadline: Years of service pins are great for
+headline2: Represent your station with pride.
+grabber: Whether you're trying to honor a family member who serves or hand out a memento to your station, we can do it all.
+img: https://images.unsplash.com/photo-1499010001488-d58fa63bdc05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
+imgAlt: Police officer on duty.
+para1: Whether you’re holding an event for law enforcement, want to show pride in your career choice, or just want to show solidarity with your local officers, pins can be the best keepsake.
+para2: There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.
+ulHeadline: Police station pins are great for
 ex1: Events
 ex2: Yearly reviews
 ex3: Fundraising campaigns
 headline3: What production method should I choose?
 para3: Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
 
-pciHeadline: Honor volunteer work in no time.
-pciPara1: There are endless options to make a beautiful pin that honors employees. Gold, bronze, or silver plating options assure you’ll have the highest quality and classiest award.
-pciPara2: Years of service pins are great for volunteer organizations. Keep your volunteers happy by making them feel appreciated. A high quality, beautiful custom pin is the perfect way to honor them for all the work they do. They not only make a classy and honorable gift, they provide people something to commemorate their hard work when they look back at their career. 
-pciImg: https://a.storyblok.com/f/78493/450x450/ab310e9142/autism_pin.png
-pciAlt: Autism awareness pin
+pciHeadline: Why Choose Custom Pins?
+pciPara1: The brave men and women of the police force put their lives at risk daily to serve and protect their communities. The best way to thank them for this is by showing support for the brave work they do each and every day.
+pciPara2: If you are a police officer, you know pins are a symbol of status and rank. With your own customizable pins, you can show your pride in your career even when you’re not on the job. There are endless possibilities to show off your position as an officer, whether it be an american flag or a design with the well known thin blue line. Pins are small and practical and are sure to be an eye catching addition to any backpack, lanyard, bag, or hat.
+pciImg: https://a.storyblok.com/f/78493/350x350/6a22a0e993/gold-police-shield-pin.png
+pciAlt: Police station pin
 ---
 
 # Nuxt Content
