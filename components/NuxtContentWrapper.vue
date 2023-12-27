@@ -1,5 +1,5 @@
 <template>
-    <ContentRenderer v-if="data" :value="data">
+    <ContentRenderer v-if="show" :value="data">
 			<PinHeader :data="data" />
 			<TwoColumnContent :data="data" />
 			<PinContentImage :data="data"/>
@@ -7,6 +7,8 @@
 </template>
 
 <script setup>
-  const route = $this.route
-	const { data } = await useAsyncData('page-data', () => queryContent($this.route).findOne())
+  const route = useRoute()
+	const { data } = await useAsyncData('page-data', () => queryContent(route.path).findOne())
+	const show = (data !== null)
+	console.log(show)
 </script>
