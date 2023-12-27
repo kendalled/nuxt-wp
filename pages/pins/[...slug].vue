@@ -2,6 +2,7 @@
 	<div>
 		<main class="bg-gray-50">
 			<!-- nuxt cms content -->
+			<NuxtContentWrapper />
 			<PinBenefits />
     		<LargeTest />
     		<TailPricing />
@@ -12,7 +13,3 @@
 		</main>
 	</div>
 </template>
-
-<script setup>
-	console.log('composable page!')
-</script>
