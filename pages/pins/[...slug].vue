@@ -2,13 +2,6 @@
 	<div>
 		<main class="bg-gray-50">
 			<!-- nuxt cms content -->
-			<ContentQuery :path="$route.path" find="one" v-slot="{ data }">
-				<ContentRenderer :value="data">
-					<PinHeader :data="data" />
-					<TwoColumnContent :data="data" />
-					<PinContentImage :data="data"/>
-				</ContentRenderer>
-			</ContentQuery>
 			<PinBenefits />
     		<LargeTest />
     		<TailPricing />
