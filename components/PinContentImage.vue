@@ -4,7 +4,7 @@
         <div class="flex flex-col items-center justify-between w-full h-auto mx-auto rounded max-w-7xl lg:flex-row feature">
           <!-- first image for desktop -->
           <div class="items-center justify-center hidden h-auto -mt-4 lg:flex lg:w-2/5">
-            <img :class="[isBig ? 'w-56 h-auto' : 'w-64 h-auto -ml-10']" :src="data.pciImg" :alt="pciAlt">
+            <img :class="[isBig ? 'w-56 h-auto' : 'w-64 h-auto -ml-10']" :src="data.pciImg" alt="Hello">
           </div>
           <div class="prose max-w-none lg:w-3/5">
             <h2>
@@ -19,7 +19,7 @@
           </div>
           <!-- second image for mobile -->
           <div class="flex items-center justify-center w-full h-64 lg:hidden">
-            <img class="object-cover w-64 h-auto mt-12 lg:hidden" :src="data.pciImg" :alt="pciAlt">
+            <img class="object-cover w-64 h-auto mt-12 lg:hidden" :src="data.pciImg" alt="Hello">
           </div>
         </div>
       </section>
