@@ -5,6 +5,7 @@ export default defineNuxtConfig({
       '@nuxtjs/tailwindcss',
       'nuxt3-vuex-module',
       '@nuxt/image',
+      '@nuxt/content',
   ],
   runtimeConfig: {
       public: {
@@ -14,6 +15,9 @@ export default defineNuxtConfig({
   routeRules: {
     '/lapel-pins': { redirect: { to: '/pins', statusCode: 301 } },
     '/challenge-coins': { redirect: { to: '/coins', statusCode: 301 } },
+  },
+  content: {
+    // ... options
   },
   app: {
     head: {  
