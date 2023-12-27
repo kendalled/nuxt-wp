@@ -2,13 +2,7 @@
 	<div>
 		<main class="bg-gray-50">
 			<!-- nuxt cms content -->
-			<ContentQuery :path="$route.path" v-if="$route.path" find="one" v-slot="{ data }">
-				<ContentRenderer :value="data">
-					<PinHeader :data="data" />
-					<TwoColumnContent :data="data" />
-					<PinContentImage :data="data"/>
-				</ContentRenderer>
-			</ContentQuery>
+			<NuxtContentWrapper />
 			<PinBenefits />
     		<LargeTest />
     		<TailPricing />
@@ -21,9 +15,6 @@
 </template>
 
 <script setup>
-  	// let route = useRoute()
-	// let { data } = await useAsyncData('page-data', () => queryContent(route.path).findOne())
-	// const show = (data !== null)
-	// console.log(route)
-	// console.log(data)
+  	let route = useRoute()
+	console.log(route)
 </script>
