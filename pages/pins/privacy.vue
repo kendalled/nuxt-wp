@@ -1,5 +1,6 @@
 <template>
     <div class="w-full h-auto bg-gray-100">
+        <!-- todo: remove -->
       <PrivacyContent />
       <TailFoot />
     </div>
