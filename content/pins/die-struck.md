@@ -20,7 +20,7 @@ para3: Note that the die struck style of lapel pin is completely colorless. Beca
 
 pciHeadline: What is a Die Struck pin?
 pciPara1: Die struck pins offer a classy look for your product and have the fastest production time available!  This style of custom lapel pin is composed of raised and recessed metal areas and is manufactured without any enamel paint so it won’t allow for color in your design. They have a beautiful antique look and are perfect for awards and classy corporate products. 
-pciPara2: The raised areas of the pin are typically polished and the recessed areas sandblasted. This sandblast contrasts beautifully with the polished raised metal, resulting in a timeless look.   Once you have authorized your artwork, we immediately put your order into production.  All artwork is free and includes revisions as needed. 
+pciPara2: The raised areas of the pin are typically polished and the recessed areas sandblasted. This sandblast contrasts beautifully with the polished raised metal, resulting in a timeless look. Once you have authorized your artwork, we immediately put your order into production.  All artwork is free and includes revisions as needed. 
 pciImg: https://a.storyblok.com/f/78493/350x297/1ac23f0284/diestruck_outstandingemployee.png
 pciAlt: Die struck pin
 ---
