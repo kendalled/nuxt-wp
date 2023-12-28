@@ -1,6 +1,6 @@
 <template>
 <div>
-      <div class="scroll-parent bg-white border-b-2 border-gray-100 will-change-transform">
+      <div class="scroll-parent bg-white border-b-2 border-gray-100 will-change-transform overflow-y-hidden">
         <div class="scroll-element bg-white primary">
           <NuxtImg
             v-for="pin in pinsArray"
