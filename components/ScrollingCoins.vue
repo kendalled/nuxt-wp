@@ -37,6 +37,10 @@
                     alt: 'Challenge coin with no color'
                   },
                   {
+                    src: 'military-coin.png',
+                    alt: 'Marine challenge coin'
+                  },
+                  {
                     src: 'goldCoin.png',
                     alt: 'Polished gold challenge coin'
                   },
