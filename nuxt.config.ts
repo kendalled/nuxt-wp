@@ -9,7 +9,8 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
       public: {
-          wordpressUrl: 'https://lapelpinsandcoins.com/graphql'
+          wordpressUrl: 'https://lapelpinsandcoins.com/graphql',
+          gtagId: 'G-ST0M4S4ZHE'
       }
   },
   routeRules: {

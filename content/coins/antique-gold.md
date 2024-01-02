@@ -15,7 +15,7 @@ ex1: Clubs
 ex2: Sporting events
 ex3: Fundraising campaigns
 headline3: What production method should I choose?
-para3: Most custom coin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
+para3: Most custom coin designs can be made as antique gold, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of coin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
 
 pciHeadline: Why Choose Antique Gold Plating?
 pciPara1: Antique Gold plating is the perfect choice for an elegant feel to your coin. This plating provides contrast between raised and recessed areas that will make any text on your coin easier to read. This plating is available at a small up-charge, just ask us and we can provide pricing options!

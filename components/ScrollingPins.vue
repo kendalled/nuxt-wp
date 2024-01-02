@@ -98,7 +98,7 @@
 }
 .scroll-parent {
   position: relative;
-  width: 100vw;
+  width: 100% !important;
   height: 13rem;
   padding: 2rem 0;
   overflow-x: hidden;

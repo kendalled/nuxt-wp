@@ -1,18 +1,18 @@
 ---
-title: Custom Antique Silver Coins
+title: Custom Nursing Coins
 description: Rachel
-headline1: Antique Silver Challenge Coins
-subHeading: The plating on your coin can make all of the difference in your design. Antique silver can add a rustic and finely aged look to your coin. It provides extra contrast to make sure your coin stands out.
+headline1: Custom Nursing Challenge Coins
+subHeading: The men and women that work in the health industry spend countless hours investing in our health. A custom challenge coin is a great way to honor them for their dedication.
 teaser: since 1999
-headline2: Silver coins with a touch of class.
-grabber: Antique silver coins are a simple but effective product. They are extremely versatile and adaptable, with a variety of uses that are only limited by your imagination.
-img: https://images.unsplash.com/photo-1582480553944-ba71a317a826?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
-imgAlt: Antique silver challenge coins
-para1: Our coins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.
+headline2: Commemorate our masked heroes.
+grabber: Our challenge coins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.
+img: https://images.unsplash.com/photo-1571772996211-2f02c9727629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
+imgAlt: A nurse at work.
+para1: It can be overwhelming to design your own custom coin, so that’s why we're here to help you every step of the way.
 para2: There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.
-ulHeadline: Antique silver coins are great for
-ex1: Clubs
-ex2: Sporting events
+ulHeadline: Nursing coins are great for
+ex1: Employee recognition
+ex2: Years of service
 ex3: Fundraising campaigns
 headline3: What production method should I choose?
 para3: Most custom coin designs can be made into antique silver, but this process often works best with designs that have minimal lines and clearly defined areas of color. If you’re not sure which type of coin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
