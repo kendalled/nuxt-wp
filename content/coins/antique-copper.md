@@ -17,7 +17,7 @@ ex3: Fundraising campaigns
 headline3: What plating method should I choose?
 para3: Most custom coin designs can be made into antique copper, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of coin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
 
-pciHeadline: Why Choose Antique Copper Plating?Why Choose Antique Copper Plating?
+pciHeadline: Why Choose Antique Copper Plating?
 pciPara1: Antique copper plating is perfect for an elegant feel to your coin. This plating provides contrast between raised and recessed areas that will make any text on your coin easier to read.
 pciPara2: Antique platings are our recommended choice for no color designs. With the added contrast, your design is sure to stand out. All metal areas are dulled in the plating process when you choose antique copper, so your coin will have less noticeable scratches and dents as time goes on. 
 pciImg: https://a.storyblok.com/f/78493/490x354/40a13d6046/platingexample_antiquecopper.png
