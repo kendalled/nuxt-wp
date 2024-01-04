@@ -185,6 +185,7 @@
         ],
         link: [
           { rel: 'canonical', href: 'https://lapelpinsandcoins.com/pins' }
+          { rel: 'icon', href: '/favicon.ico' }
         ]
       }
     },
