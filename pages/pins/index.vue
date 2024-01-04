@@ -184,7 +184,7 @@
           { hid: 'description', name: 'description', content: 'Custom designed lapel pins with same-day quotes. Get started with a complimentary art proof. With over 20 years of experience, we\'ve got you covered.' }
         ],
         link: [
-          { rel: 'canonical', href: 'https://lapelpinsandcoins.com/pins' }
+          { rel: 'canonical', href: 'https://lapelpinsandcoins.com/pins' },
           { rel: 'icon', href: '/favicon.ico' }
         ]
       }
