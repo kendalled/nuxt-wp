@@ -29,7 +29,8 @@ useHead({
     },
     {
       rel: 'preload',
-      href: 'https://lapelpinsandcoins.com/scrollingPins.webp'
+      href: 'https://lapelpinsandcoins.com/scrollingPins.webp',
+      as: 'image'
     }
   ],
 })
