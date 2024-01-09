@@ -49,7 +49,7 @@
 
       <div class="relative lg:flex lg:items-center lg:flex-row-reverse">
         <div class="hidden lg:block lg:flex-shrink-0">
-          <img class="w-auto h-64" :src="img" alt="">
+          <NuxtImg class="w-auto h-64" format="webp" :src="img" alt="" />
         </div>
 
         <div class="relative lg:ml-10">
