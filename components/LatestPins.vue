@@ -54,7 +54,7 @@
       >
         <div v-for="(pin, p) in pinSet" v-show="(p === page)" :key="pin.title" class="absolute flex flex-col items-center justify-start max-w-lg px-6 py-6 bg-white rounded-md shadow-2xl lg:-mt-1 sm:mx-auto sm:flex-row lg:ml-auto lg:max-w-xl">
           <span class="relative flex items-center justify-center w-full sm:w-1/3">
-            <img class="transition-colors duration-150 ease-in-out rounded-md cursor-pointer w-36 h-36 sm:mx-0 hover:bg-gray-100" :src="pin.pics[0]" :alt="pin.title">
+            <NuxtImg class="transition-colors duration-150 ease-in-out rounded-md cursor-pointer w-36 h-36 sm:mx-0 hover:bg-gray-100" format="webp" :src="pin.pics[0]" :alt="pin.title" />
           </span>
           <span class="w-full pt-4 sm:pt-0 sm:w-2/3 sm:pl-6">
             <div class="flex items-center justify-between w-full">
