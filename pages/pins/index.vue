@@ -1,5 +1,9 @@
 <template>
     <div>
+        <Head>
+          <Title>Premium Custom Lapel Pins | Lapel Pins & Coins | Est. 1999 | Same-Day Service</Title>
+          <Meta name="description" content="Elevate your style with exquisite custom lapel pins from Lapel Pins & Coins, a trusted industry leader since 1999. Experience unparalleled craftsmanship and same-day service. Create personalized lapel pins that leave a lasting impression. Order now!" />
+        </Head>
         <div class="w-auto h-auto bg-gray-50">
         <InteriorHeader :new-layout="true" :headline="headline" :subheading="subheading" :choices="choices" />
         <!-- <SimpleHeader /> -->
@@ -178,10 +182,6 @@
             type: 'application/ld+json',
             json: structuredData
           }
-        ],
-        title: 'Custom Lapel Pins | Free Shipping | Lapel Pins & Coins',
-        meta: [
-          { hid: 'description', name: 'description', content: 'Custom designed lapel pins with same-day quotes. Get started with a complimentary art proof. With over 20 years of experience, we\'ve got you covered.' }
         ],
         link: [
           { rel: 'canonical', href: 'https://lapelpinsandcoins.com/pins' },
