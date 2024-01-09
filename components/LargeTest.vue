@@ -65,7 +65,7 @@
             <footer class="mt-8">
               <div class="flex">
                 <div class="flex-shrink-0 lg:hidden">
-                  <img class="w-24 h-24 rounded-full" :src="img" alt="">
+                  <NuxtImg class="w-24 h-24 rounded-full" :src="img" alt="Soft enamel custom pin" />
                 </div>
                 <div class="ml-4 lg:ml-0 md:flex md:items-center md:justify-center">
                   <div class="hidden border-2 border-gray-300 rounded-full md:flex-shrink-0 md:block">
