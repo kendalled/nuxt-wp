@@ -1,10 +1,9 @@
 <template>
   <div class="w-24 h-24 mx-auto mb-2 overflow-hidden transition-colors duration-100 border-4 border-transparent rounded-full sm:h-32 sm:w-32">
     <div :class="isLoad ? 'hidden' : 'block'" class="w-full h-full bg-gray-200 rounded-full animate-pulse" />
-    <NuxtImg
+    <img
       ref="theImg"
       :alt="choice.name"
-      format="webp"
       :src="choice.src"
       draggable="false"
       class="mx-auto"
