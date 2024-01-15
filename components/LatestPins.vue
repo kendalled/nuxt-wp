@@ -1,45 +1,5 @@
 <template>
   <section class="relative mt-8 lg:ml-1 lg:mt-0">
-    <!-- <div class="absolute w-full h-auto px-4 py-2 mx-auto antialiased">
-      <dl class="flex flex-col justify-between w-full pt-3 space-y-2 text-gray-100 md:flex-row md:space-x-6 md:space-y-0 md:items-center">
-        <div>
-          <dt class="sr-only">
-            Phone number
-          </dt>
-          <dd class="flex">
-            <svg
-              class="flex-shrink-0 w-6 h-6 text-gray-200"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            <span class="ml-3">+1 (844) 395-4464</span>
-          </dd>
-        </div>
-        <div>
-          <dt class="sr-only">
-            Email
-          </dt>
-          <dd class="flex">
-            <svg
-              class="flex-shrink-0 w-6 h-6 text-gray-200"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <span class="ml-3">info@lapelpinsandcoins.com</span>
-          </dd>
-        </div>
-      </dl>
-    </div> -->
     <div class="relative max-w-lg mx-auto lg:mx-0 lg:max-w-xl sm:h-64 lg:h-48 h-96">
       <!-- todo: fix mode -->
       <transition-group

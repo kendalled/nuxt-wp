@@ -9,7 +9,7 @@
         <!-- <SimpleHeader /> -->
         <!-- <SplitBrandPanel /> -->
         <ScrollingPins/>
-        <TwoColumnImage>
+        <NewColumnImage>
             <p>Our pins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.</p>
             <p>There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.</p>
             <p>Enamel pins can be used for:</p>
@@ -23,7 +23,7 @@
             </ul>
             <h2>What production method should I choose?</h2>
             <p>Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.</p>
-        </TwoColumnImage>
+          </NewColumnImage>
         <section>
             <div class="mx-auto mt-10 max-w-7xl sm:px-6 lg:px-8">
             <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
@@ -73,7 +73,7 @@
   <script>
   import LargeTest from '~/components/LargeTest'
   import InteriorHeader from '~/components/InteriorHeader'
-  import TwoColumnImage from '~/components/TwoColumnImage'
+  import NewColumnImage from '~/components/NewColumnImage'
   import InteriorContentImage from '~/components/InteriorContentImage'
   import FinalQuote from '~/components/FinalQuote'
   import PinBenefits from '~/components/PinBenefits'
@@ -84,18 +84,19 @@
   import TailFoot from '~/components/TailFoot'
   export default {
     components: {
-      LargeTest,
-      InteriorHeader,
-      TwoColumnImage,
-      InteriorContentImage,
-      FinalQuote,
-      PinBenefits,
-      TailPricing,
-      TailSteps,
-      Faq2,
-      TailCta,
-      TailFoot
-    },
+    LargeTest,
+    InteriorHeader,
+    TwoColumnImage,
+    InteriorContentImage,
+    FinalQuote,
+    PinBenefits,
+    TailPricing,
+    TailSteps,
+    Faq2,
+    TailCta,
+    TailFoot,
+    NewColumnImageVue
+},
     data () {
       return {
         headline: 'High quality, custom lapel pins designed by experts.',
