@@ -1,7 +1,7 @@
 <template>
     <div class="relative w-full mx-auto rounded-lg shadow-lg lg:-mt-8 text-gray-50 lg:w-full">
       <button aria-label="Show company video in modal" class="relative block w-full overflow-hidden transition-shadow duration-100 rounded-lg bg-gray-50 focus:outline-none focus:ring" @click.prevent="showModal = true">
-        <img src="/betterQuality.gif" class="object-cover w-full opacity-100 sm:h-80" alt="Promotional video for custom lapel pins and challenge coins.">
+        <img src="/withPin.jpg" class="object-cover w-full opacity-100 sm:h-80" alt="Promotional video for custom lapel pins and challenge coins.">
         <!-- <img class="object-cover w-full" src="~/static/thumbnail3.png" alt="Promotional video for custom lapel pins and challenge coins." data-not-lazy> -->
         <span class="absolute inset-0 flex items-center justify-center w-full h-full cursor-pointer">
           <svg class="w-20 h-20 text-orange-300 group" fill="#F6AD55" viewBox="0 0 84 84">

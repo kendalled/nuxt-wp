@@ -86,7 +86,7 @@
     components: {
     LargeTest,
     InteriorHeader,
-    TwoColumnImage,
+    NewColumnImage,
     InteriorContentImage,
     FinalQuote,
     PinBenefits,
@@ -94,8 +94,7 @@
     TailSteps,
     Faq2,
     TailCta,
-    TailFoot,
-    NewColumnImageVue
+    TailFoot
 },
     data () {
       return {

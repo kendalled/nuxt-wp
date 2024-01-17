@@ -30,11 +30,6 @@ useHead({
     {
       rel: 'icon',
       href: '/favicon.ico'
-    },
-    {
-      rel: 'preload',
-      href: 'https://lapelpinsandcoins.com/scrollingPins.webp',
-      as: 'image'
     }
   ],
 })
