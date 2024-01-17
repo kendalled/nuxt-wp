@@ -8,7 +8,7 @@
             <p class="text-base font-semibold leading-6 tracking-wider text-blue-400 uppercase">
               Same-day reply
             </p>
-            <h1 class="mt-2 text-3xl font-semibold leading-10 text-white sm:text-4xl">
+            <h1 class="mt-2 text-3xl font-bold leading-10 text-white sm:text-4xl">
               {{ data.headline1 }}
             </h1>
             <p class="max-w-3xl mt-4 text-base leading-6 text-blue-100">

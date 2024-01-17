@@ -6,6 +6,11 @@ export default defineNuxtConfig({
       'nuxt3-vuex-module',
       '@nuxt/image',
       '@nuxt/content',
+      ['@nuxtjs/google-fonts', {
+        families: {
+          Inter: '300..900'
+        }
+    }],
   ],
   runtimeConfig: {
       public: {

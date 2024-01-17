@@ -14,12 +14,12 @@
             <p>There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.</p>
             <p>Enamel pins can be used for:</p>
             <ul>
-            <li>Promotional campaigns</li>
-            <li>Fundraising for your organization</li>
-            <li>Bringing fans together around a sports team</li>
-            <li>Gifts for friends &amp; family</li>
-            <li>Recognizing an employee</li>
-            <li><span>&hellip;</span> and so much more!</li>
+              <li>Promotional campaigns</li>
+              <li>Fundraising for your organization</li>
+              <li>Bringing fans together around a sports team</li>
+              <li>Gifts for friends &amp; family</li>
+              <li>Recognizing an employee</li>
+              <li><span>&hellip;</span> and so much more!</li>
             </ul>
             <h2>What production method should I choose?</h2>
             <p>Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.</p>

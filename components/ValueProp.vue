@@ -17,6 +17,7 @@
             <NuxtImg class="transition-colors duration-150 ease-in-out rounded-md cursor-pointer w-36 h-36 sm:mx-0 hover:bg-gray-100" format="webp" :src="pin.pics[0]" :alt="pin.title" />
           </span>
           <span class="w-full pt-4 sm:pt-0 sm:w-2/3 sm:pl-6">
+            <img class="absolute top-3 right-3 opacity-100 shadow-lg" style="height: 5.5rem; width: 5.5rem;" src="/30percent.svg" />
             <div class="space-y-5">
               <span class="flex items-start lg:col-span-1 lg:mt-0">
                 <div class="flex-shrink-0">
@@ -42,9 +43,7 @@
                   <span class="font-semibold">Unlimited</span> revisions on all orders
                 </p>
               </span>
-
             </div>
-
           </span>
         </div>
       </transition-group>
@@ -66,6 +65,15 @@
     <!-- <LatestPinSteps :total-steps="pinSet.length" :current-step="page" @choice="changeNum" /> -->
   </section>
   </template>
+
+  <style scoped>
+    .st0 {
+          fill:#FF9E18;
+        }
+	  .st2{
+      fill:#FFF7ED;
+    }
+    </style>
 
   <script>
   export default {
