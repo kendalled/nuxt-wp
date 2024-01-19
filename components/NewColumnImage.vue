@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-hidden pb-32" style="background: linear-gradient(to bottom, #ffffff, #f9fafb);">
+    <div class="overflow-hidden" style="background: linear-gradient(to bottom, #ffffff, #f9fafb);">
       <div class="relative px-4 pt-16 pb-10 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="absolute top-0 bottom-0 hidden w-screen lg:block bg-gray-50 left-3/4" />
         <div class="mx-auto text-base max-w-prose lg:max-w-none">
