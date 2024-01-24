@@ -23,6 +23,7 @@
     "@nuxt/image": "^1.1.0",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "click-outside-vue3": "^4.0.1",
+    "nuxt-gtag": "^1.1.2",
     "nuxt3-vuex-module": "^1.0.12",
     "vuex": "^4.0.2"
   }

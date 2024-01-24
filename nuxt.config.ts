@@ -6,17 +6,15 @@ export default defineNuxtConfig({
       'nuxt3-vuex-module',
       '@nuxt/image',
       '@nuxt/content',
+      'nuxt-gtag',
       ['@nuxtjs/google-fonts', {
         families: {
           Inter: '300..900'
         }
-    }],
+    }]
   ],
-  runtimeConfig: {
-      public: {
-          wordpressUrl: 'https://lapelpinsandcoins.com/graphql',
-          gtagId: 'G-ST0M4S4ZHE'
-      }
+  gtag: {
+    id: 'G-ST0M4S4ZHE'
   },
   routeRules: {
     '/lapel-pins': { redirect: { to: '/pins', statusCode: 301 } },
