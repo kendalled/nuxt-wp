@@ -127,6 +127,106 @@ export default {
       details: false,
       viewAll: true,
       errorNotif: false,
+      restorePoint: [
+        {
+          id: 1,
+          sid: 'pl1',
+          name: 'Polished Gold',
+          src: '/quote/HPGold.png'
+        },
+        {
+          id: 2,
+          sid: 'pl2',
+          name: 'Polished Silver',
+          src: '/quote/HPSilver.png'
+        },
+        {
+          id: 3,
+          sid: 'pl3',
+          name: 'Polished Copper',
+          src: '/quote/HPCopper.png'
+        },
+        {
+          id: 4,
+          sid: 'pl4',
+          name: 'Polished Nickel',
+          src: '/quote/HPNickel.png'
+        },
+        {
+          id: 5,
+          sid: 'pl5',
+          name: 'Black Metal',
+          src: '/quote/BlackMetal.png'
+        },
+        {
+          id: 6,
+          sid: 'pl6',
+          name: 'Antique Gold',
+          src: '/quote/AGold.png'
+        },
+        {
+          id: 7,
+          sid: 'pl7',
+          name: 'Antique Silver',
+          src: '/quote/ASilver.png'
+        },
+        {
+          id: 8,
+          sid: 'pl8',
+          name: 'Antique Copper',
+          src: '/quote/ACopper.png'
+        },
+        {
+          id: 9,
+          sid: 'pl9',
+          name: 'Dual Plated',
+          src: '/quote/DualPlated.png'
+        },
+        {
+          id: 10,
+          sid: 'pl10',
+          name: 'Color Coated',
+          src: '/quote/ColorCoated.png'
+        }
+      ],
+      newPoint: [
+        {
+          id: 1,
+          sid: 'pl1',
+          name: 'Polished Gold',
+          src: '/quote/HPGold.png'
+        },
+        {
+          id: 2,
+          sid: 'pl2',
+          name: 'Polished Silver',
+          src: '/quote/HPSilver.png'
+        },
+        {
+          id: 3,
+          sid: 'pl3',
+          name: 'Polished Copper',
+          src: '/quote/HPCopper.png'
+        },
+        {
+          id: 4,
+          sid: 'pl4',
+          name: 'Polished Nickel',
+          src: '/quote/HPNickel.png'
+        },
+        {
+          id: 9,
+          sid: 'pl9',
+          name: 'Dual Plated',
+          src: '/quote/DualPlated.png'
+        },
+        {
+          id: 10,
+          sid: 'pl10',
+          name: 'Color Coated',
+          src: '/quote/ColorCoated.png'
+        }
+      ],
       categories: [
         [
           {
@@ -764,6 +864,9 @@ export default {
     pagesLength () {
       return this.categories[this.option].length
     },
+    disableAntiques () {
+      return (JSON.parse(JSON.stringify(this.$store.state.quote.quote))[0].selected == "Hard Enamel")
+    },
     quote () {
       const quotes = [
         JSON.parse(JSON.stringify(this.$store.state.quote.quote)),
@@ -794,6 +897,15 @@ export default {
     },
     currentPage (newVal, oldVal) {
       this.$emit('update', this.currentPage)
+    },
+    disableAntiques (newVal, oldVal) {
+      // if Hard enamel is chosen, disable (or enable)
+      if (newVal !== oldVal) {
+        this.categories[0][1].data = this.newPoint
+      }
+      if (newVal === false) {
+        this.categories[0][1].data = this.restorePoint
+      }
     }
   },
   methods: {
