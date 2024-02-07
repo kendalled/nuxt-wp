@@ -36,7 +36,7 @@
             </a>
           </div>
         </div>
-        <ValueProp v-if="newLayout"/>
+        <LatestPins v-if="newLayout"/>
         <div v-else class="mt-8 lg:mt-0">
           <div class="max-w-lg lg:ml-auto lg:max-w-xl">
             <a href="#" class="flex items-start px-5 py-4 text-lg font-medium leading-6 text-white transition duration-150 ease-in-out border border-blue-400 rounded-lg hover:bg-gray-800" @click.prevent="scrollSmooth('quote-steps')">
