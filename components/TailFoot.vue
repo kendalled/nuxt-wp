@@ -118,7 +118,7 @@
             </a>
           </div>
           <p class="mt-8 text-base leading-6 text-gray-500 md:mt-0 md:order-1">
-            &copy; 2023 Lapel Pins &amp; Coins. <span class="hidden sm:inline-block">All rights reserved.
+            &copy; 2024 Lapel Pins &amp; Coins. <span class="hidden sm:inline-block">All rights reserved.
             <!--<Built with Vue.js by KJ. nuxt-link to="/feedback" title="Links to feedback page." class="text-blue-500 transition-colors duration-150 hover:text-blue-600 hover:underline">Have any feedback?</nuxt-link> -->
             </span>
           </p>
