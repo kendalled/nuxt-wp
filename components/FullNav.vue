@@ -190,6 +190,11 @@ export default {
               new: false
             },
             {
+              title: 'Easter Pins',
+              ref: '/pins/easter',
+              new: true
+            },
+            {
               title: 'Police Pins',
               ref: '/pins/police',
               new: false
