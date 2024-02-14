@@ -21,7 +21,7 @@ para3: Most custom pin designs can be made into soft enamel pins, but this proce
 pciHeadline: Why put pins in your basket?
 pciPara1: Our pins and coins are great at giving your Easter holiday get together a festive touch, adding a dash of charm to your holiday celebration! Get into the Easter spirit, with Lapel Pins & Coins!
 pciPara2: Whether it's to commemorate a successful brunch, or to liven up the scavenger hunt for the kids, a pin is a lifelong memento of your Easter Sunday. As an extremely cost effective and creative accessory, we couldn't reccommend them more. We have hundreds of customers who have made Easter Bunny pins, as well as egg pins to give to their little ones.
-pciImg: https://a.storyblok.com/f/78493/736x350/bbac76385c/animalpin.png
+pciImg: https://a.storyblok.com/f/78493/350x350/6a22a0e993/gold-police-shield-pin.png
 pciAlt: Easter pin
 ---
 
