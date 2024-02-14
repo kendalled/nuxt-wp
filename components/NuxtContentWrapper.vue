@@ -3,7 +3,7 @@
 		<ContentRenderer :value="data">
 			<PinHeader :data="data" />
 			<slot></slot>
-			<TwoColumnContent :data="data" />
+			<NewColumnContent :data="data" />
 			<PinContentImage :data="data"/>
 			</ContentRenderer>
 	</ContentQuery>
