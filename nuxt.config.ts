@@ -18,7 +18,9 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/lapel-pins': { redirect: { to: '/pins', statusCode: 301 } },
+    '/lapelpins': { redirect: { to: '/pins', statusCode: 301 } },
     '/challenge-coins': { redirect: { to: '/coins', statusCode: 301 } },
+    '/challengecoins': { redirect: { to: '/coins', statusCode: 301 } },
   },
   content: {
     // ... options
