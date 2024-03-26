@@ -887,7 +887,13 @@ export default {
     },
     // TODO: smarter way to do this
     percentDone () {
-      return ((this.currentPage + 1) / this.pagesLength) * 100;
+      // Checks if on last page, as well as if last page is empty.
+      if ((this.currentPage + 1 !== this.pagesLength) || this.choiceEmpty) {
+        return ((this.currentPage) / this.pagesLength) * 100;
+      }
+      else {
+        return 100
+      }
     }
   },
   // todo: unify
@@ -918,9 +924,10 @@ export default {
     showDetails () {
       this.details = true
     },
+    // Testing percent based logic
     getPinClasses () {
-      const currentPage = this.currentPage
-      return (currentPage === 0 ? 'w-1/5' : currentPage === 1 ? 'w-2/5' : currentPage === 2 ? 'w-3/5' : currentPage === 3 ? 'w-4/5' : 'w-full')
+      const percentDone = this.percentDone
+      return (percentDone === 0 ? 'w-1/12' : percentDone === 20 ? 'w-1/5' : percentDone === 40 ? 'w-2/5' : percentDone === 60 ? 'w-3/5' : percentDone === 80 ? 'w-4/5' : 'w-full')
     },
     getCoinClasses () {
       const currentPage = this.currentPage
