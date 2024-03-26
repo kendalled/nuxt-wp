@@ -22,7 +22,7 @@
               <li><span>&hellip;</span> and so much more!</li>
             </ul>
             <h2>What production method should I choose?</h2>
-            <p>Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.</p>
+            <p>Most custom lapel pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.</p>
           </NewColumnImage>
         <section>
             <div class="mx-auto mt-10 max-w-7xl sm:px-6 lg:px-8">
@@ -42,7 +42,7 @@
             <FinalQuote :option="0" :margin="1" :bg="1" @scroll="goQuote" />
             </div>
         </section>
-        <InteriorContentImage :headline="'Design a custom pin in minutes.'" :p1="p1" :p2="p2" :img="img1" />
+        <InteriorContentImage :headline="'Design a custom lapel pin in minutes.'" :p1="p1" :p2="p2" :img="img1" />
         <PinBenefits />
         <LargeTest />
         <TailPricing />
@@ -114,8 +114,8 @@
             mobile: 'View our ordering process'
           }
         ],
-        p1: 'Custom pins are small, customizable, and easy to make. You can design them to be as classy as you need them to be, and they make for the perfect subtle fashion statement. Showing pride in your achievements or support for a certain cause or movement is easier than ever with lapel pins. They may be small, but custom pins can be huge for your fundraiser, company, or team. We make pins for a variety of uses. Brand promotion, for one, is essential to a brand\'s success, and there’s no easier way to promote and establish your brand than with a pin. No matter how you plan on using them, our pins are sure to suit your needs.',
-        p2: 'We make pins for a variety of uses. Brand promotion, for one, is essential to a brand\'s success, and there’s no easier way to promote and establish your brand than with a custom lapel pin. Award ceremonies can be stepped up a level with classy custom pins to reward those who earned it. No matter how you plan on using them, our pins are sure to suit your needs.',
+        p1: 'Custom lapel pins are small, customizable, and easy to make. You can design them to be as classy as you need them to be, and they make for the perfect subtle fashion statement. Showing pride in your achievements or support for a certain cause or movement is easier than ever with lapel pins. They may be small, but custom lapel pins can be huge for your fundraiser, company, or team. We make pins for a variety of uses. Brand promotion, for one, is essential to a brand\'s success, and there’s no easier way to promote and establish your brand than with a pin. No matter how you plan on using them, our pins are sure to suit your needs.',
+        p2: 'We make pins for a variety of uses. Brand promotion, for one, is essential to a brand\'s success, and there’s no easier way to promote and establish your brand than with a custom lapel pin. Award ceremonies can be stepped up a level with classy custom lapel pins to reward those who earned it. No matter how you plan on using them, our pins are sure to suit your needs.',
         img1: '/homePins.png',
         // todo: unify or split into 3 sets for one <FinalQuote />
       }
@@ -137,7 +137,7 @@
         image: [
           'https://lapelpinsandcoins.com/homePins.png'
         ],
-        description: 'Our customized pins are struck from the highest quality metals and plated in authentic gold or silver. Starting at 50 pcs, our pricing can\'t be beat.',
+        description: 'Our customized lapel pins are struck from the highest quality metals and plated in authentic gold or silver. Starting at 50 pcs, our pricing can\'t be beat.',
         sku: 'LA1234',
         mpn: '925872',
         brand: {
