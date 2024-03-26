@@ -7,7 +7,7 @@
         <div class="flex flex-wrap items-center justify-between -mt-4 -ml-4 sm:flex-nowrap">
           <div class="mt-4 ml-4">
             <h3 class="text-lg font-medium leading-6 text-gray-900">
-              {{ pageTitle }}
+              <span>Step {{ currentPage + 1 }}:</span> {{ pageTitle }}
             </h3>
             <p class="mt-1 text-sm leading-5 text-gray-500">
               {{ pageDesc }}
@@ -16,14 +16,13 @@
           <!-- :class="[pagesLength === 4 ? 'w-20' : 'w-20']" todo: show on mobile -->
           <div class="flex-shrink-0 hidden mt-4 ml-4 sm:block">
             <p class="w-20 text-sm leading-5 text-right text-gray-700">
-              Step
-              <span class="font-medium">{{ currentPage + 1 }} </span>
-              of
-              <span class="font-medium">{{ pagesLength }}</span>
+              <span class="font-medium">{{ percentDone }}%</span>
+              <!-- of
+              <span class="font-medium">{{ pagesLength }}</span> -->
             </p>
             <div class="flex items-end justify-start w-full h-6 pl-2">
               <div class="w-full h-2 bg-gray-200 rounded">
-                <div class="h-2 bg-green-400 rounded" :class="[option === 0 ? getPinClasses() : getCoinClasses()]" />
+                <div class="h-2 bg-green-400 rounded transition-all" :class="[option === 0 ? getPinClasses() : getCoinClasses()]" />
               </div>
             </div>
           </div>
@@ -885,6 +884,10 @@ export default {
     },
     choiceEmpty () {
       return (this.option === 0 ? this.$store.state.quote.quote[this.currentPage].selected === null : this.option === 1 ? this.$store.state.coinQuote.quoteCoin[this.currentPage].selected === null : this.$store.state.chainQuote.quoteChain[this.currentPage].selected === null)
+    },
+    // TODO: smarter way to do this
+    percentDone () {
+      return ((this.currentPage + 1) / this.pagesLength) * 100;
     }
   },
   // todo: unify

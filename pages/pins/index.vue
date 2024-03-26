@@ -30,7 +30,10 @@
                 <div class="text-center">
                 <h2 class="text-3xl font-bold leading-9 text-gray-900 sm:text-4xl sm:leading-10 lg:leading-none">
                     <span class="sm:hidden">Get started today.</span>
-                    <span class="hidden sm:block">Get started with a free quote.</span>
+                    <span class="hidden sm:block">Get started with a free quote.
+                      <div class="w-full max-w-xl mx-auto h-3 -mt-2 bg-blue-600/40 rounded-sm"></div>
+                    </span>
+                    <!-- <div class="w-full max-w-xl mx-auto h-3 -mt-2 bg-blue-600/40 rounded-sm"></div> -->
                 </h2>
                 <p class="mt-4 text-xl leading-7 text-gray-500">
                     Simply describe your design and select some basic options. We'll handle the rest.
