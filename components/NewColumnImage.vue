@@ -35,6 +35,12 @@
               <rect width="404" height="384" fill="url(#de316486-4a29-4312-bdfc-fbce2132a2c1)" />
             </svg>
             <div class="relative mx-auto text-base max-w-prose lg:max-w-none">
+              <button @click="testScroll('quote-steps')" type="button" class="mb-6 md:hidden xl:inline-flex lg:absolute lg:top-[-6.5rem] relative z-10 w-full justify-center text-lg inline-flex items-center gap-x-2 rounded-md bg-orange-500/95 px-3.5 py-5 font-semibold text-white shadow-sm hover:bg-orange-500 transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600">
+                <span class="text-xl md:text-3xl">Save 30%</span> <span class="ml-2 md:ml-8"><span class="hidden md:inline-block">Click here for a</span> Free Quote</span>
+                <svg class="-mr-0.5 -mb-2 duration-500 h-7 w-7 animate-bounce" data-slot="icon" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path clip-rule="evenodd" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-.53 14.03a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V8.25a.75.75 0 0 0-1.5 0v5.69l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3Z"></path>
+                </svg>
+              </button>
               <Thumbnail />
               <figure>
                 <div class="relative pb-7/12 lg:pb-0">
@@ -75,6 +81,13 @@
   import Thumbnail from '~/components/Thumbnail'
   export default {
       name: 'TwoColumnImage',
+      methods: {
+        testScroll (elem) {
+          if (process.browser) {
+            document.getElementById(elem).scrollIntoView({ behavior: 'smooth', block: 'center' })
+          }
+        }
+      },
       props: {
           teaser: {
               type: String,
@@ -86,7 +99,7 @@
           },
           grabber: {
               type: String,
-              default: 'Custom pins are a simple but effective product. They are extremely versatile and adaptable, with a variety of uses that are only limited by your imagination.'
+              default: 'Custom lapel pins are a simple but effective product. They are extremely versatile and adaptable, with a variety of uses that are only limited by your imagination.'
           },
           img: {
               type: String,
