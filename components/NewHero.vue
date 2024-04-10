@@ -9,8 +9,7 @@
         </div>
         <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
           <h1 class="text-4xl font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">
-            <span class="block text-white sm:hidden">Get custom pins</span>
-            <span class="hidden text-white sm:block">Get customized pins</span>
+            <span class="blocktext-white">Get custom pins</span>
             <span class="block text-light-blue-200">with expert guidance.</span>
           </h1>
           <p class="max-w-lg mx-auto mt-6 text-xl text-center text-light-blue-200 sm:max-w-3xl">
