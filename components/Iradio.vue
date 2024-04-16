@@ -134,7 +134,7 @@ export default {
     return {
       prices: [
         'Free',
-        '$0.40',
+        '$1.00',
         '$0.60',
         '$4.00'
       ],
