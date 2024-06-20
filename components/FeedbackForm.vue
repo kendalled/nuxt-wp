@@ -54,7 +54,7 @@
         </p>
       </div>
       <div class="mt-12">
-        <form action="https://formspree.io/xpzydjkd" method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+        <form method="POST" class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
           <input type="hidden" name="_next" value="https://lapelpinsandcoins.com/feedbackthanks">
           <div>
             <label for="first_name" class="block text-sm font-medium leading-5 text-gray-700">First name
