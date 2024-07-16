@@ -1,5 +1,19 @@
 <template>
     <div class="hidden lg:ml-3 lg:-mr-1.5 lg:flex lg:items-center">
+      <button aria-label="Show search bar" class="flex-shrink-0 p-1 ml-3 text-gray-400 border-2 border-transparent rounded-full hover:text-gray-500 focus:outline-none focus:text-gray-500 focus:bg-gray-100" @click="showModal = true">
+        <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            aria-label="Closes phone number"
+            viewBox="0 0 24 24"
+            class="w-6 h-6"
+          >
+          <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"></path>
+        </svg>
+      </button>
       <div v-if="phoneOpen" class="hidden xl:flex">
         <button aria-label="Hide phone number" class="flex-shrink-0 p-1 ml-3 text-gray-400 border-2 border-transparent rounded-full hover:text-gray-500 focus:outline-none focus:text-gray-500 focus:bg-gray-100" @click="phoneOpen = false">
           <svg
@@ -106,6 +120,7 @@
           </div>
         </transition>
       </div>
+      <SearchPalette :open="showModal" @close="showModal = false" />
     </div>
   </template>
   
@@ -118,6 +133,7 @@
     },
     data () {
       return {
+        showModal: false,
         emailOpen: false,
         phoneOpen: true,
         open: false,
