@@ -99,7 +99,7 @@
     .scroll-parent {
       position: relative;
       width: 100% !important;
-      height: 13rem;
+      height: 11rem;
       padding: 2rem 0;
       overflow-x: hidden;
     }
@@ -116,7 +116,7 @@
     }
     
     .scroll-element img {
-      width: 8.5rem;
+      width: 7rem;
     }
     
     .primary {
