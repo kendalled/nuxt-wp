@@ -43,7 +43,7 @@
 
         <!-- Results, show/hide based on command palette state -->
         <ul v-if="resultList.length !== 0" class="max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800" id="options" role="listbox">
-          <!-- Active: "bg-indigo-600 text-white" -->
+          <!-- Active: "bg-indigo-600 text-white" TODO: fix click target -->
           <li v-for="item, ind in resultList" class="cursor-pointer select-none px-4 py-2 hover:bg-blue-600 hover:text-white group" :id="`option-${ind}`" role="option" tabindex="-1">
             <nuxt-link :to="item.slug" :title="item.title" class="w-full">
               <span class="text-gray-700 group-hover:text-blue-100">
@@ -377,6 +377,7 @@ export default {
       if (newValue === false) {
         this.showModal = false
         this.$emit('close')
+        this.search = ''
       }
     },
     // TODO: Handle better

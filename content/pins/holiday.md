@@ -1,7 +1,7 @@
 ---
-title: Holiday Pins
-description: Rachel
-headline1: Custom Holiday Pins
+title: Holiday Lapel Pins - Festive Custom Pins for Every Occasion | Lapel Pins & Coins
+description: Spread the holiday cheer with custom holiday lapel pins from Lapel Pins & Coins. Perfect for Christmas, Halloween, Easter, and more. Create your festive pin today!
+headline1: Custom Holiday Lapel Pins
 subHeading: Pins are a great way to celebrate any of the countless holidays throughout the year. Whether you’re looking for an inexpensive gift or an effective motivator, pins can meet all of your needs.
 
 teaser: since 1999
@@ -21,8 +21,8 @@ para3: Most custom pin designs can be made into soft enamel pins, but this proce
 pciHeadline: Why Choose Custom Holiday Pins?
 pciPara1: The Holidays are a wonderful time to enjoy with your friends, family, and others in your life. They can be a time to come together and share with others, and a comforting time in many people’s lives. No matter what you celebrate or who you celebrate it with, it is a time for sharing, unity, and love. Pins can make a great and inexpensive present for all your loved ones. They are easily customizable and can be a meaningful and timeless keepsake for everyone in your life.
 pciPara2: There are countless smaller holidays every day of the year as well. Days like national pencil day, or month long celebrations like literacy month, while not well-known, can be a good excuse to motivate people. For example, literacy month can be used by teachers to encourage their students to read more often. Pins can be used as awards as well as gifts, and further inspire these students.  
-pciImg: https://a.storyblok.com/f/78493/303x350/66c32b5433/holiday.png
-pciAlt: Custom christmas pin
+pciImg: /interior/holiday.png
+pciAlt: Customized christmas pin
 ---
 
 # Nuxt Content
