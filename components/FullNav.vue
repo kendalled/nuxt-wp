@@ -190,8 +190,8 @@ export default {
               new: false
             },
             {
-              title: 'Rainbow Pins',
-              ref: '/pins/rainbow',
+              title: 'Easter Pins',
+              ref: '/pins/easter',
               new: true
             },
             {
