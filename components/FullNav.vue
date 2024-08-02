@@ -190,8 +190,8 @@ export default {
               new: false
             },
             {
-              title: 'Easter Pins',
-              ref: '/pins/easter',
+              title: 'Rainbow Pins',
+              ref: '/pins/rainbow',
               new: true
             },
             {
@@ -200,8 +200,8 @@ export default {
               new: false
             },
             {
-              title: 'Rainbow Pins',
-              ref: '/pins/rainbow',
+              title: 'Holiday Pins',
+              ref: '/pins/holiday',
               new: false
             },
             {
