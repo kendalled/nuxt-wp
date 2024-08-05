@@ -150,7 +150,7 @@ export default {
             },
             {
               title: 'Gaming Pins',
-              slug: '/pins/video-game',
+              slug: '/pins/gaming',
               category: 'Pins'
             },
             {

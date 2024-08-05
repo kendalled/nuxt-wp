@@ -149,7 +149,7 @@
             },
             {
               title: 'Gaming Pins',
-              ref: '/pins/video-game'
+              ref: '/pins/gaming'
             }
           ]
         }
