@@ -52,10 +52,10 @@
         default: 'categories'
       }
     },
-    // TODO: make expanded: false without messing up render
+    // TODO: test expanded: false without messing up render
     data () {
       return {
-        expanded: true
+        expanded: false
       }
     },
     computed: {

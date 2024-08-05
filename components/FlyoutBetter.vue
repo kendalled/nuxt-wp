@@ -17,7 +17,7 @@
           <nav class="grid px-4 py-8 bg-white gap-y-10 sm:grid-cols-2 sm:gap-x-8 sm:py-12 sm:px-6 lg:px-8 xl:pr-12">
             <ScrollableLinks :links="links2" />
             <ScrollableLinks v-show="links.length > 5" :title="category + ' types'" :links="links" />
-            <div v-show="links.length < 5"class="space-y-5">
+            <div v-show="links.length < 5" class="space-y-5">
               <h3 class="text-sm font-medium leading-5 tracking-wide text-gray-500 uppercase">
                 {{ category }} types
               </h3>
