@@ -1,5 +1,6 @@
 <template>
-    <div class="relative w-full mx-auto rounded-lg shadow-lg lg:-mt-8 text-gray-50 lg:w-full">
+  <!-- was: lg: -mt-8 -->
+    <div class="relative w-full mx-auto rounded-lg shadow-lg lg:-mt-0 text-gray-50 lg:w-full">
       <button aria-label="Show company video in modal" class="relative block w-full overflow-hidden transition-shadow duration-100 rounded-lg bg-gray-50 focus:outline-none focus:ring" @click.prevent="showModal = true">
         <img src="/withPin.jpg" class="object-cover w-full opacity-100 sm:h-80" alt="Promotional video for custom lapel pins and challenge coins.">
         <!-- <img class="object-cover w-full" src="~/static/thumbnail3.png" alt="Promotional video for custom lapel pins and challenge coins." data-not-lazy> -->

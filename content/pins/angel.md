@@ -13,7 +13,7 @@ para2: There are several different kinds of printing processes and it can be ove
 ulHeadline: Angel pins are great for
 ex1: Churches
 ex2: Vocational Bible Schools
-ex3: Outdoorsmen 
+ex3: Fundraising campaigns
 headline3: What production method should I choose?
 para3: Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
 
