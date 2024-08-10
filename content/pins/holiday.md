@@ -6,8 +6,8 @@ subHeading: Pins are a great way to celebrate any of the countless holidays thro
 
 teaser: since 1999
 headline2: Get in the holiday spirit with pins.
-grabber: Pins are a great way to celebrate any of the countless holidays throughout the year.
-img: https://images.unsplash.com/photo-1544546491-1ecfecfcc75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
+grabber: Customized pins are a perfect gift to commemorate the holidays. Whether it's for extended family or just a stocking stuffer, look no further than pins.
+img: /interior/holiday-pins-silver.png
 imgAlt: Family around a christmas tree.
 para1: Our pins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.
 para2: There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.
@@ -30,7 +30,7 @@ pciAlt: Customized christmas pin
 This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
 
 Try to navigate to [/quote](/quote). These 2 pages are rendered by the `pages/[...slug].vue` component.
-
+https://images.unsplash.com/photo-1544546491-1ecfecfcc75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
 ---
 
 Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.

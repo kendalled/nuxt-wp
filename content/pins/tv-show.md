@@ -4,7 +4,7 @@ description: Celebrate your favorite TV shows with custom lapel pins from Lapel 
 headline1: Custom TV Show Lapel Pins
 subHeading: Everyone has a favorite animal. Whether it's your pet or your favorite animal at the zoo, you can make a custom pin that shows why you love it.
 teaser: since 1999
-headline2: Celebrate nature with animal pins.
+headline2: Represent your favorite TV show with ease.
 grabber: Custom pins are a simple but effective product. They are extremely versatile and adaptable, with a variety of uses that are only limited by your imagination.
 img: https://images.unsplash.com/photo-1592406759051-0d700b1d2745?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
 imgAlt: Animal in nature.

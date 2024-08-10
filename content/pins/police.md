@@ -7,7 +7,7 @@ subHeading: Law enforcement is an essential part of the way our society runs. Pi
 teaser: since 1999
 headline2: Represent your station with pride.
 grabber: Whether you're trying to honor a family member who serves or hand out a memento to your station, we can do it all.
-img: https://images.unsplash.com/photo-1499010001488-d58fa63bdc05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
+img: /interior/public-servant-pin.png
 imgAlt: Police officer on duty.
 para1: Whether you’re holding an event for law enforcement, want to show pride in your career choice, or just want to show solidarity with your local officers, pins can be the best keepsake.
 para2: There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.
@@ -32,5 +32,5 @@ This page corresponds to the `/` route of your website. You can delete it or cre
 Try to navigate to [/quote](/quote). These 2 pages are rendered by the `pages/[...slug].vue` component.
 
 ---
-
+https://images.unsplash.com/photo-1499010001488-d58fa63bdc05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
 Look at the [Content documentation](https://content.nuxtjs.org/) to learn more.
