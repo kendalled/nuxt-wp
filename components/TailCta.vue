@@ -1,7 +1,7 @@
 <template>
   <div class="relative bg-gray-800">
-    <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
-      <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1563910463363-21a8b6c9d72f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80&auto=format&fit=crop&w=1350&q=80&auto=format&fit=crop&w=1920&q=60&blend=6875F5&sat=-100&blend-mode=multiply" alt="Support team">
+    <div class="h-56 bg-blue-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+      <img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1563910463363-21a8b6c9d72f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80&auto=format&fit=crop&w=1350&q=80&auto=format&fit=crop&w=1920&q=60&blend=2563EB&sat=-100&blend-mode=multiply" alt="Support team">
     </div>
     <div class="relative px-4 py-12 mx-auto max-w-screen-xl sm:px-6 lg:px-8 lg:py-16">
       <div class="md:ml-auto md:w-1/2 md:pl-10">
