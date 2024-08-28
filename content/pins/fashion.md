@@ -2,26 +2,26 @@
 title: Fashion Lapel Pins - Custom Trendy and Chic Pins | Lapel Pins & Coins
 description: Enhance your style with custom fashion lapel pins from Lapel Pins & Coins. Ideal for adding a touch of flair to outfits and showcasing personal style. Design your fashionable pin today!
 headline1: Custom Fashion Lapel Pins
-subHeading: Everyone has a favorite animal. Whether it's your pet or your favorite animal at the zoo, you can make a custom pin that shows why you love it.
+subHeading: Your wardrobe should be a reflection of your personality, and there’s no easier way to do this than with a custom pin.
 teaser: since 1999
-headline2: Celebrate nature with animal pins.
+headline2: Turn heads with a fashionable pin.
 grabber: Custom pins are a simple but effective product. They are extremely versatile and adaptable, with a variety of uses that are only limited by your imagination.
 img: https://images.unsplash.com/photo-1592406759051-0d700b1d2745?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.565&fp-y=.55&w=1184&h=1376&q=80
 imgAlt: Animal in nature.
 para1: Our pins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.
 para2: There are several different kinds of printing processes and it can be overwhelming to do the research and know what best fits your design. That’s why we work with you every step of the way to ensure you’ll love the final product.
-ulHeadline: Animal pins are great for
-ex1: Zoos and clubs
-ex2: Farmers
-ex3: Museums
+ulHeadline: Fashion pins are great for
+ex1: Pageants
+ex2: Clothing brands
+ex3: Fashion shows
 headline3: What production method should I choose?
 para3: Most custom pin designs can be made into soft enamel pins, but this process often works best with designs that have minimal lines and clearly defined areas of color. These details are important because the colored areas sit slightly recessed, below the metal separations. If you’re not sure which type of pin to choose, don’t worry! Just ask, and we can provide suggestions from our experienced team.
 
-pciHeadline: Why Choose Animal Pins?
-pciPara1: Pins are small and practical, so they’re perfect for gifts, keepsakes, and more! Any animal you can think of can be turned into a pin. You can also make paw pins, feather pins, or pins that symbolize your favorite animal.
-pciPara2: These animal pins are the perfect giveaway item to raise awareness for animal endangerment. Whether you’re hosting an event or canvassing for animal rights, they give you a fun and cool way to reach out to people! Physical keepsakes are a great way to get people to support your cause and walk away with something to show for it. There are an endless amount of uses for pins, so let your imagination run wild!
-pciImg: /interior/animal-pin.png
-pciAlt: A custom animal pin.
+pciHeadline: Why Choose Fashion Pins?
+pciPara1: Nowadays, trends are constantly changing. It can be hard to keep up. One thing that never changes is who you are.There are many ways you can use pins as a fashion statement. Pins can be as small and practical or big and glamorous as you want them to be. No matter the design though, they make the perfect accentuating piece to any outfit.
+pciPara2: Take your wardrobe a step up by adding a pin on your lapel, the collar of your jacket, at your waist, or even just on your bag! There’s endless ways to wear your pins, so get creative! Whether you want to glam up your look or keep it casual and fun, pins are a great way to show your personality and make a statement.
+pciImg: /interior/fashion-pin.png
+pciAlt: A customized fashionable pin.
 ---
 
 # Nuxt Content
