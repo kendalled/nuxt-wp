@@ -82,7 +82,7 @@ export default {
       bigImg: 'https://images.unsplash.com/photo-1518544801976-3e159e50e5bb?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.5&fp-y=.35&w=1184&h=1376&q=80',
       bigImg2: 'https://images.unsplash.com/photo-1552057426-c4a71681057d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&crop=focalpoint&fp-x=0.3&fp-y=.35&w=1184&h=1376&q=80',
       twoColGrabber: 'Our challenge coins are struck from the highest quality metal to ensure a beautiful, classy, and durable product.',
-      headline: 'Custom challenge coins designed professionally in minutes.',
+      headline: 'Custom challenge coins designed for you in minutes.',
       subheading: 'With over 20 years of experience, we make custom challenge coins more accessible than ever. Our ordering process includes free artwork, professional designs, and unlimited revisions. Get started today.',
       choices: [
         {
