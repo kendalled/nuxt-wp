@@ -116,7 +116,7 @@
     }
     
     .scroll-element img {
-      width: 7rem;
+      width: 8rem;
     }
     
     .primary {
