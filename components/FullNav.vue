@@ -8,7 +8,7 @@
             <div class="flex items-center h-full" @click="closeAll">
               <nuxt-link title="Lapel Pins and Coins - Home" to="/" class="flex items-center flex-shrink-0 rounded-md focus:outline-none">
                 <span class="sr-only">Home</span>
-                <img data-not-lazy class="block w-auto h-7 lg:hidden" src="/lapel.svg" alt="">
+                <img data-not-lazy class="block w-auto h-5 lg:hidden" src="/lapel.svg" alt="">
                 <img data-not-lazy class="hidden w-auto mt-0.5 lg:block h-7" src="/lapel.svg" alt="">
               </nuxt-link>
             </div>
@@ -40,7 +40,10 @@
               Free Quote
             </nuxt-link>
           </div>
-          <div class="flex items-center lg:hidden">
+          <div class="flex items-center space-x-2 lg:hidden">
+            <nuxt-link to="/quote" class="inline-flex items-center justify-center px-3 py-1.5 text-xs font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors">
+              Free Quote
+            </nuxt-link>
             <button aria-label="Menu Toggle" class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500" @click="mobileOpen = !mobileOpen">
               <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path
