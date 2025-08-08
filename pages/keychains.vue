@@ -103,9 +103,19 @@
     },
     head () {
       return {
-        title: 'Custom Keychains | Free Shipping | Lapel Pins & Coins',
+        title: 'Custom Keychains | Personalized Enamel Keychains | Free Quote & Design',
         meta: [
-          { hid: 'description', name: 'description', content: 'Custom designed keychains in no time. Decades of experience in production. Take a look at our designs & get your free quote today!' }
+          { hid: 'description', name: 'description', content: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized keychains. Free artwork, unlimited revisions. Perfect for promotions and gifts.' },
+          { name: 'keywords', content: 'custom keychains, personalized keychains, enamel keychains, promotional keychains, custom keychain maker' },
+          { property: 'og:title', content: 'Custom Keychains | Personalized Enamel Keychains | Free Quote & Design' },
+          { property: 'og:description', content: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized keychains. Free artwork, unlimited revisions.' },
+          { property: 'og:image', content: 'https://lapelpinsandcoins.com/homeChains.png' },
+          { property: 'og:url', content: 'https://lapelpinsandcoins.com/keychains' },
+          { property: 'og:type', content: 'website' },
+          { name: 'twitter:card', content: 'summary_large_image' },
+          { name: 'twitter:title', content: 'Custom Keychains | Personalized Enamel Keychains | Free Quote & Design' },
+          { name: 'twitter:description', content: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized keychains. Free artwork, unlimited revisions.' },
+          { name: 'twitter:image', content: 'https://lapelpinsandcoins.com/homeChains.png' }
         ],
         link: [
           { rel: 'canonical', href: 'https://lapelpinsandcoins.com/keychains' }

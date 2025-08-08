@@ -1,6 +1,6 @@
 ---
-title: Custom Police Challenge Coins
-description: Rachel
+title: Custom Police Challenge Coins  
+description: Professional police challenge coins for law enforcement recognition and awards. High-quality commemor ative coins honoring police officers and departments.
 headline1: Custom Police Challenge Coins
 subHeading: Our nation’s police force is made up of incredible men and women who work around the clock to keep the peace in our local communities. Reward your precinct with custom challenge coins!
 teaser: since 1999

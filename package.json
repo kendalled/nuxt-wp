@@ -25,6 +25,7 @@
     "click-outside-vue3": "^4.0.1",
     "nuxt-gtag": "^1.1.2",
     "nuxt3-vuex-module": "^1.0.12",
+    "sharp": "^0.34.3",
     "vuex": "^4.0.2"
   }
 }

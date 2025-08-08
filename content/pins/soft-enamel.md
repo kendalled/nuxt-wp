@@ -1,7 +1,7 @@
 ---
 title: Soft Enamel Pins
-description: Rachel
-headline1: Soft enamel pins designed by professional artists.
+description: Premium soft enamel pins with vibrant colors and raised metal finish. Professional manufacturing with same-day quotes. Perfect for clubs, events, and promotional campaigns.
+headline1: Custom soft enamel pins designed by professional artists.
 subHeading: With over 20 years of experience, we make soft enamel pins more accessible than ever. Our ordering process includes free artwork and unlimited revisions. Get started in minutes with a free quote.
 
 teaser: Most popular
