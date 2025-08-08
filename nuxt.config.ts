@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     preset: 'netlify'
   },
   modules: [
-      '@nuxt/devtools',
+      // '@nuxt/devtools', // Disable devtools in production
       '@nuxtjs/tailwindcss',
       'nuxt3-vuex-module',
       '@nuxt/image',
