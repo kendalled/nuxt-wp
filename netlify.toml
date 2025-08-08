@@ -1,0 +1,5 @@
+[build]
+  node_version = "20.19.0"
+
+[build.environment]
+  NODE_VERSION = "20.19.0"
