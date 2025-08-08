@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".output/public"
+  publish = "dist"
   node_version = "22.12.0"
 
 [build.environment]
