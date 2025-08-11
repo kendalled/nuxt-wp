@@ -502,8 +502,12 @@ export default {
       }
     },
     // emits data to quoteWrapper
-    emitData (newVal) {
-      this.$emit('changed', newVal)
+    emitData: {
+      deep: true,
+      handler (newVal) {
+        console.log('TwoColForm emitData changed:', newVal)
+        this.$emit('changed', newVal)
+      }
     },
     fullName (newVal) {
       this.emitData.name = newVal

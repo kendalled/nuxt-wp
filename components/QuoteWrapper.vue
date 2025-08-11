@@ -194,10 +194,12 @@ export default {
   methods: {
     scheduleEstimate () {
       if (this.option !== 0) return
+      console.log('scheduleEstimate called, twoColData:', this.twoColData)
       if (this._estimateTimer) clearTimeout(this._estimateTimer)
       this._estimateTimer = setTimeout(() => {
         try {
           const est = computePinEstimate(this.$store.state, this.twoColData)
+          console.log('New estimate computed:', est)
           this.estimate = est
         } catch (e) {
           console.error('Estimate computation failed:', e)
@@ -205,6 +207,7 @@ export default {
       }, 150)
     },
     updateData (val) {
+      console.log('QuoteWrapper updateData received:', val)
       this.twoColData = val
       this.scheduleEstimate()
     },

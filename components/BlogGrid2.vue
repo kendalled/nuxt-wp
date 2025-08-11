@@ -123,16 +123,35 @@ export default {
     return {
       loaded: false,
       selected: 1,
-      blogPosts: []
-    }
-  },
-  async fetch () {
-    try {
-      this.blogPosts = await $content('blog')
-        .sortBy('date', 'desc')
-        .fetch()
-    } catch (error) {
-      console.error('Error fetching blog posts:', error)
+      blogPosts: [
+        {
+          title: 'The Fascinating History of Disney Pins',
+          description: 'Explore the rich history of Disney pin collecting from its humble beginnings to today\'s vibrant trading community.',
+          image: '/pinblog2.jpg',
+          author: 'Dani Bucaro',
+          date: '2024-03-15',
+          readTime: '6 min read',
+          slug: 'disney-pins'
+        },
+        {
+          title: 'The Complete Guide to Custom Pin Design',
+          description: 'Everything you need to know about creating stunning custom pins, from concept to finished product.',
+          image: '/pinblog1.jpg',
+          author: 'Dani Bucaro',
+          date: '2024-03-10',
+          readTime: '8 min read',
+          slug: 'pin-design-guide'
+        },
+        {
+          title: 'Challenge Coins: A Deep Dive into Military Tradition',
+          description: 'Discover the fascinating history and traditions behind military challenge coins and their evolution into civilian recognition symbols.',
+          image: '/coinblog1.jpg',
+          author: 'Dani Bucaro',
+          date: '2024-03-05',
+          readTime: '7 min read',
+          slug: 'challenge-coins'
+        }
+      ]
     }
   },
   computed: {

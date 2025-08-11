@@ -14,7 +14,6 @@ export default defineNuxtConfig({
       '@nuxtjs/tailwindcss',
       'nuxt3-vuex-module',
       '@nuxt/image',
-      '@nuxt/content',
       'nuxt-gtag',
       ['@nuxtjs/google-fonts', {
         families: {
@@ -32,9 +31,6 @@ export default defineNuxtConfig({
     '/lapelpins': { redirect: { to: '/pins', statusCode: 301 } },
     '/challenge-coins': { redirect: { to: '/coins', statusCode: 301 } },
     '/challengecoins': { redirect: { to: '/coins', statusCode: 301 } },
-  },
-  content: {
-    // ... options
   },
   app: {
     head: {  
