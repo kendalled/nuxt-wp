@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "currency": "USD",
+  "plating": {
+    "pl1": { "label": "Polished Gold", "perUnitCents": 0 },
+    "pl2": { "label": "Polished Silver", "perUnitCents": 0 },
+    "pl3": { "label": "Polished Copper", "perUnitCents": 0 },
+    "pl4": { "label": "Polished Nickel", "perUnitCents": 0 },
+    "pl5": { "label": "Black Metal", "perUnitCents": 0 },
+    "pl6": { "label": "Antique Gold", "perUnitCents": 60 },
+    "pl7": { "label": "Antique Silver", "perUnitCents": 35 },
+    "pl8": { "label": "Antique Copper", "perUnitCents": 30 },
+    "pl9": {
+      "label": "Dual Plated",
+      "pricingModel": "per_side_per_unit",
+      "perSideCents": 70,
+      "defaultSideCount": 1
+    },
+    "pl10": { "label": "Color Coated", "perUnitCents": 0 }
+  },
+  "backing": {
+    "bk0": { "label": "Butterfly Clutch", "perUnitCents": 0 },
+    "bk1": { "label": "Black Rubber", "perUnitCents": 0 },
+    "bk2": { "label": "Yellow Rubber", "perUnitCents": 0 },
+    "bk3": { "label": "Jewelry Clutch", "perUnitCents": 30 },
+    "bk4": { "label": "Deluxe Clutch", "perUnitCents": 25 }
+  },
+  "packaging": {
+    "pk0": { "label": "Poly Bag", "perUnitCents": 0 },
+    "pk1": { "label": "Acrylic Case", "perUnitCents": 100 },
+    "pk2": { "label": "Velvet Bag", "perUnitCents": 60 },
+    "pk3": { "label": "Velvet Case", "perUnitCents": 400 }
+  },
+  "notes": [
+    "All backings are free except Jewelry Clutch (+$0.30/unit) and Deluxe Clutch (+$0.25/unit).",
+    "All platings are free except Antique Gold (+$0.60/unit), Antique Copper (+$0.30/unit), Antique Silver (+$0.35/unit).",
+    "Dual Plated surcharge is $0.70 per side per unit (default assumes 1 side for pins).",
+    "Packaging surcharges (per unit): Acrylic Case $1.00, Velvet Bag $0.60, Velvet Case $4.00; Poly Bag free."
+  ]
+}
+
+

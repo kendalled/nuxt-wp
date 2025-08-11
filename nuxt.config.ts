@@ -3,6 +3,12 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'netlify'
   },
+  runtimeConfig: {
+    public: {
+      // Toggle to gradually roll out the estimator UI
+      showEstimator: process.env.NUXT_PUBLIC_SHOW_ESTIMATOR ?? true
+    }
+  },
   modules: [
       // '@nuxt/devtools', // Disable devtools in production
       '@nuxtjs/tailwindcss',

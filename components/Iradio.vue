@@ -8,13 +8,13 @@
         <label :for="choice.name + i.toString()" class="text-sm text-center text-gray-600 cursor-pointer focus:ring-teal group">
           <input
             :id="choice.name + i.toString()"
-            :value="choice.name"
+            :value="choice.sid || choice.name"
             :name="'test' + title"
-            :checked="quote[option].selected === choice.name"
+            :checked="quote[option].selected === (choice.sid || choice.name)"
             type="radio"
             class="opacity-0"
             :aria-labelledby="getChoiceAria(choice.name)"
-            @click="emitChoice(title, choice.name)"
+            @click="emitChoice(title, choice.sid || choice.name)"
           >
           <iradio-img :choice="choice" :small="small" />
           <span :id="getChoiceAria(choice.name)" class="flex justify-center w-full h-6 leading-snug transition-colors duration-150 ease-in-out group-hover:text-blue-500">{{ choice.name }}

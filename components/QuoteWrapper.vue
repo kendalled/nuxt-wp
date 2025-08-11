@@ -48,6 +48,8 @@
             @scroll="testScroll"
             @need="errorNotifTwo = true"
           />
+          <EstimateSidebar v-if="estimatorEnabled" :estimate="estimate" />
+          <EstimateBottomDock v-if="estimatorEnabled" :estimate="estimate" />
           <!-- /End replace -->
         </form>
       </main>
@@ -63,6 +65,9 @@ import HiddenInputs from '~/components/HiddenInputs'
 import FinalQuote from '~/components/FinalQuote'
 import TwoColForm from '~/components/TwoColForm'
 import QuoteChoice from '~/components/QuoteChoice'
+import EstimateSidebar from '~/components/EstimateSidebar'
+import EstimateBottomDock from '~/components/EstimateBottomDock'
+import { computePinEstimate } from '~/utils/pricing/pins'
 export default {
   name: 'QuoteWrapper',
   components: {
@@ -70,7 +75,9 @@ export default {
     HiddenInputs,
     FinalQuote,
     TwoColForm,
-    QuoteChoice
+    QuoteChoice,
+    EstimateSidebar,
+    EstimateBottomDock
   },
   data () {
     return {
@@ -81,7 +88,7 @@ export default {
       currentPage: 0,
       dropOpen: false,
       twoColData: {
-        quantity: '50',
+        quantity: '100',
         // state: 'Select a State',
         country: 'US',
         description: '',
@@ -91,7 +98,9 @@ export default {
         phone: '',
         name: ''
         // address: ''
-      }
+      },
+      estimate: { perUnit: null, total: null, breakdown: {}, confidence: 'unknown', notes: [] },
+      _estimateTimer: null
     }
   },
   computed: {
@@ -154,6 +163,9 @@ export default {
     doneFirst () {
       const status = (this.product === 'Lapel Pins' ? 0 : this.product === 'Challenge Coins' ? 1 : 2)
       return (status === 0 ? this.pinDone : status === 1 ? this.coinDone : this.chainDone)
+    },
+    estimatorEnabled () {
+      return this.$config?.public?.showEstimator !== false && this.option === 0
     }
   },
   watch: {
@@ -166,11 +178,35 @@ export default {
           behavior: 'smooth'
         })
       }
+    },
+    '$store.state.quote.quote': {
+      deep: true,
+      handler () {
+        this.scheduleEstimate()
+      }
+    },
+    'twoColData.quantity': {
+      handler () {
+        this.scheduleEstimate()
+      }
     }
   },
   methods: {
+    scheduleEstimate () {
+      if (this.option !== 0) return
+      if (this._estimateTimer) clearTimeout(this._estimateTimer)
+      this._estimateTimer = setTimeout(() => {
+        try {
+          const est = computePinEstimate(this.$store.state, this.twoColData)
+          this.estimate = est
+        } catch (e) {
+          console.error('Estimate computation failed:', e)
+        }
+      }, 150)
+    },
     updateData (val) {
       this.twoColData = val
+      this.scheduleEstimate()
     },
     closeNotif () {
       this.errorNotif = false
@@ -206,15 +242,21 @@ export default {
     updatePage (val) {
       this.currentPage = val
       this.errorNotif = false
+      this.scheduleEstimate()
     },
     selectProduct (val) {
       this.$store.commit('prefs/resetPage')
+      this.scheduleEstimate()
     },
     testScroll (elem) {
       if (process.browser) {
         document.getElementById(elem).scrollIntoView({ behavior: 'smooth', block: 'center' })
       }
     }
+  }
+  ,
+  mounted () {
+    this.scheduleEstimate()
   }
 }
 </script>
