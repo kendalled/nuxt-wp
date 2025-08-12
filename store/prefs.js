@@ -54,10 +54,3 @@ export const getters = {
     return state.prefs.choice
   }
 }
-
-export default {
-  state,
-  mutations,
-  actions,
-  getters
-}

@@ -1,6 +1,6 @@
 ---
 title: Hard Enamel Pins
-description: Premium hard enamel pins with smooth, polished finish and professional quality. Durable construction perfect for formal events, corporate branding, and special occasions.
+description: Rachel
 headline1: Hard enamel pins designed by professional in-house artists.
 subHeading: Hard Enamel lapel pins are sleek, accurate, and timeless. They provide a smooth glassy finish and the highest quality look for your design. They offer incredible detail, so your design won't suffer!
 

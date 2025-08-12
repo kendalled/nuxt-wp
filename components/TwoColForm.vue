@@ -502,11 +502,8 @@ export default {
       }
     },
     // emits data to quoteWrapper
-    emitData: {
-      deep: true,
-      handler (newVal) {
-        this.$emit('changed', newVal)
-      }
+    emitData (newVal) {
+      this.$emit('changed', newVal)
     },
     fullName (newVal) {
       this.emitData.name = newVal

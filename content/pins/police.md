@@ -1,6 +1,6 @@
 ---
 title: Police Pins
-description: Custom police lapel pins for law enforcement officers and supporters. Thin blue line pins, badge designs, and station pins for events and recognition.
+description: Rachel
 headline1: Custom Police Pins
 subHeading: Law enforcement is an essential part of the way our society runs. Pins with meaningful police symbols are a great way to show your support for officers everywhere.
 

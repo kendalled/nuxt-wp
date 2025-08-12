@@ -1,18 +1,8 @@
 <template>
     <div>
         <Head>
-          <Title>Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design</Title>
-          <Meta name="description" content="Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions. Starting at 50 pcs." />
-          <Meta name="keywords" content="custom lapel pins, enamel pins, soft enamel pins, hard enamel pins, die struck pins, custom pins, lapel pin maker" />
-          <Meta property="og:title" content="Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design" />
-          <Meta property="og:description" content="Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions." />
-          <Meta property="og:image" content="https://lapelpinsandcoins.com/homePins.png" />
-          <Meta property="og:url" content="https://lapelpinsandcoins.com/pins" />
-          <Meta property="og:type" content="website" />
-          <Meta name="twitter:card" content="summary_large_image" />
-          <Meta name="twitter:title" content="Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design" />
-          <Meta name="twitter:description" content="Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions." />
-          <Meta name="twitter:image" content="https://lapelpinsandcoins.com/homePins.png" />
+          <Title>Premium Custom Lapel Pins | Lapel Pins & Coins | Est. 1999 | Same-Day Service</Title>
+          <Meta name="description" content="Elevate your style with exquisite custom lapel pins from Lapel Pins & Coins, a trusted industry leader since 1999. Experience unparalleled craftsmanship and same-day service. Create personalized lapel pins that leave a lasting impression. Order now!" />
         </Head>
         <div class="w-auto h-auto bg-gray-50">
         <InteriorHeader :new-layout="true" :headline="headline" :subheading="subheading" :choices="choices" />
@@ -150,39 +140,43 @@
         '@type': 'Product',
         name: 'Custom Lapel Pins',
         image: [
-          'https://lapelpinsandcoins.com/homePins.png',
-          'https://lapelpinsandcoins.com/quote/SoftEnamel-sample.png',
-          'https://lapelpinsandcoins.com/quote/HardEnamel-sample.png'
+          'https://lapelpinsandcoins.com/homePins.png'
         ],
-        description: 'Professional custom lapel pins crafted with 20+ years experience. Soft enamel, hard enamel, and die struck options available. Starting at 50 pcs with same-day quotes.',
-        category: 'Custom Lapel Pins',
+        description: 'Our customized lapel pins are struck from the highest quality metals and plated in authentic gold or silver. Starting at 50 pcs, our pricing can\'t be beat.',
+        sku: 'LA1234',
+        mpn: '925872',
         brand: {
           '@type': 'Brand',
           name: 'Lapel Pins & Coins'
         },
-        manufacturer: {
-          '@type': 'Organization',
-          name: 'Lapel Pins & Coins',
-          url: 'https://lapelpinsandcoins.com'
+        review: {
+          '@type': 'Review',
+          reviewRating: {
+            '@type': 'Rating',
+            ratingValue: '5.0',
+            bestRating: '5.0'
+          },
+          author: {
+            '@type': 'Person',
+            name: 'Judith Black'
+          }
         },
         aggregateRating: {
           '@type': 'AggregateRating',
           ratingValue: '5.0',
-          reviewCount: '89',
-          bestRating: '5.0'
+          reviewCount: '14'
         },
         offers: {
-          '@type': 'AggregateOffer',
-          lowPrice: '2.12',
-          highPrice: '8.50',
+          '@type': 'Offer',
+          url: 'https://lapelpinsandcoins.com/pins',
           priceCurrency: 'USD',
-          availability: 'https://schema.org/InStock',
+          price: '2.12',
+          priceValidUntil: '2020-11-20',
           itemCondition: 'https://schema.org/NewCondition',
+          availability: 'https://schema.org/InStock',
           seller: {
             '@type': 'Organization',
-            name: 'Lapel Pins & Coins',
-            telephone: '+1-844-395-4464',
-            url: 'https://lapelpinsandcoins.com'
+            name: 'Lapel Pins & Coins'
           }
         }
       }

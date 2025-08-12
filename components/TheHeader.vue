@@ -1,23 +1,25 @@
 <template>
-  <div class="relative h-64 w-full overflow-hidden">
-    <!-- Background Image -->
-    <div 
-      class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-      :style="{ backgroundImage: `url(${backgroundImage})` }"
-    />
-    <!-- Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/70" />
-  </div>
-</template>
-
-<script>
-export default {
-  name: 'TheHeader',
-  props: {
-    backgroundImage: {
-      type: String,
-      default: '/pinblog1.jpg'
-    }
-  }
-}
-</script>
+    <header :class="{ 'bg-gray-900 text-white': darkMode, 'bg-white text-gray-800': !darkMode }" class="flex items-center justify-between p-4">
+    <nuxt-link to="/" class="text-2xl font-semibold">NuxtPress Demo</nuxt-link>
+      <button @click="toggleDarkMode" :class="{ 'bg-gray-800 text-white rounded-md shadow-sm': darkMode, 'bg-gray-200 text-gray-800 rounded-md shadow-sm': !darkMode }" class="shadow-xs text-sm px-3 py-2 transition-colors duration-300 ease-in-out hover:bg-gray-700 hover:text-white font-semibold">
+        Toggle Dark Mode
+      </button>
+    </header>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        darkMode: true, // Set dark mode to true by default
+      };
+    },
+    methods: {
+      toggleDarkMode() {
+        this.darkMode = !this.darkMode;
+        document.body.classList.toggle('dark', this.darkMode);
+      },
+    },
+  };
+  </script>
+  

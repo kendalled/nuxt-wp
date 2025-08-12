@@ -1,6 +1,6 @@
 ---
 title: Military Challenge Coins
-description: Authentic military challenge coins honoring service members. Professional quality with antique and polished finishes. Perfect for awards, recognition, and commemorating service.
+description: Rachel
 headline1: Custom Military Challenge Coins
 subHeading: We value the courage of the brave men and women that put their lives on the line to protect our country. Custom challenge coins are a great way to honor the veterans in your community.
 teaser: since 1999

@@ -1,6 +1,6 @@
 ---
 title: Fire Department Challenge Coins
-description: Custom fire department challenge coins honoring firefighters and first responders. Maltese cross designs, station badges, and commemorative coins for fire departments.
+description: Rachel
 headline1: Fire Department Challenge Coins
 subHeading: By partnering with fire chiefs across the United States, we have produced countless high quality customized challenge coins that represent each station's unique values.
 teaser: since 1999
