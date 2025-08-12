@@ -1,22 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  nitro: {
-    preset: 'netlify',
-    prerender: {
-      routes: ['/quote']
-    }
-  },
-  runtimeConfig: {
-    public: {
-      // Toggle to gradually roll out the estimator UI
-      showEstimator: process.env.NUXT_PUBLIC_SHOW_ESTIMATOR ?? true
-    }
-  },
   modules: [
-      // '@nuxt/devtools', // Disable devtools in production
+      '@nuxt/devtools',
       '@nuxtjs/tailwindcss',
       'nuxt3-vuex-module',
       '@nuxt/image',
+      '@nuxt/content',
       'nuxt-gtag',
       ['@nuxtjs/google-fonts', {
         families: {
@@ -34,7 +23,9 @@ export default defineNuxtConfig({
     '/lapelpins': { redirect: { to: '/pins', statusCode: 301 } },
     '/challenge-coins': { redirect: { to: '/coins', statusCode: 301 } },
     '/challengecoins': { redirect: { to: '/coins', statusCode: 301 } },
-    '/quote': { prerender: true }
+  },
+  content: {
+    // ... options
   },
   app: {
     head: {  
