@@ -505,7 +505,6 @@ export default {
     emitData: {
       deep: true,
       handler (newVal) {
-        console.log('TwoColForm emitData changed:', newVal)
         this.$emit('changed', newVal)
       }
     },

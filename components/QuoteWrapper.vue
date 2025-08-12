@@ -28,6 +28,18 @@
           <!-- <input type="hidden" name="_next" value="https://lapelpinsandcoins.com/thanks"> -->
           <input id="product" v-model="product" type="hidden" name="Product">
           <HiddenInputs :product="product" />
+          <input
+            v-if="isPin"
+            type="hidden"
+            name="Estimated Per Unit"
+            :value="estimate && estimate.perUnit != null ? estimate.perUnit : ''"
+          >
+          <input
+            v-if="isPin"
+            type="hidden"
+            name="Estimated Total"
+            :value="estimate && estimate.total != null ? estimate.total : ''"
+          >
           <FinalQuote
             :done="doneFirst"
             :margin="1"
@@ -194,12 +206,10 @@ export default {
   methods: {
     scheduleEstimate () {
       if (this.option !== 0) return
-      console.log('scheduleEstimate called, twoColData:', this.twoColData)
       if (this._estimateTimer) clearTimeout(this._estimateTimer)
       this._estimateTimer = setTimeout(() => {
         try {
           const est = computePinEstimate(this.$store.state, this.twoColData)
-          console.log('New estimate computed:', est)
           this.estimate = est
         } catch (e) {
           console.error('Estimate computation failed:', e)
@@ -207,7 +217,6 @@ export default {
       }, 150)
     },
     updateData (val) {
-      console.log('QuoteWrapper updateData received:', val)
       this.twoColData = val
       this.scheduleEstimate()
     },

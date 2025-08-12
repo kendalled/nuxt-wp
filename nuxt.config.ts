@@ -1,7 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   nitro: {
-    preset: 'netlify'
+    preset: 'netlify',
+    prerender: {
+      routes: ['/quote']
+    }
   },
   runtimeConfig: {
     public: {
@@ -31,6 +34,7 @@ export default defineNuxtConfig({
     '/lapelpins': { redirect: { to: '/pins', statusCode: 301 } },
     '/challenge-coins': { redirect: { to: '/coins', statusCode: 301 } },
     '/challengecoins': { redirect: { to: '/coins', statusCode: 301 } },
+    '/quote': { prerender: true }
   },
   app: {
     head: {  
