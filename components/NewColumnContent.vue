@@ -92,7 +92,7 @@
           </div>
       </div>
     </div>
-    <div class="mx-auto mt-10 max-w-7xl sm:px-6 lg:px-8">
+    <div class="mx-auto mt-10 md:mt-20 max-w-7xl sm:px-6 lg:px-8">
         <div class="px-4 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
           <div class="text-center">
             <h2 class="text-3xl font-bold text-gray-900 leading-9 sm:text-4xl sm:leading-10 lg:leading-none">
