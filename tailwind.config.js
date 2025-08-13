@@ -7,8 +7,8 @@ module.exports = {
         extend: {
           colors: {
             orange: colors.orange,
-            'light-blue': colors.lightBlue,
-            'cool-gray': colors.coolGray
+            'light-blue': colors.sky,
+            'cool-gray': colors.gray
           },
           typography: {},
           fontFamily: {
