@@ -6,7 +6,7 @@ Reintroduce all features lost in the "back to stable release" commit while maint
 ## 🎯 **Critical Success Requirements**
 1. **NEVER modify netlify.toml or core Nuxt configuration** 
 2. **Test Netlify forms after each major phase**
-3. **Commit after each successful phase for rollback safety**
+3. **Stage after each successful phase; you commit and push after verification**
 4. **Use EXACT commit references for final polished versions**
 
 ---
@@ -47,10 +47,10 @@ git show 7c3c6cb:store/quote.js > store/quote.js
 
 ---
 
-## 📱 **PHASE 2: Component Improvements (Non-Pricing)**
+## 📱 **PHASE 2: Component Improvements (Non-Pricing)** ✅
 *Estimated Risk: 🟡 Low-Medium*
 
-### **2.1 Safe Component Updates**
+### **2.1 Safe Component Updates** ✅
 **Goal:** Restore component improvements
 
 **Exact Commands:**
@@ -65,7 +65,7 @@ git show 64205ac:components/TheHeader.vue > components/TheHeader.vue
 git show 7c3c6cb:components/TwoColForm.vue > components/TwoColForm.vue
 ```
 
-### **2.2 BlogGrid2 Component**
+### **2.2 BlogGrid2 Component** ✅
 **Goal:** Restore blog functionality improvements
 
 **Exact Commands:**
@@ -75,6 +75,7 @@ git show 64205ac:components/BlogGrid2.vue > components/BlogGrid2.vue
 ```
 
 **🧪 Checkpoint:** Test Netlify forms work after Phase 2
+- Status: Local build passed ✅; Netlify forms verification pending ⏳
 
 ---
 
@@ -316,58 +317,58 @@ After each phase, verify:
 ```bash
 # Phase 1
 git add content/ store/
-git commit -m "feat: restore content and store improvements
-
-Source commits:
-- content/: 7c3c6cb (final metadata)  
-- store/: 7c3c6cb (final fixes)
-Forms verified working"
+# You commit and push after verifying build and forms:
+# git commit -m "feat: restore content and store improvements" \
+#   -m "Source commits:" \
+#   -m "- content/: 7c3c6cb (final metadata)" \
+#   -m "- store/: 7c3c6cb (final fixes)" \
+#   -m "Forms verified working" && git push origin main
 
 # Phase 2
 git add components/Iradio.vue components/TheHeader.vue components/TwoColForm.vue components/BlogGrid2.vue
-git commit -m "feat: restore component improvements
-
-Source commits:
-- Iradio.vue: e93292f (enhanced radio styling)
-- TheHeader.vue: 64205ac (gradient header)
-- TwoColForm.vue: 7c3c6cb (debug-free)
-- BlogGrid2.vue: 64205ac (static blog integration)
-Forms verified working"
+# You commit and push after verifying build and forms:
+# git commit -m "feat: restore component improvements" \
+#   -m "Source commits:" \
+#   -m "- Iradio.vue: e93292f (enhanced radio styling)" \
+#   -m "- TheHeader.vue: 64205ac (gradient header)" \
+#   -m "- TwoColForm.vue: 7c3c6cb (debug-free)" \
+#   -m "- BlogGrid2.vue: 64205ac (static blog integration)" \
+#   -m "Forms verified working" && git push origin main
 
 # Phase 3
 git add pages/
-git commit -m "feat: restore page SEO and blog restructure
-
-Source commits:
-- All pages/: 7c3c6cb (final SEO improvements)
-- Blog restructure: 64205ac
-Forms verified working"
+# You commit and push after verifying build and forms:
+# git commit -m "feat: restore page SEO and blog restructure" \
+#   -m "Source commits:" \
+#   -m "- All pages/: 7c3c6cb (final SEO improvements)" \
+#   -m "- Blog restructure: 64205ac" \
+#   -m "Forms verified working" && git push origin main
 
 # Phase 4
 git add content/blog/ public/blog/
-git commit -m "feat: restore blog content system
-
-Source commits:
-- Blog articles: 37558ae
-Forms verified working"
+# You commit and push after verifying build and forms:
+# git commit -m "feat: restore blog content system" \
+#   -m "Source commits:" \
+#   -m "- Blog articles: 37558ae" \
+#   -m "Forms verified working" && git push origin main
 
 # Phase 5
 git add assets/pricing/ utils/pricing/ test/
-git commit -m "feat: restore pricing system data and utilities
-
-Source commits:
-- All pricing files: e93292f
-Forms verified working"
+# You commit and push after verifying build and forms:
+# git commit -m "feat: restore pricing system data and utilities" \
+#   -m "Source commits:" \
+#   -m "- All pricing files: e93292f" \
+#   -m "Forms verified working" && git push origin main
 
 # Phase 6 (Most Important)
 git add components/Estimate*
-git commit -m "feat: restore pricing estimator with final styling
-
-Source commits:
-- EstimateBottomDock.vue: e93292f (final polished styling)
-- EstimateSidebar.vue: e93292f (final polished styling)
-- QuoteWrapper.vue: 7c3c6cb (final debug-free integration)
-Forms verified working"
+# You commit and push after verifying build and forms:
+# git commit -m "feat: restore pricing estimator with final styling" \
+#   -m "Source commits:" \
+#   -m "- EstimateBottomDock.vue: e93292f (final polished styling)" \
+#   -m "- EstimateSidebar.vue: e93292f (final polished styling)" \
+#   -m "- QuoteWrapper.vue: 7c3c6cb (final debug-free integration)" \
+#   -m "Forms verified working" && git push origin main
 ```
 
 ---

@@ -48,10 +48,9 @@
         </div>
 
         <div v-else class="relative grid max-w-lg gap-5 mx-auto mt-12 lg:grid-cols-3 lg:max-w-none">
-          <span v-for="blogPost in correctSet" :key="blogPost.content.body[0].text" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+          <article v-for="blogPost in blogPosts" :key="blogPost.slug" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
             <div class="flex-shrink-0">
-              <img class="object-cover w-full h-48" data-not-lazy :src="blogPost.content.image" alt="">
-              <!-- <div class="object-cover w-full h-48 bg-gray-200 animate-pulse" /> -->
+              <img class="object-cover w-full h-48" :src="blogPost.image" :alt="blogPost.title">
             </div>
             <div class="flex flex-col justify-between flex-1 p-6 bg-white">
               <div class="flex-1">
@@ -60,43 +59,42 @@
                     Blog
                   </span>
                 </p>
-                <nuxt-link :to="'blog/' + blogPost.content.body[0].slug" class="block">
+                <nuxt-link :to="'/blog/' + blogPost.slug" class="block">
                   <h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
-                    {{ blogPost.content.body[0].text }}
+                    {{ blogPost.title }}
                   </h3>
                   <p class="mt-3 text-base leading-6 text-gray-500">
-                    {{ blogPost.content.teaserText }}...
+                    {{ blogPost.description }}
                   </p>
                 </nuxt-link>
               </div>
               <div class="flex items-center mt-6">
                 <div class="flex-shrink-0">
                   <a href="#">
-                    <img class="w-10 h-10 rounded-full" src="/dani.jpg" data-not-lazy alt="">
+                    <img class="w-10 h-10 rounded-full" src="/dani.jpg" alt="Dani Bucaro">
                   </a>
                 </div>
                 <div class="ml-3">
                   <p class="text-sm font-medium leading-5 text-gray-900">
                     <a href="#" class="hover:underline">
-                      Dani Bucaro
+                      {{ blogPost.author }}
                     </a>
                   </p>
                   <div class="flex text-sm leading-5 text-gray-500">
-                    <time datetime="2020-03-16">
-                      Mar 16, 2020
+                    <time :datetime="blogPost.date">
+                      {{ formatDate(blogPost.date) }}
                     </time>
                     <span class="mx-1">
                       &middot;
                     </span>
                     <span>
-                      6 min read
+                      {{ blogPost.readTime }}
                     </span>
                   </div>
                 </div>
               </div>
             </div>
-
-          </span>
+          </article>
         </div>
         <!-- <PaginateIcon @update="updateSelected" /> -->
       </div>
@@ -125,58 +123,53 @@ export default {
     return {
       loaded: false,
       selected: 1,
-      result: null
+      blogPosts: [
+        {
+          title: 'The Fascinating History of Disney Pins',
+          description: 'Explore the rich history of Disney pin collecting from its humble beginnings to today\'s vibrant trading community.',
+          image: '/pinblog2.jpg',
+          author: 'Dani Bucaro',
+          date: '2024-03-15',
+          readTime: '6 min read',
+          slug: 'disney-pins'
+        },
+        {
+          title: 'The Complete Guide to Custom Pin Design',
+          description: 'Everything you need to know about creating stunning custom pins, from concept to finished product.',
+          image: '/pinblog1.jpg',
+          author: 'Dani Bucaro',
+          date: '2024-03-10',
+          readTime: '8 min read',
+          slug: 'pin-design-guide'
+        },
+        {
+          title: 'Challenge Coins: A Deep Dive into Military Tradition',
+          description: 'Discover the fascinating history and traditions behind military challenge coins and their evolution into civilian recognition symbols.',
+          image: '/coinblog1.jpg',
+          author: 'Dani Bucaro',
+          date: '2024-03-05',
+          readTime: '7 min read',
+          slug: 'challenge-coins'
+        }
+      ]
     }
   },
-  async fetch () {
-    const version = this.$nuxt.context.query._storyblok || this.$nuxt.context.isDev ? 'draft' : 'published'
-    // Load the JSON from the API
-    this.result = await this.$nuxt.context.app.$storyapi.get('cdn/stories/', {
-      version,
-      starts_with: 'blog'
-    }).then((res) => {
-      return {
-        result: res.data
-      }
-    }).catch((res) => {
-      this.$nuxt.context.error({ statusCode: res.response.status, message: res.response.data })
-    })
-    // this.page = await this.$nuxt.context.$content('articles', slug)
-    //   .fetch()
-    //   .catch((err) => {
-    //     error({ statusCode: 404, message: 'Page not found: ' + err })
-    //   })
-  },
   computed: {
-    correctSet () {
-      if (this.result) {
-        const chunkArray = function (myOriginalArray, chunkSize) {
-          const results = []
-          const myArray = [...myOriginalArray]
-
-          while (myArray.length) {
-            results.push(myArray.splice(0, chunkSize))
-          }
-
-          return results
-        }
-        return chunkArray(this.result.result.stories, 3).reverse()[this.selected - 1]
-      } else {
-        return []
-      }
-    },
     showSkeletons () {
-      return (this.result === null)
+      return this.blogPosts.length === 0
     }
   },
   methods: {
     updateSelected (val) {
       this.selected = val
     },
-    lazyLoadImage () {
-      const media = this.$refs.blogImg
-      return this.$lazyLoad(media)
-      // [...media].forEach(m => this.$lazyLoad(m))
+    formatDate (dateString) {
+      const date = new Date(dateString)
+      return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      })
     }
   }
 }
