@@ -883,7 +883,7 @@ export default {
       return pages[this.currentPage].desc
     },
     choiceEmpty () {
-      return (this.option === 0 ? this.$store.state.quote.quote[this.currentPage].selected === null : this.option === 1 ? this.$store.state.coinQuote.quoteCoin[this.currentPage].selected === null : this.$store.state.chainQuote.quoteChain[this.currentPage].selected === null)
+      return (this.option === 0 ? this.$store.state.quote.quote[this.currentPage]?.selected === null : this.option === 1 ? this.$store.state.coinQuote.quoteCoin[this.currentPage]?.selected === null : this.$store.state.chainQuote.quoteChain[this.currentPage]?.selected === null)
     },
     // TODO: smarter way to do this
     percentDone () {
