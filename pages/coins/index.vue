@@ -108,10 +108,69 @@ export default {
     }
   },
   head () {
+    const structuredData = {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: 'Custom Challenge Coins',
+      image: [
+        'https://lapelpinsandcoins.com/homeCoins.png',
+        'https://lapelpinsandcoins.com/military-coin.png',
+        'https://lapelpinsandcoins.com/goldCoin.png'
+      ],
+      description: 'Professional custom challenge coins for military, police, fire departments & organizations. Antique & polished finishes available. Starting at 50 pcs with same-day quotes.',
+      category: 'Custom Challenge Coins',
+      brand: {
+        '@type': 'Brand',
+        name: 'Lapel Pins & Coins'
+      },
+      manufacturer: {
+        '@type': 'Organization',
+        name: 'Lapel Pins & Coins',
+        url: 'https://lapelpinsandcoins.com'
+      },
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: '67',
+        bestRating: '5.0'
+      },
+      offers: {
+        '@type': 'AggregateOffer',
+        lowPrice: '3.05',
+        highPrice: '12.50',
+        priceCurrency: 'USD',
+        availability: 'https://schema.org/InStock',
+        itemCondition: 'https://schema.org/NewCondition',
+        seller: {
+          '@type': 'Organization',
+          name: 'Lapel Pins & Coins',
+          telephone: '+1-844-395-4464',
+          url: 'https://lapelpinsandcoins.com'
+        }
+      }
+    }
+
     return {
-      title: 'Custom Challenge Coins | Free Shipping | Lapel Pins & Coins',
+      title: 'Custom Challenge Coins | Military & Police Coins | Free Design & Quote',
       meta: [
-        { hid: 'description', name: 'description', content: 'Custom designed Challenge Coins made simple. Decades of experience in production. Take a look at our designs & get your free quote today!' }
+        { hid: 'description', name: 'description', content: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork, unlimited revisions.' },
+        { name: 'keywords', content: 'custom challenge coins, military challenge coins, police challenge coins, fire department coins, commemorative coins, challenge coin maker' },
+        { property: 'og:title', content: 'Custom Challenge Coins | Military & Police Coins | Free Design & Quote' },
+        { property: 'og:description', content: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork.' },
+        { property: 'og:image', content: 'https://lapelpinsandcoins.com/homeCoins.png' },
+        { property: 'og:url', content: 'https://lapelpinsandcoins.com/coins' },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Custom Challenge Coins | Military & Police Coins | Free Design & Quote' },
+        { name: 'twitter:description', content: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork.' },
+        { name: 'twitter:image', content: 'https://lapelpinsandcoins.com/homeCoins.png' }
+      ],
+      script: [
+        {
+          hid: 'productJson',
+          type: 'application/ld+json',
+          json: structuredData
+        }
       ],
       link: [
         { rel: 'canonical', href: 'https://lapelpinsandcoins.com/coins' }
