@@ -17,3 +17,9 @@ export const actions = {
     })
   }
 }
+
+export default {
+  state,
+  mutations,
+  actions
+}

@@ -1,6 +1,6 @@
 ---
 title: Custom Die Struck Pins
-description: Rachel
+description: Premium die struck lapel pins with antique metal finish. Professional colorless pin design perfect for awards, corporate recognition, and elegant branding.
 headline1: Die struck pins designed by professional artists.
 subHeading: Die struck lapel pins are classic, professional, and dimensional. These colorless pins allow you to create a product that feels antique and high-end.
 

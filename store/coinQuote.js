@@ -70,3 +70,10 @@ export const actions = {
     context.commit('resetQuote', reset)
   }
 }
+
+export default {
+  state,
+  getters,
+  mutations,
+  actions
+}
