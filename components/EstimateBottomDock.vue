@@ -8,7 +8,7 @@
           <p v-if="isStarting" class="text-xs text-amber-600">Starting at</p>
           <p v-if="isNone" class="text-xs text-gray-500">Select production method</p>
         </div>
-        <button class="text-sm text-blue-600 hover:text-blue-500" @click="expanded = !expanded">
+        <button type="button" class="text-sm text-blue-600 hover:text-blue-500" @click="expanded = !expanded">
           <span v-if="expanded">Hide</span><span v-else>Details</span> →
         </button>
       </div>
