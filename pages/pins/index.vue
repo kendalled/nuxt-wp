@@ -39,11 +39,11 @@
             <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
                 <div class="text-center">
                 <h2 class="text-3xl font-bold leading-9 text-gray-900 sm:text-4xl sm:leading-10 lg:leading-none">
-                    <span class="sm:hidden">Get started today.
-                      <div class="w-full max-w-xl mx-auto h-3 -mt-2 opacity-75 bg-blue-600/25 rounded-sm"></div>
+                    <span class="sm:hidden">
+                      Get started today.
                     </span>
-                    <span class="hidden sm:block">Get started with a free quote.
-                      <div class="w-full max-w-xl mx-auto h-3 -mt-2 opacity-75 bg-blue-600/25 rounded-sm"></div>
+                    <span class="hidden sm:block">
+                      Get started with a free quote.
                     </span>
                     <!-- <div class="w-full max-w-xl mx-auto h-3 -mt-2 bg-blue-600/40 rounded-sm"></div> -->
                 </h2>
