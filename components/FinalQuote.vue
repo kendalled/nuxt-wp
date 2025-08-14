@@ -62,15 +62,15 @@
           <span v-if="isPlating && viewAll" class="font-medium text-blue-600 transition duration-150 ease-in-out cursor-pointer hover:text-blue-500" @click="viewAll = false">
             Hide premium <span class="hidden sm:inline-block"> options </span> →
           </span>
-          <button v-if="!isPlating" class="font-medium text-blue-600 transition duration-150 ease-in-out focus:outline-none hover:text-blue-500" @click.prevent="showDetails">
+          <button v-if="!isPlating" type="button" class="font-medium text-blue-600 transition duration-150 ease-in-out focus:outline-none hover:text-blue-500" @click.prevent="showDetails">
             Learn more →
           </button>
         </div>
         <div class="w-auto h-auto">
-          <button v-show="currentPage !== 0" class="px-4 py-2 text-sm font-medium text-blue-700 transition duration-150 ease-in-out bg-blue-100 border border-transparent rounded-md hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 active:bg-blue-200" @click.prevent="lastPage">
+          <button v-show="currentPage !== 0" type="button" class="px-4 py-2 text-sm font-medium text-blue-700 transition duration-150 ease-in-out bg-blue-100 border border-transparent rounded-md hover:bg-blue-50 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 active:bg-blue-200" @click.prevent="lastPage">
             Back
           </button>
-          <button :class="[choiceEmpty ? 'text-gray-700 bg-gray-100 hover:bg-gray-50 active:bg-gray-200' : 'text-white bg-blue-600 hover:bg-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:bg-blue-500 active:bg-blue-600']" class="px-4 py-2 ml-2 text-sm font-medium transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm focus:outline-none" @click.prevent="[choiceEmpty ? emitNotif() : nextPage()]">
+          <button type="button" :class="[choiceEmpty ? 'text-gray-700 bg-gray-100 hover:bg-gray-50 active:bg-gray-200' : 'text-white bg-blue-600 hover:bg-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:bg-blue-500 active:bg-blue-600']" class="px-4 py-2 ml-2 text-sm font-medium transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm focus:outline-none" @click.prevent="[choiceEmpty ? emitNotif() : nextPage()]">
             Continue
           </button>
         </div>

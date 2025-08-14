@@ -117,7 +117,7 @@
                   Continue
                   :files-length="fileLength"
                 </button> -->
-                <button :class="[greyed ? 'text-gray-700 bg-gray-100 hover:bg-gray-50 active:bg-gray-200' : 'text-white bg-blue-600 hover:bg-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:bg-blue-500 active:bg-blue-600']" class="px-4 py-2 text-sm font-medium transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm focus:outline-none" @click.prevent="scrollQuote('contact-info')">
+                <button type="button" :class="[greyed ? 'text-gray-700 bg-gray-100 hover:bg-gray-50 active:bg-gray-200' : 'text-white bg-blue-600 hover:bg-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50 focus:bg-blue-500 active:bg-blue-600']" class="px-4 py-2 text-sm font-medium transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm focus:outline-none" @click.prevent="scrollQuote('contact-info')">
                   Continue
                 </button>
               </span>

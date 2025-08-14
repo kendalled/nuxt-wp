@@ -155,7 +155,7 @@ export default {
         {
           title: 'Production Method',
           desc: 'Learn more about our production methods.',
-          details: 'The production style you choose can have different effects on your design. Soft enamel has recessed color areas, giving your pin a textured feel. Hard enamel is smoothly polished, like jewelry. Offset and Silkscreen printing can be used for more elaborate designs that can’t have metal separations. Die struck is used for no color designs. Choose the style you think will look best on your design, we’ll let you know if any changes need to be made.'
+          details: 'The production style you choose can have different effects on your design. Soft enamel has recessed color areas, giving your pin a textured feel. Hard enamel is smoothly polished, like jewelry. Offset and silk screen printing can be used for more elaborate designs that can’t have metal separations. Die struck is used for non-color designs. Choose the style you think will look best on your design, we’ll let you know if any changes need to be made.'
         },
         {
           title: 'Plating Options',
