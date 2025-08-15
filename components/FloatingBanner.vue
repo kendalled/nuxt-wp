@@ -7,7 +7,7 @@
     leave-from-class="opacity-100"
     leave-to-class="opacity-0"
   >
-    <div v-if="show" class="fixed inset-x-0 bottom-0 z-20 pb-2 sm:pb-5">
+    <div v-if="show" class="fixed inset-x-0 bottom-0 z-[100] pb-2 sm:pb-5">
       <div class="px-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8">
         <div class="p-2 bg-yellow-400 rounded-lg shadow-lg sm:p-3">
           <div class="flex flex-wrap items-center justify-between">
