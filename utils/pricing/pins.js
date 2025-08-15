@@ -7,14 +7,16 @@ import { roundHalfUp, safeNumber } from './money.js'
 function coerceQuantityToTier(quantity) {
   const qty = Number.parseInt(quantity, 10)
   const tiers = meta.quantityTiers || []
-  if (!Number.isFinite(qty) || tiers.length === 0) return { tierQuantity: tiers[0], isBelowMinimum: true }
+  if (tiers.length === 0) return { tierQuantity: 0, isBelowMinimum: true }
+  if (!Number.isFinite(qty) || qty <= 0) return { tierQuantity: tiers[0], isBelowMinimum: true }
   const minTier = tiers[0]
   if (qty <= minTier) return { tierQuantity: minTier, isBelowMinimum: qty < minTier }
-  for (let i = 0; i < tiers.length; i += 1) {
-    if (qty <= tiers[i]) return { tierQuantity: tiers[i], isBelowMinimum: false }
+  // Floor to the highest tier that does not exceed the quantity
+  for (let i = tiers.length - 1; i >= 0; i -= 1) {
+    if (qty >= tiers[i]) return { tierQuantity: tiers[i], isBelowMinimum: false }
   }
-  // Above max: use max tier
-  return { tierQuantity: tiers[tiers.length - 1], isBelowMinimum: false }
+  // Fallback (should not hit)
+  return { tierQuantity: minTier, isBelowMinimum: true }
 }
 
 function resolveProcessKeyFromSid(productionSid) {
@@ -104,8 +106,11 @@ export function computePinEstimate(vuexState, twoColData) {
     }
   }
 
-  const rawQuantity = twoColData?.quantity || '100'
-  const quantityParsed = rawQuantity === '1000+' ? 1000 : Number.parseInt(rawQuantity, 10)
+  const rawQuantity = twoColData?.quantity ?? meta.policies?.minQuantity ?? (meta.quantityTiers?.[0] ?? 100)
+  const parsed = Number.parseInt(String(rawQuantity), 10)
+  const quantityParsed = (Number.isFinite(parsed) && parsed > 0)
+    ? parsed
+    : (meta.policies?.minQuantity ?? (meta.quantityTiers?.[0] ?? 100))
   const { tierQuantity, isBelowMinimum } = coerceQuantityToTier(quantityParsed)
 
   // Resolve inputs
@@ -164,7 +169,8 @@ export function computePinEstimate(vuexState, twoColData) {
 
   const confidence = (!processKey || !sizeInches) ? 'starting_at' : 'exact'
   const notes = []
-  if (isBelowMinimum) notes.push('Minimum pricing tier is 100 units; smaller runs priced at 100-tier.')
+  if (isBelowMinimum) notes.push(`Minimum pricing tier is ${meta.quantityTiers?.[0] || 100} units; smaller runs priced at ${meta.quantityTiers?.[0] || 100}-tier.`)
+  notes.push(`Pricing based on ${tierQuantity}+ tier`)
 
   return { perUnit, total, breakdown, confidence, notes }
 }

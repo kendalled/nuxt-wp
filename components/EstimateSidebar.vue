@@ -52,6 +52,7 @@
             <span class="ml-1">→</span>
           </button>
           <dl v-show="expanded && !isNone" class="mt-3 space-y-2 text-sm">
+            <div class="flex justify-between" v-if="breakdown.tierQuantity"><dt class="text-gray-600">Tier</dt><dd class="text-gray-900">{{ breakdown.tierQuantity }}+</dd></div>
             <div class="flex justify-between"><dt class="text-gray-600">Base</dt><dd class="text-gray-900">{{ currency(breakdown.basePerUnit) }} /ea</dd></div>
             <div class="flex justify-between" v-if="breakdown.platingPerUnit"><dt class="text-gray-600">Plating</dt><dd class="text-gray-900">+{{ currency(breakdown.platingPerUnit) }} /ea</dd></div>
             <div class="flex justify-between" v-if="breakdown.backingPerUnit"><dt class="text-gray-600">Backing</dt><dd class="text-gray-900">+{{ currency(breakdown.backingPerUnit) }} /ea</dd></div>

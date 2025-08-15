@@ -18,7 +18,7 @@ function buildState({ productionSid = null, platingSid = null, sizeSid = null, b
 }
 
 function twoCol(quantity) {
-  return { quantity: String(quantity) }
+  return { quantity }
 }
 
 // representative parity cases
@@ -48,6 +48,18 @@ test('quantity below minimum rounds up to 100-tier', () => {
   const state = buildState({ productionSid: processToSid.dieStruck, sizeSid: sizeToSid[0.75] })
   const result = computePinEstimate(state, twoCol(50))
   assert.equal(result.breakdown.tierQuantity, 100)
+})
+
+test('non-tier quantity floors to the correct tier (e.g., 350 -> 300)', () => {
+  const state = buildState({ productionSid: processToSid.dieStruck, sizeSid: sizeToSid[1.0] })
+  const result = computePinEstimate(state, twoCol(350))
+  assert.equal(result.breakdown.tierQuantity, 300)
+})
+
+test('large quantity uses highest available tier (e.g., 3000 -> 2000 tier)', () => {
+  const state = buildState({ productionSid: processToSid.softEnamel, sizeSid: sizeToSid[1.0] })
+  const result = computePinEstimate(state, twoCol(3000))
+  assert.equal(result.breakdown.tierQuantity, meta.quantityTiers[meta.quantityTiers.length - 1])
 })
 
 test('starting at when size missing', () => {
