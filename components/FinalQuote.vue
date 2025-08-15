@@ -854,11 +854,13 @@ export default {
     ]),
     isPackaging () {
       const pages = this.categories[this.option]
-      return pages[this.currentPage].title === 'Packaging'
+      const page = pages && pages[this.currentPage]
+      return page ? page.title === 'Packaging' : false
     },
     isPlating () {
       const pages = this.categories[this.option]
-      return pages[this.currentPage].title === 'Plating'
+      const page = pages && pages[this.currentPage]
+      return page ? page.title === 'Plating' : false
     },
     pagesLength () {
       return this.categories[this.option].length
@@ -876,11 +878,13 @@ export default {
     },
     pageTitle () {
       const pages = this.categories[this.option]
-      return pages[this.currentPage].pageTitle
+      const page = pages && pages[this.currentPage]
+      return page ? page.pageTitle : ''
     },
     pageDesc () {
       const pages = this.categories[this.option]
-      return pages[this.currentPage].desc
+      const page = pages && pages[this.currentPage]
+      return page ? page.desc : ''
     },
     choiceEmpty () {
       return (this.option === 0 ? this.$store.state.quote.quote[this.currentPage]?.selected === null : this.option === 1 ? this.$store.state.coinQuote.quoteCoin[this.currentPage]?.selected === null : this.$store.state.chainQuote.quoteChain[this.currentPage]?.selected === null)
@@ -898,6 +902,12 @@ export default {
   },
   // todo: unify
   watch: {
+    option (newVal, oldVal) {
+      // Reset to page 0 when switching product types
+      if (newVal !== oldVal) {
+        this.$store.commit('prefs/resetPage')
+      }
+    },
     choiceEmpty (newVal, oldVal) {
       // close notification if choice made
       if (!newVal) {
