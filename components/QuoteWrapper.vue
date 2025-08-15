@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gray-100">
     <FloatingBanner message="You have not completed your design options - please finish the steps at the top of the page." message2="Please complete the quote at the top" :show="errorNotif" @close="closeNotif" />
-    <FloatingBanner message="You have incomplete contact information - fill out any empty fields to finish your quote." message2="Please complete your contact information" :show="errorNotifTwo" @close="closeNotifTwo" />
+    <FloatingBanner message="You have incomplete order information - fill out any empty fields to finish your quote." message2="Please complete your order information" :show="errorNotifTwo" @close="closeNotifTwo" />
 
     <!-- old nav spot -->
     <div class="py-10">
