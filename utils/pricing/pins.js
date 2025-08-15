@@ -170,7 +170,6 @@ export function computePinEstimate(vuexState, twoColData) {
   const confidence = (!processKey || !sizeInches) ? 'starting_at' : 'exact'
   const notes = []
   if (isBelowMinimum) notes.push(`Minimum pricing tier is ${meta.quantityTiers?.[0] || 100} units; smaller runs priced at ${meta.quantityTiers?.[0] || 100}-tier.`)
-  notes.push(`Pricing based on ${tierQuantity}+ tier`)
 
   return { perUnit, total, breakdown, confidence, notes }
 }
