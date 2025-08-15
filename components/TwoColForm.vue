@@ -25,13 +25,10 @@
                   <div class="relative mt-1 rounded-md shadow-sm">
                     <input
                       id="quantity"
-                      v-model.number="emitData.quantity"
+                      v-model="emitData.quantity"
                       @blur="normalizeQuantity"
-                      type="number"
+                      type="text"
                       inputmode="numeric"
-                      step="1"
-                      :min="minimumQuantity"
-                      :max="maxQuantity"
                       name="QuantityVisible"
                       class="block w-full mt-1 rounded-md shadow-sm sm:text-sm focus:ring focus:ring-opacity-50"
                       :class="[quantityError ? 'border-red-300 focus:border-red-300 focus:ring-red-200' : 'border-gray-300 focus:border-blue-300 focus:ring-blue-200']"
@@ -463,7 +460,7 @@ export default {
   data () {
     return {
       emitData: {
-        quantity: 100,
+        quantity: '',
         state: 'Select a State',
         country: 'United States',
         description: '',
@@ -498,9 +495,11 @@ export default {
       return 100000
     },
     quantityError () {
-      const q = this.emitData.quantity
-      if (q === null || q === undefined || q === '' || Number.isNaN(q)) return 'Quantity is required'
-      if (!Number.isInteger(q) || q <= 0) return 'Please enter a whole number'
+      const raw = (this.emitData.quantity === null || this.emitData.quantity === undefined) ? '' : String(this.emitData.quantity).trim()
+      if (raw === '') return 'Quantity is required'
+      const q = Number.parseInt(raw, 10)
+      if (!Number.isFinite(q)) return 'Please enter a valid number'
+      if (q <= 0) return 'Please enter a whole number'
       if (q < this.minimumQuantity) return `Minimum quantity is ${this.minimumQuantity}`
       if (q > this.maxQuantity) return `Maximum quantity is ${this.maxQuantity}`
       return null
@@ -552,13 +551,17 @@ export default {
       this.$emit('scroll', elem)
     },
     normalizeQuantity () {
-      let q = this.emitData.quantity
-      if (q === null || q === undefined || q === '' || Number.isNaN(q)) {
-        this.emitData.quantity = this.minimumQuantity
+      const raw = (this.emitData.quantity === null || this.emitData.quantity === undefined) ? '' : String(this.emitData.quantity).trim()
+      if (raw === '') {
+        // Keep blank if empty
+        this.emitData.quantity = ''
         return
       }
-      q = Math.floor(Number(q))
-      if (!Number.isFinite(q) || q <= 0) q = this.minimumQuantity
+      let q = Number.parseInt(raw, 10)
+      if (!Number.isFinite(q)) {
+        this.emitData.quantity = ''
+        return
+      }
       if (q < this.minimumQuantity) q = this.minimumQuantity
       if (q > this.maxQuantity) q = this.maxQuantity
       this.emitData.quantity = q
