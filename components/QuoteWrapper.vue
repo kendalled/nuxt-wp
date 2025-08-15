@@ -100,7 +100,7 @@ export default {
       currentPage: 0,
       dropOpen: false,
       twoColData: {
-        quantity: '100',
+        quantity: 100,
         // state: 'Select a State',
         country: 'US',
         description: '',

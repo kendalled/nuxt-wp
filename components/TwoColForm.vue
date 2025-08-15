@@ -19,7 +19,31 @@
               <div class="grid grid-cols-2 gap-6">
                 <div class="col-span-6 sm:col-span-1">
                   <input id="hiddenQty" v-model="emitData.quantity" name="Quantity" type="hidden">
-                  <CustomSelect :title="'Quantity'" :options="quantityList" @chosen="updateQty" />
+                  <div class="flex justify-between">
+                    <label for="quantity" class="block text-sm font-medium leading-5 text-gray-700">Quantity</label>
+                  </div>
+                  <div class="relative mt-1 rounded-md shadow-sm">
+                    <input
+                      id="quantity"
+                      v-model.number="emitData.quantity"
+                      @blur="normalizeQuantity"
+                      type="number"
+                      inputmode="numeric"
+                      step="1"
+                      :min="minimumQuantity"
+                      :max="maxQuantity"
+                      name="QuantityVisible"
+                      class="block w-full mt-1 rounded-md shadow-sm sm:text-sm focus:ring focus:ring-opacity-50"
+                      :class="[quantityError ? 'border-red-300 focus:border-red-300 focus:ring-red-200' : 'border-gray-300 focus:border-blue-300 focus:ring-blue-200']"
+                      :placeholder="`Minimum ${minimumQuantity}`"
+                      :aria-invalid="!!quantityError"
+                      aria-describedby="quantity-help"
+                    >
+                  </div>
+                  <p id="quantity-help" class="mt-1 text-sm" :class="[quantityError ? 'text-red-600' : 'text-gray-500']">
+                    <span v-if="quantityError">{{ quantityError }}</span>
+                    <span v-else>Minimum {{ minimumQuantity }} pieces</span>
+                  </p>
                 </div>
                 <!-- where other input was -->
                 <div class="col-span-6 sm:col-span-1">
@@ -439,7 +463,7 @@ export default {
   data () {
     return {
       emitData: {
-        quantity: '100',
+        quantity: 100,
         state: 'Select a State',
         country: 'United States',
         description: '',
@@ -466,19 +490,20 @@ export default {
     isFiles () {
       return this.emitData.referenceFiles.length > 0
     },
-    quantityList () {
-      return [
-        '100',
-        '200',
-        '300',
-        '400',
-        '500',
-        '600',
-        '700',
-        '800',
-        '900',
-        '1000+'
-      ]
+    minimumQuantity () {
+      // product: 0 = pins, 1 = coins, 2 = keychains
+      return this.product === 1 ? 50 : 100
+    },
+    maxQuantity () {
+      return 100000
+    },
+    quantityError () {
+      const q = this.emitData.quantity
+      if (q === null || q === undefined || q === '' || Number.isNaN(q)) return 'Quantity is required'
+      if (!Number.isInteger(q) || q <= 0) return 'Please enter a whole number'
+      if (q < this.minimumQuantity) return `Minimum quantity is ${this.minimumQuantity}`
+      if (q > this.maxQuantity) return `Maximum quantity is ${this.maxQuantity}`
+      return null
     },
     allInfo () {
       const data = [this.emitData.phone,
@@ -526,8 +551,17 @@ export default {
     scrollQuote (elem) {
       this.$emit('scroll', elem)
     },
-    updateQty (val) {
-      this.emitData.quantity = val
+    normalizeQuantity () {
+      let q = this.emitData.quantity
+      if (q === null || q === undefined || q === '' || Number.isNaN(q)) {
+        this.emitData.quantity = this.minimumQuantity
+        return
+      }
+      q = Math.floor(Number(q))
+      if (!Number.isFinite(q) || q <= 0) q = this.minimumQuantity
+      if (q < this.minimumQuantity) q = this.minimumQuantity
+      if (q > this.maxQuantity) q = this.maxQuantity
+      this.emitData.quantity = q
     },
     emitError () {
       this.$emit('need')
