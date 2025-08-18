@@ -37,7 +37,7 @@
                       aria-describedby="quantity-help"
                     >
                   </div>
-                  <p id="quantity-help" class="mt-1 text-sm" :class="[quantityError ? 'text-red-600' : 'text-gray-500']">
+                  <p id="quantity-help" class="mt-1 text-sm" :class="[quantityError ? 'text-red-600' : 'text-gray-500 opacity-0']">
                     <span v-if="quantityError">{{ quantityError }}</span>
                     <span v-else>Minimum {{ minimumQuantity }} pieces</span>
                   </p>
@@ -51,10 +51,12 @@
                   <div class="relative mt-1 rounded-md shadow-sm">
                     <input
                       id="deadline"
+                      v-model="emitData.deadline"
                       type="date"
                       placeholder="mm/dd/yyyy"
                       name="Deadline"
-                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm sm:text-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                      class="block w-full mt-1 border-gray-300 rounded-md shadow-sm sm:text-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50 [&::-webkit-calendar-picker-indicator]:opacity-75 text-gray-400 focus:text-gray-900"
+                      :class="{ 'text-gray-900': emitData.deadline }"
                       aria-describedby="deadline-optional"
                     >
                   </div>
@@ -466,6 +468,7 @@ export default {
         description: '',
         referenceFiles: [],
         proofs: [],
+        deadline: '',
         // zip: '',
         email: '',
         phone: '',
