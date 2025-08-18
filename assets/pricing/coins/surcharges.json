@@ -1,0 +1,25 @@
+{
+  "plating": {
+    "antique-gold": { "type": "per-coin", "cost": 0.60 },
+    "antique-copper": { "type": "per-coin", "cost": 0.30 },
+    "antique-silver": { "type": "per-coin", "cost": 0.35 },
+    "dual-plating": { "type": "per-side-per-coin", "cost": 0.70 }
+  },
+  "addons": {
+    "edge-numbering": { "type": "per-coin", "cost": 0.65 },
+    "sequential-numbering": { "type": "per-side", "cost": 0.25 },
+    "cutouts": { "type": "per-cutout", "cost": 0.15 },
+    "epoxy-dome": { "type": "per-side", "cost": 0.35 },
+    "offset-print": { "type": "flat-rate", "cost": 100 },
+    "glow-in-dark": { "type": "per-side", "cost": 0.25 },
+    "silk-screen": { "type": "per-side", "cost": 19 }
+  },
+  "packaging": {
+    "poly-bag": { "type": "per-coin", "cost": 0 },
+    "acrylic-case": { "type": "per-coin", "cost": 1.00 },
+    "velvet-bag": { "type": "per-coin", "cost": 0.60 },
+    "velvet-case": { "type": "per-coin", "cost": 4.00 }
+  }
+}
+
+

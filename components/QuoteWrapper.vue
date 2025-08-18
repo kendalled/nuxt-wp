@@ -80,6 +80,7 @@ import QuoteChoice from '~/components/QuoteChoice'
 import EstimateSidebar from '~/components/EstimateSidebar'
 import EstimateBottomDock from '~/components/EstimateBottomDock'
 import { computePinEstimate } from '~/utils/pricing/pins'
+import { computeCoinEstimate } from '~/utils/pricing/coins'
 export default {
   name: 'QuoteWrapper',
   components: {
@@ -177,7 +178,7 @@ export default {
       return (status === 0 ? this.pinDone : status === 1 ? this.coinDone : this.chainDone)
     },
     estimatorEnabled () {
-      return this.$config?.public?.showEstimator !== false && this.option === 0
+      return this.$config?.public?.showEstimator !== false && (this.option === 0 || this.option === 1)
     }
   },
   watch: {
@@ -197,6 +198,12 @@ export default {
         this.scheduleEstimate()
       }
     },
+    '$store.state.coinQuote.quoteCoin': {
+      deep: true,
+      handler () {
+        this.scheduleEstimate()
+      }
+    },
     'twoColData.quantity': {
       handler () {
         this.scheduleEstimate()
@@ -205,12 +212,16 @@ export default {
   },
   methods: {
     scheduleEstimate () {
-      if (this.option !== 0) return
       if (this._estimateTimer) clearTimeout(this._estimateTimer)
       this._estimateTimer = setTimeout(() => {
         try {
-          const est = computePinEstimate(this.$store.state, this.twoColData)
-          this.estimate = est
+          if (this.option === 0) {
+            const est = computePinEstimate(this.$store.state, this.twoColData)
+            this.estimate = est
+          } else if (this.option === 1) {
+            const est = computeCoinEstimate(this.$store.state, this.twoColData)
+            this.estimate = est
+          }
         } catch (e) {
           console.error('Estimate computation failed:', e)
         }

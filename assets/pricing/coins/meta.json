@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "defaultCurrency": "USD",
+  "quantityTiers": [50, 100, 200, 300, 500, 1000, 2000, 3000, 5000],
+  "rounding": { "perUnit": 2, "total": 2, "mode": "half_up" },
+  "supportedSizes": [1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0],
+  "uiExposedSizes": [1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0],
+  "colorOptions": {
+    "no-color": "no-color",
+    "one-side": "one-side",
+    "both-sides": "both-sides"
+  },
+  "mappings": {
+    "colorSidToKey": {
+      "c1": "no-color",
+      "c0": "both-sides"
+    },
+    "sizeSidToInchesNominal": {
+      "sz0": 1.25,
+      "sz1": 1.5,
+      "sz2": 1.75,
+      "sz3": 2.0,
+      "sz4": 2.25,
+      "sz5": 2.5,
+      "sz6": 2.75,
+      "sz7": 3.0
+    },
+    "platingSidToKey": {
+      "pl6": "antique-gold",
+      "pl8": "antique-copper",
+      "pl7": "antique-silver",
+      "pl9": "dual-plating"
+    },
+    "packagingSidToKey": {
+      "pk0": "poly-bag",
+      "pk1": "acrylic-case",
+      "pk2": "velvet-bag",
+      "pk3": "velvet-case"
+    }
+  },
+  "policies": {
+    "minQuantity": 50,
+    "maxTierBehavior": "use_max_tier",
+    "dualPlatingSideCountDefault": 2
+  }
+}
+
+
