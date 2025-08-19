@@ -55,8 +55,8 @@
                 </h4>
                 <ul class="mt-4">
                   <li>
-                    <a href="#" class="text-base leading-6 text-gray-600 hover:text-gray-900">
-                      Claim
+                    <a href="/sitemap.xml" title="Sitemap" class="text-base leading-6 text-gray-600 hover:text-gray-900">
+                      Sitemap
                     </a>
                   </li>
                   <li class="mt-4">
