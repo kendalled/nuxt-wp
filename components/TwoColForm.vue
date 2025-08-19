@@ -18,7 +18,6 @@
               <!-- start inputs -->
               <div class="grid grid-cols-2 gap-6">
                 <div class="col-span-6 sm:col-span-1">
-                  <input id="hiddenQty" v-model="emitData.quantity" name="Quantity" type="hidden">
                   <div class="flex justify-between">
                     <label for="quantity" class="block text-sm font-medium leading-5 text-gray-700">Quantity</label>
                   </div>
@@ -29,7 +28,7 @@
                       @blur="normalizeQuantity"
                       type="text"
                       inputmode="numeric"
-                      name="QuantityVisible"
+                      name="Quantity"
                       class="block w-full mt-1 rounded-md shadow-sm sm:text-sm focus:ring focus:ring-opacity-50"
                       :class="[quantityError ? 'border-red-300 focus:border-red-300 focus:ring-red-200' : 'border-gray-300 focus:border-blue-300 focus:ring-blue-200']"
                       :placeholder="`Minimum ${minimumQuantity}`"
