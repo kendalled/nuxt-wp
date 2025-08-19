@@ -111,6 +111,17 @@ export function computeCoinEstimate(vuexState, twoColData) {
   const sizeSid = getSelectedSid('Sizing')
   const packagingSid = getSelectedSid('Packaging')
 
+  // Require plating selection before showing any estimate
+  if (!platingSid) {
+    return {
+      perUnit: 0,
+      total: 0,
+      breakdown: {},
+      confidence: 'none',
+      notes: ['Select plating to see estimate']
+    }
+  }
+
   const rawQuantity = twoColData?.quantity ?? meta.policies?.minQuantity ?? (meta.quantityTiers?.[0] ?? 50)
   const parsed = Number.parseInt(String(rawQuantity), 10)
   const quantityParsed = (Number.isFinite(parsed) && parsed > 0)
