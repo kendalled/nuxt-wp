@@ -543,7 +543,7 @@ export default {
               id: 2,
               sid: 'c2',
               name: 'Color on One Side',
-              src: 'colorCoin.png'
+              src: '/airforce.png'
             },
             {
               id: 1,
