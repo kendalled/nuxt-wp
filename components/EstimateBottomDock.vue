@@ -16,6 +16,8 @@
         <dl class="space-y-1 text-sm">
           <div class="flex justify-between" v-if="breakdown.tierQuantity"><dt class="text-gray-600">Tier</dt><dd class="text-gray-900">{{ breakdown.tierQuantity }}+</dd></div>
           <div class="flex justify-between"><dt class="text-gray-600">Per unit</dt><dd class="text-gray-900">{{ currency(perUnit) }}</dd></div>
+          <div class="flex justify-between" v-if="breakdown.platingPerUnit"><dt class="text-gray-600">Plating</dt><dd class="text-gray-900">+{{ currency(breakdown.platingPerUnit) }} /ea</dd></div>
+          <div class="flex justify-between" v-if="breakdown.packagingPerUnit"><dt class="text-gray-600">Packaging</dt><dd class="text-gray-900">+{{ currency(breakdown.packagingPerUnit) }} /ea</dd></div>
           <div class="flex justify-between" v-if="breakdown.moldFee"><dt class="text-gray-600">Mold fee</dt><dd class="text-gray-900">{{ currency(breakdown.moldFee) }}</dd></div>
           <div class="flex justify-between" v-if="breakdown.setupFee"><dt class="text-gray-600">Setup fee</dt><dd class="text-gray-900">{{ currency(breakdown.setupFee) }}</dd></div>
         </dl>
