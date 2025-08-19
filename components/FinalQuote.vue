@@ -536,7 +536,7 @@ export default {
             {
               id: 0,
               sid: 'c0',
-              name: 'Color Coin',
+              name: 'Full Color Coin',
               src: 'colorCoin.png'
             },
             {
