@@ -13,7 +13,8 @@
   "mappings": {
     "colorSidToKey": {
       "c1": "no-color",
-      "c0": "both-sides"
+      "c0": "both-sides",
+      "c2": "one-side"
     },
     "sizeSidToInchesNominal": {
       "sz0": 1.25,

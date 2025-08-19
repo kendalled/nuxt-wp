@@ -540,6 +540,12 @@ export default {
               src: 'colorCoin.png'
             },
             {
+              id: 2,
+              sid: 'c2',
+              name: 'Color on One Side',
+              src: 'colorCoin.png'
+            },
+            {
               id: 1,
               sid: 'c1',
               name: 'No Color Coin',
