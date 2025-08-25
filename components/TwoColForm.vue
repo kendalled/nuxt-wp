@@ -502,8 +502,8 @@ export default {
       const q = Number.parseInt(raw, 10)
       if (!Number.isFinite(q)) return 'Please enter a valid number'
       if (q <= 0) return 'Please enter a whole number'
-      if (q < this.minimumQuantity) return `Minimum quantity is ${this.minimumQuantity}`
-      if (q > this.maxQuantity) return `Maximum quantity is ${this.maxQuantity}`
+      if (q < this.minimumQuantity) return `Minimum is ${this.minimumQuantity}`
+      if (q > this.maxQuantity) return `Maximum is ${this.maxQuantity}`
       return null
     },
     allInfo () {
