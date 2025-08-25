@@ -106,7 +106,8 @@
           <div class="lg:col-span-6">
             <!-- Enhanced Article Content -->
             <div class="prose prose-lg prose-blue max-w-none">
-              <ContentRenderer v-if="data" :value="data" />
+              <ContentRenderer v-if="data && data.body" :value="data" />
+              <slot v-else />
             </div>
 
             <!-- Article Footer -->
@@ -164,7 +165,8 @@
                   </a>
                   
                   <nuxt-link 
-                    to="/feedback"
+                    to="/contact"
+                    title="Get support"
                     class="flex items-center p-3 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-all duration-200"
                   >
                     <svg class="w-5 h-5 text-blue-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

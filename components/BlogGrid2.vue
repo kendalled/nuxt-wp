@@ -59,7 +59,7 @@
                     Blog
                   </span>
                 </p>
-                <nuxt-link :to="'/blog/' + blogPost.slug" class="block">
+                <nuxt-link :to="'/' + blogPost.slug" class="block">
                   <h3 class="mt-2 text-xl font-semibold leading-7 text-gray-900">
                     {{ blogPost.title }}
                   </h3>
@@ -131,7 +131,7 @@ export default {
           author: 'Dani Bucaro',
           date: '2024-03-15',
           readTime: '6 min read',
-          slug: 'disney-pins'
+          slug: 'history-of-disney-pins'
         },
         {
           title: 'The Complete Guide to Custom Pin Design',
@@ -140,7 +140,7 @@ export default {
           author: 'Dani Bucaro',
           date: '2024-03-10',
           readTime: '8 min read',
-          slug: 'pin-design-guide'
+          slug: 'custom-pin-design-guide'
         },
         {
           title: 'Challenge Coins: A Deep Dive into Military Tradition',
@@ -149,7 +149,7 @@ export default {
           author: 'Dani Bucaro',
           date: '2024-03-05',
           readTime: '7 min read',
-          slug: 'challenge-coins'
+          slug: 'challenge-coin-military-tradition'
         }
       ]
     }
