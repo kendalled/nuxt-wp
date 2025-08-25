@@ -34,9 +34,9 @@
             </div>
             <div class="flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto">
               <div class="rounded-md shadow-sm">
-                <a target="_blank" href="https://m.me/LapelPinsCoins" title="Contact our support team via Facebook livechat." class="flex items-center justify-center px-4 py-2 text-sm font-medium text-yellow-600 bg-white border border-transparent leading-5 transition duration-150 ease-in-out rounded-md hover:text-yellow-500 focus:outline-none focus:ring">
-                  Need help?
-                </a>
+                <NuxtLink to="/contact" title="Contact our support team." class="flex items-center justify-center px-4 py-2 text-sm font-medium text-yellow-600 bg-white border border-transparent leading-5 transition duration-150 ease-in-out rounded-md hover:text-yellow-500 focus:outline-none focus:ring">
+                  Contact our support team.
+                </NuxtLink>
               </div>
             </div>
             <div class="flex-shrink-0 order-2 sm:order-3 sm:ml-2">

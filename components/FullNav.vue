@@ -112,7 +112,7 @@
             <nuxt-link to="/checkout" class="block px-4 py-2 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100">
               Checkout
             </nuxt-link>
-            <nuxt-link to="privacy" title="Privacy policy" class="block px-4 py-2 mt-1 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100">
+            <nuxt-link to="/privacy" title="Privacy policy" class="block px-4 py-2 mt-1 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100">
               Privacy Policy
             </nuxt-link>
             <nuxt-link to="/quote" title="Quote request form" class="block px-4 py-2 mt-1 text-base font-medium text-gray-500 transition duration-150 ease-in-out hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100">
@@ -454,13 +454,13 @@ export default {
       return (this.scrollPosition > 10 || this.coinFlyoutOpen || this.pinFlyoutOpen)
     },
     selected () {
-      const path = this.$route.path
-      const ind = path.lastIndexOf('/') || path.length
-      const startingPath = path.substr(0, ind)
+      const path = this.$route?.path
+      const ind = path?.lastIndexOf('/') || path?.length || 0
+      const startingPath = path?.substr(0, ind) || ''
       return startingPath === '/' ? 0 : startingPath === '/pins' ? 1 : startingPath === '/coins' ? 2 : startingPath === '/keychains' ? 3 : startingPath === '/blog' ? 4 : startingPath === '/quote' ? 5 : -1
     },
     path () {
-      return this.$route.path
+      return this.$route?.path
     },
     pinListOne () {
       return this.links[0].list1
@@ -483,7 +483,7 @@ export default {
       }
       // blur quote button on route change
       if (newVal === 5) {
-        document.getElementById('quoteButton').blur()
+        document.getElementById('quoteButton')?.blur()
       }
       if (this.selected !== 0) {
         window.removeEventListener('scroll', this.updateScroll)
@@ -532,8 +532,8 @@ export default {
     },
     testScroll (elem) {
       if (process.browser) {
-        document.getElementById(elem).scrollIntoView({ behavior: 'smooth', block: 'center' })
-        document.getElementById('phone-button').blur()
+        document.getElementById(elem)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        document.getElementById('phone-button')?.blur()
       }
     }
   }

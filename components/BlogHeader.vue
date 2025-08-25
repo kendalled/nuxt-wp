@@ -91,7 +91,7 @@ export default {
     formatDate(dateString) {
       if (!dateString) return ''
       const d = new Date(dateString)
-      return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+      return d?.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) || ''
     }
   }
 }

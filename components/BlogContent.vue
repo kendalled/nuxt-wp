@@ -252,14 +252,14 @@ export default {
         if (articleContent) {
           const headings = articleContent.querySelectorAll('h2, h3')
           this.tableOfContents = Array.from(headings).map((heading, index) => {
-            const id = heading.id || `heading-${index}`
-            if (!heading.id) {
+            const id = heading?.id || `heading-${index}`
+            if (!heading?.id) {
               heading.id = id
             }
             return {
               id,
-              text: heading.textContent,
-              level: parseInt(heading.tagName.charAt(1))
+              text: heading?.textContent || '',
+              level: parseInt(heading?.tagName?.charAt(1) || '2')
             }
           })
         }
