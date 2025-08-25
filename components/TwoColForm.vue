@@ -20,6 +20,7 @@
                 <div class="col-span-6 sm:col-span-1">
                   <div class="flex justify-between">
                     <label for="quantity" class="block text-sm font-medium leading-5 text-gray-700">Quantity</label>
+                    <span v-if="quantityError" class="text-sm leading-5 text-red-600">{{ quantityError }}</span>
                   </div>
                   <div class="relative mt-1 rounded-md shadow-sm">
                     <input
@@ -31,15 +32,11 @@
                       name="Quantity"
                       class="block w-full mt-1 rounded-md shadow-sm sm:text-sm focus:ring focus:ring-opacity-50"
                       :class="[quantityError ? 'border-red-300 focus:border-red-300 focus:ring-red-200' : 'border-gray-300 focus:border-blue-300 focus:ring-blue-200']"
-                      :placeholder="`Minimum ${minimumQuantity}`"
+                      :placeholder="`Minimum ${minimumQuantity} pieces`"
                       :aria-invalid="!!quantityError"
                       aria-describedby="quantity-help"
                     >
                   </div>
-                  <p id="quantity-help" class="mt-1 text-sm" :class="[quantityError ? 'text-red-600' : 'text-gray-500 opacity-0']">
-                    <span v-if="quantityError">{{ quantityError }}</span>
-                    <span v-else>Minimum {{ minimumQuantity }} pieces</span>
-                  </p>
                 </div>
                 <!-- where other input was -->
                 <div class="col-span-6 sm:col-span-1">
@@ -81,9 +78,12 @@
               </div>
               <!-- <CustomFileInput class="hidden" @file="newFile" /> -->
               <div class="mt-4">
-                <label class="block text-sm font-medium text-gray-700">
-                  Reference file(s)
-                </label>
+                <div class="flex justify-between">
+                  <label class="block text-sm font-medium text-gray-700">
+                    Reference file(s)
+                  </label>
+                  <span class="text-sm leading-5 text-gray-500">Optional</span>
+                </div>
                 <div class="mt-1 grid grid-cols-5 px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                   <div v-if="isFiles" class="col-span-5 mb-4 md:mb-0 md:col-span-2 bg-gray-100 rounded space-x-2 flex items-center px-2 py-2 h-full">
                     <img v-for="img in emitData.referenceFiles" :key="img" class="h-20 w-20 rounded object-cover shadow" :src="img">
@@ -498,7 +498,7 @@ export default {
     },
     quantityError () {
       const raw = (this.emitData.quantity === null || this.emitData.quantity === undefined) ? '' : String(this.emitData.quantity).trim()
-      if (raw === '') return 'Quantity is required'
+      if (raw === '') return 'Required'
       const q = Number.parseInt(raw, 10)
       if (!Number.isFinite(q)) return 'Please enter a valid number'
       if (q <= 0) return 'Please enter a whole number'
@@ -510,7 +510,7 @@ export default {
       // Require valid quantity and basic contact fields
       if (this.quantityError) return false
       const data = [this.emitData.phone,
-        this.emitData.name, this.emitData.email, this.emitData.address]
+        this.emitData.name, this.emitData.email]
       for (let i = 0; i < data.length; i++) {
         const element = data[i]
         if (element === '') {
