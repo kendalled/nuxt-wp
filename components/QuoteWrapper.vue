@@ -50,7 +50,7 @@
             @notif="errorNotif = true"
           />
           <TwoColForm
-            :class="[!doneFirst ? 'opacity-50' : 'opacity-100']"
+            :class="[!doneFirst ? 'opacity-25' : 'opacity-100']"
             class="transition-opacity duration-300 ease-in-out"
             :greyed="!doneFirst"
             :product="option"
