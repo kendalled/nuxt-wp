@@ -107,7 +107,7 @@
             <!-- Contact Form -->
             <div class="mt-12 lg:mt-0">
               <div class="max-w-lg mx-auto lg:max-w-none">
-                <form name="contact" method="POST" data-netlify="true" class="grid grid-cols-1 gap-y-6">
+                <form name="Contact Form (Standalone)" method="POST" data-netlify="true" class="grid grid-cols-1 gap-y-6">
                   <div>
                     <label for="contact_name" class="block text-sm font-medium leading-5 text-gray-700">Name *</label>
                     <div class="relative mt-1 rounded-md shadow-sm">
