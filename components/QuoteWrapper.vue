@@ -29,13 +29,13 @@
           <input id="product" v-model="product" type="hidden" name="Product">
           <HiddenInputs :product="product" />
           <input
-            v-if="isPin"
+            v-if="isPin || isCoin"
             type="hidden"
             name="Estimated Per Unit"
             :value="estimate && estimate.perUnit != null ? estimate.perUnit : ''"
           >
           <input
-            v-if="isPin"
+            v-if="isPin || isCoin"
             type="hidden"
             name="Estimated Total"
             :value="estimate && estimate.total != null ? estimate.total : ''"
