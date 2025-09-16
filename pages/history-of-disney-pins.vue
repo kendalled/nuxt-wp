@@ -62,7 +62,7 @@
 
       <p>The hobby continues to grow, with new collectors joining every day and Disney consistently releasing innovative designs that push the boundaries of what a collectible pin can be.</p>
     </BlogContent>
-    <BlogNavigation :current-article="data" />
+    <BlogNavigation :current-slug="data.slug" />
   </NuxtLayout>
 </template>
 

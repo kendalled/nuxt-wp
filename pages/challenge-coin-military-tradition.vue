@@ -71,7 +71,7 @@
 
       <p>The challenge coin tradition stands as a testament to the enduring power of symbols to unite, inspire, and honor those who answer the call to serve.</p>
     </BlogContent>
-    <BlogNavigation :current-article="data" />
+    <BlogNavigation :current-slug="data.slug" />
   </NuxtLayout>
 </template>
 

@@ -67,7 +67,7 @@
 
       <p>Remember that the best pin designs often appear simple but are the result of careful planning and multiple iterations. Don't be afraid to refine your concept based on manufacturer feedback and sample results.</p>
     </BlogContent>
-    <BlogNavigation :current-article="data" />
+    <BlogNavigation :current-slug="data.slug" />
   </NuxtLayout>
 </template>
 
