@@ -63,7 +63,8 @@ export default {
         'pk3': 'Velvet Case',
         // Color options for challenge coins
         'c0': 'Full Color Coin',
-        'c1': 'No Color Coin'
+        'c1': 'No Color Coin',
+        'c2': 'Color on One Side'
       }
     }
   },
