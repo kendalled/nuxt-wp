@@ -168,7 +168,7 @@
               title: 'A Complete History of Disney Pins',
               desc: 'An in-depth overview of the origins, changes, and loyal community behind Disney\'s famous lapel pins.',
               img: '/pinblog2.jpg',
-              href: '/blog/disney-pins'
+              href: '/blog/history-of-disney-pins'
             }
           ]
         }
