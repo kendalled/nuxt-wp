@@ -1,19 +1,5 @@
 <template>
     <div>
-        <Head>
-          <Title>Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design</Title>
-          <Meta name="description" content="Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions. Starting at 50 pcs." />
-          <Meta name="keywords" content="custom lapel pins, enamel pins, soft enamel pins, hard enamel pins, die struck pins, custom pins, lapel pin maker" />
-          <Meta property="og:title" content="Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design" />
-          <Meta property="og:description" content="Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions." />
-          <Meta property="og:image" content="https://lapelpinsandcoins.com/homePins.png" />
-          <Meta property="og:url" content="https://lapelpinsandcoins.com/pins" />
-          <Meta property="og:type" content="website" />
-          <Meta name="twitter:card" content="summary_large_image" />
-          <Meta name="twitter:title" content="Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design" />
-          <Meta name="twitter:description" content="Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions." />
-          <Meta name="twitter:image" content="https://lapelpinsandcoins.com/homePins.png" />
-        </Head>
         <div class="w-auto h-auto bg-gray-50">
         <InteriorHeader :new-layout="true" :headline="headline" :subheading="subheading" :choices="choices" />
         <!-- <SimpleHeader /> -->
@@ -85,67 +71,78 @@
   }
   </style>
   
-  <script>
-  import LargeTest from '~/components/LargeTest'
-  import InteriorHeader from '~/components/InteriorHeader'
-  import NewColumnImage from '~/components/NewColumnImage'
-  import InteriorContentImage from '~/components/InteriorContentImage'
-  import FinalQuote from '~/components/FinalQuote'
-  import PinBenefits from '~/components/PinBenefits'
-  import TailPricing from '~/components/TailPricing'
-  import TailSteps from '~/components/TailSteps'
-  import Faq2 from '~/components/Faq2'
-  import TailCta from '~/components/TailCta'
-  import TailFoot from '~/components/TailFoot'
-  export default {
-    components: {
-    LargeTest,
-    InteriorHeader,
-    NewColumnImage,
-    InteriorContentImage,
-    FinalQuote,
-    PinBenefits,
-    TailPricing,
-    TailSteps,
-    Faq2,
-    TailCta,
-    TailFoot
-},
-    data () {
-      return {
-        headline: 'High quality, custom lapel pins designed by experts.',
-        subheading: 'With over 20 years of experience, we make customized pins more accessible than ever. Our ordering process includes free artwork, professional designs, and unlimited revisions. Get started today.',
-        choices: [
-          {
-            desk: 'Browse our various pin styles',
-            mobile: 'Browse our pin styles'
-          },
-          {
-            desk: 'See our industry-leading pricing',
-            mobile: 'See our unmatched pricing'
-          },
-          {
-            desk: 'View our streamlined ordering process',
-            mobile: 'View our ordering process'
-          }
-        ],
-        p1: 'Custom lapel pins are small, customizable, and easy to make. You can design them to be as classy as you need them to be, and they make for the perfect subtle fashion statement. Showing pride in your achievements or support for a certain cause or movement is easier than ever with lapel pins. They may be small, but custom lapel pins can be huge for your fundraiser, company, or team. We make pins for a variety of uses. Brand promotion, for one, is essential to a brand\'s success, and there’s no easier way to promote and establish your brand than with a pin. No matter how you plan on using them, our pins are sure to suit your needs.',
-        p2: 'We make pins for a variety of uses. Brand promotion, for one, is essential to a brand\'s success, and there’s no easier way to promote and establish your brand than with a custom lapel pin. Award ceremonies can be stepped up a level with classy custom lapel pins to reward those who earned it. No matter how you plan on using them, our pins are sure to suit your needs.',
-        img1: '/homePins.png',
-        // todo: unify or split into 3 sets for one <FinalQuote />
-      }
-    },
-    head () {
-      // const items = this.questions.map((item, index) => ({
-      //   '@type': 'Question',
-      //   position: index + 1,
-      //   name: item.query,
-      //   acceptedAnswer: {
-      //     '@type': 'Answer',
-      //     text: item.answer
-      //   }
-      // }))
-      const structuredData = {
+<script setup>
+import { ref, onMounted } from 'vue'
+import { useStore } from 'vuex'
+import LargeTest from '~/components/LargeTest'
+import InteriorHeader from '~/components/InteriorHeader'
+import NewColumnImage from '~/components/NewColumnImage'
+import InteriorContentImage from '~/components/InteriorContentImage'
+import FinalQuote from '~/components/FinalQuote'
+import PinBenefits from '~/components/PinBenefits'
+import TailPricing from '~/components/TailPricing'
+import TailSteps from '~/components/TailSteps'
+import Faq2 from '~/components/Faq2'
+import TailCta from '~/components/TailCta'
+import TailFoot from '~/components/TailFoot'
+
+const router = useRouter()
+const store = useStore()
+
+const headline = ref('High quality, custom lapel pins designed by experts.')
+const subheading = ref('With over 20 years of experience, we make customized pins more accessible than ever. Our ordering process includes free artwork, professional designs, and unlimited revisions. Get started today.')
+const choices = ref([
+  {
+    desk: 'Browse our various pin styles',
+    mobile: 'Browse our pin styles'
+  },
+  {
+    desk: 'See our industry-leading pricing',
+    mobile: 'See our unmatched pricing'
+  },
+  {
+    desk: 'View our streamlined ordering process',
+    mobile: 'View our ordering process'
+  }
+])
+const p1 = ref("Custom lapel pins are small, customizable, and easy to make. You can design them to be as classy as you need them to be, and they make for the perfect subtle fashion statement. Showing pride in your achievements or support for a certain cause or movement is easier than ever with lapel pins. They may be small, but custom lapel pins can be huge for your fundraiser, company, or team. We make pins for a variety of uses. Brand promotion, for one, is essential to a brand's success, and there's no easier way to promote and establish your brand than with a pin. No matter how you plan on using them, our pins are sure to suit your needs.")
+const p2 = ref("We make pins for a variety of uses. Brand promotion, for one, is essential to a brand's success, and there's no easier way to promote and establish your brand than with a custom lapel pin. Award ceremonies can be stepped up a level with classy custom lapel pins to reward those who earned it. No matter how you plan on using them, our pins are sure to suit your needs.")
+const img1 = ref('/homePins.png')
+
+const goQuote = () => {
+  router.push('/quote')
+}
+
+onMounted(() => {
+  store.commit('prefs/setPrefs', 'Lapel Pins')
+})
+
+// SEO Meta tags
+useSeoMeta({
+  title: 'Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design',
+  description: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions. Starting at 50 pcs.',
+  keywords: 'custom lapel pins, enamel pins, soft enamel pins, hard enamel pins, die struck pins, custom pins, lapel pin maker',
+  ogTitle: 'Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design',
+  ogDescription: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions.',
+  ogImage: 'https://lapelpinsandcoins.com/homePins.png',
+  ogUrl: 'https://lapelpinsandcoins.com/pins',
+  ogType: 'website',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design',
+  twitterDescription: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions.',
+  twitterImage: 'https://lapelpinsandcoins.com/homePins.png'
+})
+
+// Product and Breadcrumb structured data
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://lapelpinsandcoins.com/pins' },
+    { rel: 'icon', href: '/favicon.ico' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Product',
         name: 'Custom Lapel Pins',
@@ -185,33 +182,32 @@
             url: 'https://lapelpinsandcoins.com'
           }
         }
-      }
-      return {
-        script: [
+      })
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
           {
-            hid: 'productJson',
-            type: 'application/ld+json',
-            json: structuredData
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://lapelpinsandcoins.com'
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Custom Lapel Pins',
+            item: 'https://lapelpinsandcoins.com/pins'
           }
-        ],
-        link: [
-          { rel: 'canonical', href: 'https://lapelpinsandcoins.com/pins' },
-          { rel: 'icon', href: '/favicon.ico' }
         ]
-      }
-    },
-    mounted () {
-      this.$store.commit('prefs/setPrefs', 'Lapel Pins')
-    },
-    methods: {
-      goQuote () {
-        if (process.browser) {
-          this.$router.push('/quote')
-        }
-      }
+      })
     }
-  }
-  </script>
+  ]
+})
+</script>
   
   <style>
   .max-w-8xl {

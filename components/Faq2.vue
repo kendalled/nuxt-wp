@@ -53,74 +53,72 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'Faq',
-  data () {
-    return {
-      questions: [
-        {
-          query: 'How long does shipping take?',
-          answer: 'Once your design is finalized and you have checked out, you can expect to receive your custom items in under 14 days. Have a tight deadline? No worries! Rush orders are available.',
-          opened: false
-        },
-        {
-          query: 'How can I ensure the quality of my product(s)?',
-          answer: 'We have the process down to a science. A high-quality digital proof will allow you to check spelling, verify color, adjust size, and make any additional changes or corrections prior to starting production. The size of your lapel pin, keychain, or coin is determined by measuring the widest or tallest point of your design. Your products are then made with stainless steel, and spot-checked for quality.',
-          opened: false
-        },
-        {
-          query: 'What material should I choose?',
-          answer: 'There are several materials and plating options available to make your custom item stand out. If you are unsure about what choices on the quote form suit your needs, feel free to ask! At Lapel Pins and Coins, we believe in superior customer service. Each order is different, so we always help you choose the options that best suit your design.',
-          opened: false
-        },
-        {
-          query: 'Will I get my product on time?',
-          answer: 'We will work with you to meet any deadline! Once we have received your approval and payment, we begin production on your order immediately. We give you expected delivery dates, but we have no control over unforeseen circumstances. If you experience any problem with your order arriving, contact us! We’ll be here to help.',
-          opened: false
-        },
-        {
-          query: 'Can I change my design?',
-          answer: 'Yes! We offer you unlimited revisions on all art proofs, free of charge. Change it up as much as you’d like to get your design just right.',
-          opened: false
-        },
-        {
-          query: 'What is your minimum order size?',
-          answer: 'Our minimum order quantity for pins is 100 pieces. Challenge coin orders need to be a minimum of 50 pieces. Contact us for any additional questions about your order size.',
-          opened: false
-        }
-      ]
-    }
+<script setup>
+import { ref, computed } from 'vue'
+
+const questions = ref([
+  {
+    query: "How long does shipping take?",
+    answer: "Once your design is finalized and you have checked out, you can expect to receive your custom items in under 14 days. Have a tight deadline? No worries! Rush orders are available.",
+    opened: false
   },
-  head () {
-    const items = this.questions.map((item, index) => ({
-      '@type': 'Question',
-      position: index + 1,
-      name: item.query,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer
-      }
-    }))
-    const structuredData = {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      mainEntity: items
-    }
-    return {
-      script: [
-        {
-          hid: 'FaqJson',
-          type: 'application/ld+json',
-          json: structuredData
-        }
-      ]
-    }
+  {
+    query: "How can I ensure the quality of my product(s)?",
+    answer: "We have the process down to a science. A high-quality digital proof will allow you to check spelling, verify color, adjust size, and make any additional changes or corrections prior to starting production. The size of your lapel pin, keychain, or coin is determined by measuring the widest or tallest point of your design. Your products are then made with stainless steel, and spot-checked for quality.",
+    opened: false
   },
-  methods: {
-    open (val) {
-      this.questions[val].opened = !this.questions[val].opened
-    }
+  {
+    query: "What material should I choose?",
+    answer: "There are several materials and plating options available to make your custom item stand out. If you are unsure about what choices on the quote form suit your needs, feel free to ask! At Lapel Pins and Coins, we believe in superior customer service. Each order is different, so we always help you choose the options that best suit your design.",
+    opened: false
+  },
+  {
+    query: "Will I get my product on time?",
+    answer: "We will work with you to meet any deadline! Once we have received your approval and payment, we begin production on your order immediately. We give you expected delivery dates, but we have no control over unforeseen circumstances. If you experience any problem with your order arriving, contact us! We'll be here to help.",
+    opened: false
+  },
+  {
+    query: "Can I change my design?",
+    answer: "Yes! We offer you unlimited revisions on all art proofs, free of charge. Change it up as much as you'd like to get your design just right.",
+    opened: false
+  },
+  {
+    query: "What is your minimum order size?",
+    answer: "Our minimum order quantity for pins is 100 pieces. Challenge coin orders need to be a minimum of 50 pieces. Contact us for any additional questions about your order size.",
+    opened: false
   }
+])
+
+const open = (val) => {
+  questions.value[val].opened = !questions.value[val].opened
 }
+
+// Generate FAQ structured data
+const faqStructuredData = computed(() => {
+  const items = questions.value.map((item, index) => ({
+    '@type': 'Question',
+    position: index + 1,
+    name: item.query,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer
+    }
+  }))
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items
+  }
+})
+
+// Modern Nuxt 3 way to add structured data
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(faqStructuredData.value)
+    }
+  ]
+})
 </script>

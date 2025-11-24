@@ -20,7 +20,6 @@
 </template>
 
 <script setup>
-import { useRoute } from 'vue-router'
 import BlogHeader from '~/components/BlogHeader'
 import BlogContent from '~/components/BlogContent'
 import BlogNavigation from '~/components/BlogNavigation'
@@ -53,15 +52,56 @@ const articleType = computed(() => {
 })
 
 // SEO Meta
-useHead({
+useSeoMeta({
   title: data.value?.title ? `${data.value.title} | Lapel Pins & Coins Blog` : 'Blog Article | Lapel Pins & Coins',
-  meta: [
-    { hid: 'description', name: 'description', content: data.value?.description || 'Read our latest blog post about custom lapel pins, challenge coins, and promotional products.' },
-    { hid: 'og:title', property: 'og:title', content: data.value?.title || 'Blog Article' },
-    { hid: 'og:description', property: 'og:description', content: data.value?.description || 'Read our latest blog post' },
-    { hid: 'og:image', property: 'og:image', content: data.value?.image || '/thumbnail.png' },
-    { hid: 'og:type', property: 'og:type', content: 'article' },
-    { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' }
+  description: data.value?.description || 'Read our latest blog post about custom lapel pins, challenge coins, and promotional products.',
+  ogTitle: data.value?.title || 'Blog Article',
+  ogDescription: data.value?.description || 'Read our latest blog post',
+  ogImage: data.value?.image || '/thumbnail.png',
+  ogType: 'article',
+  ogUrl: `https://lapelpinsandcoins.com${route.path}`,
+  twitterCard: 'summary_large_image',
+  twitterTitle: data.value?.title || 'Blog Article',
+  twitterDescription: data.value?.description || 'Read our latest blog post',
+  twitterImage: data.value?.image || '/thumbnail.png'
+})
+
+// Article structured data
+useHead({
+  link: [
+    { rel: 'canonical', href: `https://lapelpinsandcoins.com${route.path}` }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: data.value?.title || 'Blog Article',
+        description: data.value?.description || 'Read our latest blog post about custom lapel pins, challenge coins, and promotional products.',
+        image: data.value?.image ? `https://lapelpinsandcoins.com${data.value.image}` : 'https://lapelpinsandcoins.com/thumbnail.png',
+        datePublished: data.value?.date || new Date().toISOString(),
+        dateModified: data.value?.dateModified || data.value?.date || new Date().toISOString(),
+        author: {
+          '@type': 'Organization',
+          name: 'Lapel Pins & Coins',
+          url: 'https://lapelpinsandcoins.com'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Lapel Pins & Coins',
+          url: 'https://lapelpinsandcoins.com',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://lapelpinsandcoins.com/logo.png'
+          }
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': `https://lapelpinsandcoins.com${route.path}`
+        }
+      })
+    }
   ]
 })
 </script>

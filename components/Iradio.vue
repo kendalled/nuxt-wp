@@ -8,8 +8,8 @@
         <label :for="choice.name + i.toString()" class="text-sm text-center text-gray-600 cursor-pointer focus:ring-teal group">
           <input
             :id="choice.name + i.toString()"
+            :name="title + '-' + option"
             :value="choice.sid || choice.name"
-            :name="'test' + title"
             :checked="quote[option].selected === (choice.sid || choice.name)"
             type="radio"
             class="opacity-0"

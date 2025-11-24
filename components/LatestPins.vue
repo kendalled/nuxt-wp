@@ -1,7 +1,6 @@
 <template>
   <section class="relative mt-8 lg:ml-1 lg:mt-0">
     <div class="relative max-w-lg mx-auto lg:mx-0 lg:max-w-xl sm:h-64 lg:h-48 h-96">
-      <!-- todo: fix mode -->
       <transition-group
         enter-from-class="transform scale-95 opacity-0"
         enter-active-class="transition duration-200 ease-out"
@@ -9,7 +8,6 @@
         leave-from-class="transform scale-100 opacity-100"
         leave-active-class="transition duration-75 ease-in"
         leave-to-class="transform scale-95 opacity-0"
-        mode="out-in"
         @after-leave="resetPic"
       >
         <div v-for="(pin, p) in pinSet" v-show="(p === page)" :key="pin.title" class="absolute flex flex-col items-center justify-start max-w-lg px-6 py-6 bg-white rounded-md shadow-2xl lg:-mt-1 sm:mx-auto sm:flex-row lg:ml-auto lg:max-w-xl">
