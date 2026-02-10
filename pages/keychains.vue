@@ -91,7 +91,7 @@
             mobile: 'View our ordering process'
           }
         ],
-        p1: 'Most custom keychain designs can be made into soft enamel keychains, but this process often works best with designs that have minimal lines and clearly defined areas of color. These things are important because the colored areas sit slightly recessed below the metal separations. If you're not sure which type of keychain to choose, don't worry! We will work with you to make sure you choose the process that best fits your design. No matter what your goal is, our artists are here to work with you to make a design that gets your message across perfectly. Start today with a free quote!',
+        p1: "Most custom keychain designs can be made into soft enamel keychains, but this process often works best with designs that have minimal lines and clearly defined areas of color. These things are important because the colored areas sit slightly recessed below the metal separations. If you're not sure which type of keychain to choose, don't worry! We will work with you to make sure you choose the process that best fits your design. No matter what your goal is, our artists are here to work with you to make a design that gets your message across perfectly. Start today with a free quote!",
         p2: 'Keychains make the perfect small and practical souvenir. From trip mementos to popular characters, anything can be made into a stylish keychain. No matter what your goal is, our artists are here to work with you to make a design that gets your message across perfectly. Start today with a free quote!',
         img1: '/homeChains.png',
         priceHeading: 'Custom Keychains',
