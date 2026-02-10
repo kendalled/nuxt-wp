@@ -20,7 +20,7 @@ export default {
   },
   data () {
     return {
-      // Mapping SID codes to user-friendly names
+      // Common SID-to-name mappings shared by all product types.
       sidToNameMapping: {
         // Production methods
         'pr0': 'Die Struck',
@@ -39,17 +39,6 @@ export default {
         'pl8': 'Antique Copper',
         'pl9': 'Dual Plated',
         'pl10': 'Color Coated',
-        // Sizing options
-        'sz0': '0.75 inch',
-        'sz1': '1.00 inch',
-        'sz2': '1.25 inch',
-        'sz3': '1.50 inch',
-        'sz4': '1.75 inch',
-        'sz5': '2.00 inch',
-        'sz6': '2.25 inch',
-        'sz7': '2.50 inch',
-        'sz8': '2.75 inch',
-        'sz9': '3.00 inch',
         // Backing options
         'bk0': 'Butterfly Clutch',
         'bk1': 'Black Rubber',
@@ -65,6 +54,35 @@ export default {
         'c0': 'Full Color Coin',
         'c1': 'No Color Coin',
         'c2': 'Color on One Side'
+      },
+      sizeSidToNameMappingByProduct: {
+        'Lapel Pins': {
+          'sz0': '0.75 inch',
+          'sz1': '1.00 inch',
+          'sz2': '1.25 inch',
+          'sz3': '1.50 inch',
+          'sz4': '1.75 inch'
+        },
+        'Challenge Coins': {
+          'sz0': '1.25 inch',
+          'sz1': '1.50 inch',
+          'sz2': '1.75 inch',
+          'sz3': '2.00 inch',
+          'sz4': '2.25 inch',
+          'sz5': '2.50 inch',
+          'sz6': '2.75 inch',
+          'sz7': '3.00 inch'
+        },
+        Keychains: {
+          'sz0': '1.25 inch',
+          'sz1': '1.50 inch',
+          'sz2': '1.75 inch',
+          'sz3': '2.00 inch',
+          'sz4': '2.25 inch',
+          'sz5': '2.50 inch',
+          'sz6': '2.75 inch',
+          'sz7': '3.00 inch'
+        }
       }
     }
   },
@@ -74,34 +92,38 @@ export default {
     },
     production () {
       const selected = (this.product === 'Lapel Pins' ? this.$store.state.quote.quote[0].selected : this.product === 'Challenge Coins' ? 'None' : this.$store.state.chainQuote.quoteChain[0].selected)
-      return this.mapSidToName(selected)
+      return this.mapSidToName(selected, 'production')
     },
     plating () {
       const selected = (this.product === 'Lapel Pins' ? this.$store.state.quote.quote[1].selected : this.product === 'Challenge Coins' ? this.$store.state.coinQuote.quoteCoin[0].selected : this.$store.state.chainQuote.quoteChain[1].selected)
-      return this.mapSidToName(selected)
+      return this.mapSidToName(selected, 'plating')
     },
     sizing () {
       const selected = (this.product === 'Lapel Pins' ? this.$store.state.quote.quote[2].selected : this.product === 'Challenge Coins' ? this.$store.state.coinQuote.quoteCoin[2].selected : this.$store.state.chainQuote.quoteChain[2].selected)
-      return this.mapSidToName(selected)
+      return this.mapSidToName(selected, 'sizing')
     },
     color () {
       const selected = (this.product === 'Challenge Coins' ? this.$store.state.coinQuote.quoteCoin[1].selected : 'Not a Coin')
-      return this.mapSidToName(selected)
+      return this.mapSidToName(selected, 'color')
     },
     backing () {
       const selected = (this.product === 'Lapel Pins' ? this.$store.state.quote.quote[3].selected : 'Not a pin')
-      return this.mapSidToName(selected)
+      return this.mapSidToName(selected, 'backing')
     },
     packaging () {
       const selected = (this.product === 'Lapel Pins' ? this.$store.state.quote.quote[4].selected : this.product === 'Challenge Coins' ? this.$store.state.coinQuote.quoteCoin[3].selected : this.$store.state.chainQuote.quoteChain[3].selected)
-      return this.mapSidToName(selected)
+      return this.mapSidToName(selected, 'packaging')
     }
   },
   methods: {
-    mapSidToName (value) {
+    mapSidToName (value, field) {
       // If value is null/undefined or already a display name, return as is
       if (!value || typeof value !== 'string') {
         return value
+      }
+      if (field === 'sizing') {
+        const sizeMap = this.sizeSidToNameMappingByProduct[this.product] || {}
+        return sizeMap[value] || value
       }
       // If it's a SID code, map it to display name, otherwise return original
       return this.sidToNameMapping[value] || value
