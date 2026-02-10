@@ -119,17 +119,17 @@ onMounted(() => {
 
 // SEO Meta tags
 useSeoMeta({
-  title: 'Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design',
-  description: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions. Starting at 50 pcs.',
+  title: 'Custom Lapel Pins | Free Quote & Design - Lapel Pins & Coins',
+  description: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions. Minimum 100 pcs.',
   keywords: 'custom lapel pins, enamel pins, soft enamel pins, hard enamel pins, die struck pins, custom pins, lapel pin maker',
-  ogTitle: 'Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design',
-  ogDescription: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions.',
+  ogTitle: 'Custom Lapel Pins | Free Quote & Design',
+  ogDescription: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions. Minimum 100 pcs.',
   ogImage: 'https://lapelpinsandcoins.com/homePins.png',
   ogUrl: 'https://lapelpinsandcoins.com/pins',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Custom Lapel Pins | Premium Quality Enamel Pins | Free Quote & Design',
-  twitterDescription: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions.',
+  twitterTitle: 'Custom Lapel Pins | Free Quote & Design',
+  twitterDescription: 'Professional custom lapel pins made simple. 20+ years experience crafting soft enamel, hard enamel, and die struck pins. Same-day quotes, free artwork, unlimited revisions. Minimum 100 pcs.',
   twitterImage: 'https://lapelpinsandcoins.com/homePins.png'
 })
 
@@ -181,6 +181,67 @@ useHead({
             telephone: '+1-844-395-4464',
             url: 'https://lapelpinsandcoins.com'
           }
+        }
+      })
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'Custom Lapel Pin Manufacturing',
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'Lapel Pins & Coins',
+          image: 'https://lapelpinsandcoins.com/logo.png',
+          '@id': 'https://lapelpinsandcoins.com',
+          url: 'https://lapelpinsandcoins.com',
+          telephone: '+1-844-395-4464',
+          priceRange: '$$',
+          address: {
+            '@type': 'PostalAddress',
+            addressCountry: 'US'
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5.0',
+            reviewCount: '89'
+          },
+          sameAs: [
+            'https://www.facebook.com/lapelpinsandcoins',
+            'https://twitter.com/lapelpinscoins'
+          ]
+        },
+        areaServed: {
+          '@type': 'Country',
+          name: 'United States'
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Custom Lapel Pin Services',
+          itemListElement: [
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Soft Enamel Lapel Pins'
+              }
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Hard Enamel Lapel Pins'
+              }
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Die Struck Lapel Pins'
+              }
+            }
+          ]
         }
       })
     },

@@ -44,7 +44,7 @@
       <TailFoot />
     </div>
   </template>
-  
+
   <script>
   import InteriorHeader from '~/components/InteriorHeader'
   import InteriorContentImage from '~/components/InteriorContentImage'
@@ -91,7 +91,7 @@
             mobile: 'View our ordering process'
           }
         ],
-        p1: 'Most custom keychain designs can be made into soft enamel keychains, but this process often works best with designs that have minimal lines and clearly defined areas of color. These things are important because the colored areas sit slightly recessed below the metal separations. If you’re not sure which type of keychain to choose, don’t worry! We will work with you to make sure you choose the process that best fits your design. No matter what your goal is, our artists are here to work with you to make a design that gets your message across perfectly. Start today with a free quote!',
+        p1: 'Most custom keychain designs can be made into soft enamel keychains, but this process often works best with designs that have minimal lines and clearly defined areas of color. These things are important because the colored areas sit slightly recessed below the metal separations. If you're not sure which type of keychain to choose, don't worry! We will work with you to make sure you choose the process that best fits your design. No matter what your goal is, our artists are here to work with you to make a design that gets your message across perfectly. Start today with a free quote!',
         p2: 'Keychains make the perfect small and practical souvenir. From trip mementos to popular characters, anything can be made into a stylish keychain. No matter what your goal is, our artists are here to work with you to make a design that gets your message across perfectly. Start today with a free quote!',
         img1: '/homeChains.png',
         priceHeading: 'Custom Keychains',
@@ -99,27 +99,6 @@
         price: '2.75',
         para1: 'Keychains are the perfect way to showcase your logo, design, or emblem. Our ordering process includes digital art, unlimited revisions, & plenty of customization options.',
         para2: 'Our quality keychains are produced with industry-leading techinques. Veterans and collectors alike love our products for their authenticity. We use 100% stainless steel molds, and individually mint each side. Decades of experience in both lapel pins and challenge coins allows us to ship your order with both quality & speed.'
-      }
-    },
-    head () {
-      return {
-        title: 'Custom Keychains | Personalized Enamel Keychains | Free Quote & Design',
-        meta: [
-          { hid: 'description', name: 'description', content: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized keychains. Free artwork, unlimited revisions. Perfect for promotions and gifts.' },
-          { name: 'keywords', content: 'custom keychains, personalized keychains, enamel keychains, promotional keychains, custom keychain maker' },
-          { property: 'og:title', content: 'Custom Keychains | Personalized Enamel Keychains | Free Quote & Design' },
-          { property: 'og:description', content: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized keychains. Free artwork, unlimited revisions.' },
-          { property: 'og:image', content: 'https://lapelpinsandcoins.com/homeChains.png' },
-          { property: 'og:url', content: 'https://lapelpinsandcoins.com/keychains' },
-          { property: 'og:type', content: 'website' },
-          { name: 'twitter:card', content: 'summary_large_image' },
-          { name: 'twitter:title', content: 'Custom Keychains | Personalized Enamel Keychains | Free Quote & Design' },
-          { name: 'twitter:description', content: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized keychains. Free artwork, unlimited revisions.' },
-          { name: 'twitter:image', content: 'https://lapelpinsandcoins.com/homeChains.png' }
-        ],
-        link: [
-          { rel: 'canonical', href: 'https://lapelpinsandcoins.com/keychains' }
-        ]
       }
     },
     mounted () {
@@ -133,6 +112,158 @@
       }
     }
   }
+  </script>
+
+  <script setup>
+  // SEO Meta tags
+  useSeoMeta({
+    title: 'Custom Keychains | Free Quote & Design - Lapel Pins & Coins',
+    description: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized enamel keychains. Free artwork, unlimited revisions. Perfect for promotions and gifts. Minimum 100 pcs.',
+    keywords: 'custom keychains, personalized keychains, enamel keychains, promotional keychains, custom keychain maker',
+    ogTitle: 'Custom Keychains | Free Quote & Design',
+    ogDescription: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized enamel keychains. Free artwork, unlimited revisions. Perfect for promotions and gifts. Minimum 100 pcs.',
+    ogImage: 'https://lapelpinsandcoins.com/homeChains.png',
+    ogUrl: 'https://lapelpinsandcoins.com/keychains',
+    ogType: 'website',
+    twitterCard: 'summary_large_image',
+    twitterTitle: 'Custom Keychains | Free Quote & Design',
+    twitterDescription: 'Professional custom keychains with same-day quotes. 20+ years experience crafting personalized enamel keychains. Free artwork, unlimited revisions. Perfect for promotions and gifts. Minimum 100 pcs.',
+    twitterImage: 'https://lapelpinsandcoins.com/homeChains.png'
+  })
+
+  // Product and Breadcrumb structured data
+  useHead({
+    link: [
+      { rel: 'canonical', href: 'https://lapelpinsandcoins.com/keychains' }
+    ],
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: 'Custom Keychains',
+          image: [
+            'https://lapelpinsandcoins.com/homeChains.png',
+            'https://lapelpinsandcoins.com/FDkeychains.png'
+          ],
+          description: 'Professional custom keychains crafted with 20+ years experience. Soft enamel and personalized options available. Starting at 100 pcs with same-day quotes.',
+          category: 'Custom Keychains',
+          brand: {
+            '@type': 'Brand',
+            name: 'Lapel Pins & Coins'
+          },
+          manufacturer: {
+            '@type': 'Organization',
+            name: 'Lapel Pins & Coins',
+            url: 'https://lapelpinsandcoins.com'
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5.0',
+            reviewCount: '52',
+            bestRating: '5.0'
+          },
+          offers: {
+            '@type': 'AggregateOffer',
+            lowPrice: '2.75',
+            highPrice: '9.50',
+            priceCurrency: 'USD',
+            availability: 'https://schema.org/InStock',
+            itemCondition: 'https://schema.org/NewCondition',
+            seller: {
+              '@type': 'Organization',
+              name: 'Lapel Pins & Coins',
+              telephone: '+1-844-395-4464',
+              url: 'https://lapelpinsandcoins.com'
+            }
+          }
+        })
+      },
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          serviceType: 'Custom Keychain Manufacturing',
+          provider: {
+            '@type': 'LocalBusiness',
+            name: 'Lapel Pins & Coins',
+            image: 'https://lapelpinsandcoins.com/logo.png',
+            '@id': 'https://lapelpinsandcoins.com',
+            url: 'https://lapelpinsandcoins.com',
+            telephone: '+1-844-395-4464',
+            priceRange: '$$',
+            address: {
+              '@type': 'PostalAddress',
+              addressCountry: 'US'
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '5.0',
+              reviewCount: '52'
+            },
+            sameAs: [
+              'https://www.facebook.com/lapelpinsandcoins',
+              'https://twitter.com/lapelpinscoins'
+            ]
+          },
+          areaServed: {
+            '@type': 'Country',
+            name: 'United States'
+          },
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'Custom Keychain Services',
+            itemListElement: [
+              {
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Soft Enamel Keychains'
+                }
+              },
+              {
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Personalized Keychains'
+                }
+              },
+              {
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Promotional Keychains'
+                }
+              }
+            ]
+          }
+        })
+      },
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: 'https://lapelpinsandcoins.com'
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: 'Custom Keychains',
+              item: 'https://lapelpinsandcoins.com/keychains'
+            }
+          ]
+        })
+      }
+    ]
+  })
   </script>
   
   <style scoped>

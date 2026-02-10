@@ -106,17 +106,17 @@ onMounted(() => {
 
 // SEO Meta tags
 useSeoMeta({
-  title: 'Custom Challenge Coins | Military & Police Coins | Free Design & Quote',
-  description: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork, unlimited revisions.',
+  title: 'Custom Challenge Coins | Free Design & Quote - Lapel Pins & Coins',
+  description: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork, unlimited revisions. Minimum 50 pcs.',
   keywords: 'custom challenge coins, military challenge coins, police challenge coins, fire department coins, commemorative coins, challenge coin maker',
-  ogTitle: 'Custom Challenge Coins | Military & Police Coins | Free Design & Quote',
-  ogDescription: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork.',
+  ogTitle: 'Custom Challenge Coins | Free Design & Quote',
+  ogDescription: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork, unlimited revisions. Minimum 50 pcs.',
   ogImage: 'https://lapelpinsandcoins.com/homeCoins.png',
   ogUrl: 'https://lapelpinsandcoins.com/coins',
   ogType: 'website',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Custom Challenge Coins | Military & Police Coins | Free Design & Quote',
-  twitterDescription: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork.',
+  twitterTitle: 'Custom Challenge Coins | Free Design & Quote',
+  twitterDescription: 'Professional custom challenge coins for military, police, fire departments & organizations. 20+ years experience. Antique & polished finishes. Same-day quotes, free artwork, unlimited revisions. Minimum 50 pcs.',
   twitterImage: 'https://lapelpinsandcoins.com/homeCoins.png'
 })
 
@@ -167,6 +167,67 @@ useHead({
             telephone: '+1-844-395-4464',
             url: 'https://lapelpinsandcoins.com'
           }
+        }
+      })
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Service',
+        serviceType: 'Custom Challenge Coin Manufacturing',
+        provider: {
+          '@type': 'LocalBusiness',
+          name: 'Lapel Pins & Coins',
+          image: 'https://lapelpinsandcoins.com/logo.png',
+          '@id': 'https://lapelpinsandcoins.com',
+          url: 'https://lapelpinsandcoins.com',
+          telephone: '+1-844-395-4464',
+          priceRange: '$$',
+          address: {
+            '@type': 'PostalAddress',
+            addressCountry: 'US'
+          },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5.0',
+            reviewCount: '67'
+          },
+          sameAs: [
+            'https://www.facebook.com/lapelpinsandcoins',
+            'https://twitter.com/lapelpinscoins'
+          ]
+        },
+        areaServed: {
+          '@type': 'Country',
+          name: 'United States'
+        },
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Custom Challenge Coin Services',
+          itemListElement: [
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Military Challenge Coins'
+              }
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Police Challenge Coins'
+              }
+            },
+            {
+              '@type': 'Offer',
+              itemOffered: {
+                '@type': 'Service',
+                name: 'Fire Department Challenge Coins'
+              }
+            }
+          ]
         }
       })
     },
