@@ -128,7 +128,7 @@
 
           <!-- Right Sidebar - CTA -->
           <div class="hidden lg:block lg:col-span-3">
-            <div class="sticky top-8 space-y-6">
+            <div class="sticky top-20 space-y-6">
               <!-- Try Free CTA -->
               <div class="p-6 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl">
                 <div class="text-center">
