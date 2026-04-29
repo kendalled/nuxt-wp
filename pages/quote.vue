@@ -23,6 +23,28 @@ useSeoMeta({
 useHead({
   link: [
     { rel: 'canonical', href: 'https://lapelpinsandcoins.com/quote' }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'DigitalDocument',
+        name: 'Custom Item Template PDF',
+        description: 'Template PDF customers can use to submit custom item details for a quote request.',
+        url: 'https://lapelpinsandcoins.com/custom-item-template.pdf',
+        contentUrl: 'https://lapelpinsandcoins.com/custom-item-template.pdf',
+        encodingFormat: 'application/pdf',
+        isPartOf: {
+          '@type': 'WebPage',
+          '@id': 'https://lapelpinsandcoins.com/quote'
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Lapel Pins & Coins'
+        }
+      })
+    }
   ]
 })
 

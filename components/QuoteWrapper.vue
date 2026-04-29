@@ -10,6 +10,19 @@
           <h1 class="pb-1 text-2xl font-bold leading-tight text-gray-900 border-b border-gray-200 md:text-3xl md:pb-0 md:border-b-0">
             Free Quote Request
           </h1>
+          <p class="mt-3 text-sm text-gray-600">
+            Want to fill out a template instead?
+            <a
+              href="/custom-item-template.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Download custom item template PDF for quote submission"
+              aria-label="Download custom item template PDF for quote submission (opens in a new tab)"
+              class="font-medium text-blue-700 underline underline-offset-2 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 rounded-sm"
+            >
+              Use our custom item template (PDF)
+            </a>
+          </p>
         </div>
         <QuoteChoice @choice="selectProduct" @reset="resetQuote" />
       </header>
