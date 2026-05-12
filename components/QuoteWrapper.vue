@@ -6,23 +6,25 @@
     <!-- old nav spot -->
     <div class="py-10">
       <header>
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 md:pb-10 lg:pb-0">
           <h1 class="pb-1 text-2xl font-bold leading-tight text-gray-900 border-b border-gray-200 md:text-3xl md:pb-0 md:border-b-0">
             Free Quote Request
           </h1>
-          <p class="mt-3 text-sm text-gray-600">
-            Want to fill out a template instead?
+          <div class="mt-3">
             <a
               href="/custom-item-template.pdf"
               target="_blank"
               rel="noopener noreferrer"
               title="Download custom item template PDF for quote submission"
               aria-label="Download custom item template PDF for quote submission (opens in a new tab)"
-              class="font-medium text-blue-700 underline underline-offset-2 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 rounded-sm"
+              class="group inline-flex max-w-full items-center gap-2 rounded-md border border-orange-300 bg-orange-100 px-3 py-2 text-sm font-medium text-orange-900 shadow-sm transition-colors hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2"
             >
-              Use our custom item template (PDF)
+              <span class="inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded bg-orange-200 text-[10px] font-bold text-orange-900 group-hover:bg-orange-300">
+                PDF
+              </span>
+              <span class="truncate">Use our custom item template instead</span>
             </a>
-          </p>
+          </div>
         </div>
         <QuoteChoice @choice="selectProduct" @reset="resetQuote" />
       </header>
